@@ -92,11 +92,13 @@ add_action( 'widgets_init', 'jtwebfolio_widgets_init' );
  * Enqueue scripts and styles.
  */
 function jtwebfolio_scripts() {
-	wp_enqueue_style( 'jtwebfolio-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'jtwebfolio-style', get_template_directory_uri() . '/assets/css/style.css', array(), '20140719', all );
 
-	wp_enqueue_script( 'jtwebfolio-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+	wp_register_script( 'jtwebfolio-js', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), '20140719', true );
+    wp_enqueue_script( 'jtwebfolio-js');
 
-	wp_enqueue_script( 'jtwebfolio-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
+    wp_register_script( 'jtwebfolio-select', get_template_directory_uri() . '/assets/js/src/jquery.lister.js', array('jquery'), '20140719', false );
+    wp_enqueue_script( 'jtwebfolio-select');
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -128,3 +130,8 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Load supercpt file.
+ */
+require get_template_directory() . '/inc/supercpt.php';
