@@ -92,19 +92,24 @@ add_action( 'widgets_init', 'jtwebfolio_widgets_init' );
  * Enqueue scripts and styles.
  */
 function jtwebfolio_scripts() {
-	wp_enqueue_style( 'jtwebfolio-style', get_template_directory_uri() . '/assets/css/style.css', array(), '20140719', all );
-
-	wp_register_script( 'jtwebfolio-js', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), '20140719', true );
-    wp_enqueue_script( 'jtwebfolio-js');
-
-    wp_register_script( 'jtwebfolio-select', get_template_directory_uri() . '/assets/js/src/jquery.lister.js', array('jquery'), '20140719', false );
-    wp_enqueue_script( 'jtwebfolio-select');
+	wp_enqueue_style( 'jtwebfolio-style', get_stylesheet_directory_uri() . '/assets/css/style.css' );
+	wp_enqueue_script( 'jtwebfolio-mainjs', get_template_directory_uri() . '/assets/js/main.js', array(), '20130115', true );
+	wp_enqueue_script( 'jtwebfolio-select', get_template_directory_uri() . '/assets/js/jquery.lister.js', array(), '20130115', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'jtwebfolio_scripts' );
+
+/**
+ * Allow SVG upload in media
+ */
+function cc_mime_types( $mimes ){
+	$mimes['svg'] = 'image/svg+xml';
+	return $mimes;
+}
+add_filter( 'upload_mimes', 'cc_mime_types' );
 
 /**
  * Implement the Custom Header feature.

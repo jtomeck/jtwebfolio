@@ -1,1 +1,190 @@
+* {
+	@include box-sizing(border-box);
+	margin:0;
+	padding:0;
+}
+
 body,html {}
+
+body {
+	@include font($drkgry,$font,14px);
+	background:$ltrgry;
+	line-height:1em;
+	&.toggled {
+		overflow:hidden;
+		.site-content {
+			opacity:0;
+		}
+		.site-footer {
+			display:0;
+		}
+	}
+}
+
+a {
+	text-decoration:none;
+	&:visited,
+	&:hover,
+	&:active {
+		text-decoration:none;
+	}
+}
+
+.btn {
+  @include button($grn,10px 15px,20px);
+}
+
+/* MOBILE NAVIGATION
+********************************/
+.mobile-navigation {
+	background:$drkgry;
+	height:0;
+	overflow:hidden;
+	position:relative;
+	.menu-main-navigation-container {
+		@include transition(top .5s ease-in-out);
+		left:0;
+		padding:50px 30px 0;
+		position:absolute;
+		right:0;
+		top:-480px;
+		.menu {
+			@include clearfix;
+			margin:0;
+			padding:0;
+			.menu-item {
+				float:left;
+				margin:0 7% 30px 0;
+				width:46.5%;
+				a {
+					@include border-radius(10px);
+					@include font($wht,$md-font,18px);
+					background:$drkrgry;
+					display:block;
+					min-height:100px;
+					padding-top:70px;
+					position:relative;
+					text-align:center;
+					text-transform:lowercase;
+					$width:69px;
+					&:before {
+						content:"";
+						display:block;
+						height:75px;
+						left:50%;
+						margin-left:-$width/2;
+						position:absolute;
+						top:-18px;
+						width:$width;
+					}
+				}
+				//a
+				&.about {
+					a {
+						&:before {
+							background:url(../img/mobile_icon_about.svg) no-repeat;
+							background-size:100%;
+						}
+					}
+				}
+				//.about
+				&.work {
+					a {
+						&:before {
+							background:url(../img/mobile_icon_work.svg) no-repeat;
+							background-size:100%;
+						}
+					}
+				}
+				//.work
+				&.blog {
+					a {
+						&:before {
+							background:url(../img/mobile_icon_blog.svg) no-repeat;
+							background-size:100%;
+						}
+					}
+				}
+				//.blog
+				&.contact {
+					a {
+						&:before {
+							background:url(../img/mobile_icon_contact.svg) no-repeat;
+							background-size:100%;
+						}
+					}
+				}
+				//.contact
+				&:nth-child(2n) {
+					margin-right:0;
+				}
+			}
+			//.menu-item
+		}
+		//.menu
+	}
+	//.menu-main-navigation-container
+	&.toggled {
+		.menu-main-navigation-container {
+			top:0;
+		}
+	}
+}
+//.mobile-navigation
+
+/* HEADER
+********************************/
+.site-header {
+	background:url(../img/mobile_header_bg.png) bottom center no-repeat;
+	position:fixed;
+	text-align:center;
+	top:0;
+	width:100%;
+	z-index:1000;
+	.wrapper {
+		min-height:104px;
+	}
+	.site-branding {
+		padding-top:12px;
+		.site-title, .site-description {
+			display:inline-block;
+			img {
+				display:block;
+			}
+		}
+		.site-description {
+			display:none;
+		}
+	}
+	//.site-branding
+	.main-navigation {
+		display:none;
+	}
+	.toggles {
+		position:relative;
+		.menu-toggle, .hire-me {
+			height:18px;
+			position:absolute;
+			width:18px;
+			top:-20px;
+		}
+		.menu-toggle {
+			left:50%;
+			margin-left:-109px;
+		}
+		.hire-me {
+			right:50%;
+			margin-right:-110px;
+			top:-21px;
+		}
+	}
+	//.toggles
+}
+//.site-header
+.site-content, .site-footer {
+	@include transition(opacity .25s ease-in-out);
+}
+.site-content {
+	background:url(../img/mobile_bg.png) top center no-repeat;
+	padding-top:150px;
+}

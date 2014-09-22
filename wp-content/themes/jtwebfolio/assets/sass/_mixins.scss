@@ -8,8 +8,8 @@ $pnk: #ff8772;
 $grn: #009491;
 $ylw: #ffc845;
 
-$ltgry: #dae1e7;
-$ltrgry: #c7cdd3;
+$ltgry: #c7cdd3;
+$ltrgry: #dae1e7;
 $drkgry: #2c2f31;
 $drkrgry: #1f2022;
 
@@ -17,78 +17,110 @@ $drkrgry: #1f2022;
 /* FONT VARIABLES
 ********************************/
 
-$font: "Panefresco1wtRegular", sans-serif;
-$md-font: "Panefresco400wtRegular", sans-serif;
-$bld-font: "Panefresco750wtRegular", sans-serif;
-$font-it: "Panefresco1wtItalic", sans-serif;
-$md-font-it: "Panefresco400wtItalic", sans-serif;
-$bld-font-it: "Panefresco750wtItalic", sans-serif;
+$font: "panefresco_1wtregular", sans-serif;
+$md-font: "panefresco_400wtregular", sans-serif;
+$bld-font: "panefresco_750wtregular", sans-serif;
+$bldr-font: "panefresco_999wtregular", sans-serif;
+$font-it: "panefresco_1wtitalic", sans-serif;
+$md-font-it: "panefresco_400wtitalic", sans-serif;
+$bld-font-it: "panefresco_750wtitalic", sans-serif;
+$bldr-font-it: "panefresco_999wtitalic", sans-serif;
 
 /* FONT-FACE
 ********************************/
 
 @font-face {
-    font-family: 'Panefresco1wtRegular';
-    src: url('fonts/Panefresco1wtRegular-webfont.eot');
-    src: url('fonts/Panefresco1wtRegular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Panefresco1wtRegular-webfont.woff') format('woff'),
-         url('fonts/Panefresco1wtRegular-webfont.ttf') format('truetype'),
-         url('fonts/Panefresco1wtRegular-webfont.svg#Panefresco1wtRegular') format('svg');
+    font-family: 'panefresco_1wtregular';
+    src: url('fonts/panefresco1wtregular-webfont-webfont.eot');
+    src: url('fonts/panefresco1wtregular-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/panefresco1wtregular-webfont-webfont.woff2') format('woff2'),
+         url('fonts/panefresco1wtregular-webfont-webfont.woff') format('woff'),
+         url('fonts/panefresco1wtregular-webfont-webfont.ttf') format('truetype'),
+         url('fonts/panefresco1wtregular-webfont-webfont.svg#panefresco_1wtregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Panefresco1wtItalic';
-    src: url('fonts/Panefresco1wtItalic-webfont.eot');
-    src: url('fonts/Panefresco1wtItalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Panefresco1wtItalic-webfont.woff') format('woff'),
-         url('fonts/Panefresco1wtItalic-webfont.ttf') format('truetype'),
-         url('fonts/Panefresco1wtItalic-webfont.svg#Panefresco1wtItalic') format('svg');
+    font-family: 'panefresco_1wtitalic';
+    src: url('fonts/panefresco1wtitalic-webfont-webfont.eot');
+    src: url('fonts/panefresco1wtitalic-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/panefresco1wtitalic-webfont-webfont.woff2') format('woff2'),
+         url('fonts/panefresco1wtitalic-webfont-webfont.woff') format('woff'),
+         url('fonts/panefresco1wtitalic-webfont-webfont.ttf') format('truetype'),
+         url('fonts/panefresco1wtitalic-webfont-webfont.svg#panefresco_1wtitalic') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Panefresco400wtRegular';
-    src: url('fonts/Panefresco400wtRegular-webfont.eot');
-    src: url('fonts/Panefresco400wtRegular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Panefresco400wtRegular-webfont.woff') format('woff'),
-         url('fonts/Panefresco400wtRegular-webfont.ttf') format('truetype'),
-         url('fonts/Panefresco400wtRegular-webfont.svg#Panefresco400wtRegular') format('svg');
+    font-family: 'panefresco_400wtitalic';
+    src: url('fonts/panefresco400wtitalic-webfont-webfont.eot');
+    src: url('fonts/panefresco400wtitalic-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/panefresco400wtitalic-webfont-webfont.woff2') format('woff2'),
+         url('fonts/panefresco400wtitalic-webfont-webfont.woff') format('woff'),
+         url('fonts/panefresco400wtitalic-webfont-webfont.ttf') format('truetype'),
+         url('fonts/panefresco400wtitalic-webfont-webfont.svg#panefresco_400wtitalic') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Panefresco400wtItalic';
-    src: url('fonts/Panefresco400wtItalic-webfont.eot');
-    src: url('fonts/Panefresco400wtItalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Panefresco400wtItalic-webfont.woff') format('woff'),
-         url('fonts/Panefresco400wtItalic-webfont.ttf') format('truetype'),
-         url('fonts/Panefresco400wtItalic-webfont.svg#Panefresco400wtItalic') format('svg');
+    font-family: 'panefresco_750wtregular';
+    src: url('fonts/panefresco750wtregular-webfont-webfont.eot');
+    src: url('fonts/panefresco750wtregular-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/panefresco750wtregular-webfont-webfont.woff2') format('woff2'),
+         url('fonts/panefresco750wtregular-webfont-webfont.woff') format('woff'),
+         url('fonts/panefresco750wtregular-webfont-webfont.ttf') format('truetype'),
+         url('fonts/panefresco750wtregular-webfont-webfont.svg#panefresco_750wtregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Panefresco750wtRegular';
-    src: url('fonts/Panefresco750wtRegular-webfont.eot');
-    src: url('fonts/Panefresco750wtRegular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Panefresco750wtRegular-webfont.woff') format('woff'),
-         url('fonts/Panefresco750wtRegular-webfont.ttf') format('truetype'),
-         url('fonts/Panefresco750wtRegular-webfont.svg#Panefresco750wtRegular') format('svg');
+    font-family: 'panefresco_750wtitalic';
+    src: url('fonts/panefresco750wtitalic-webfont-webfont.eot');
+    src: url('fonts/panefresco750wtitalic-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/panefresco750wtitalic-webfont-webfont.woff2') format('woff2'),
+         url('fonts/panefresco750wtitalic-webfont-webfont.woff') format('woff'),
+         url('fonts/panefresco750wtitalic-webfont-webfont.ttf') format('truetype'),
+         url('fonts/panefresco750wtitalic-webfont-webfont.svg#panefresco_750wtitalic') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Panefresco750wtItalic';
-    src: url('fonts/Panefresco750wtItalic-webfont.eot');
-    src: url('fonts/Panefresco750wtItalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Panefresco750wtItalic-webfont.woff') format('woff'),
-         url('fonts/Panefresco750wtItalic-webfont.ttf') format('truetype'),
-         url('fonts/Panefresco750wtItalic-webfont.svg#Panefresco750wtItalic') format('svg');
+    font-family: 'panefresco_400wtregular';
+    src: url('fonts/panefresco400wtregular-webfont-webfont.eot');
+    src: url('fonts/panefresco400wtregular-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/panefresco400wtregular-webfont-webfont.woff2') format('woff2'),
+         url('fonts/panefresco400wtregular-webfont-webfont.woff') format('woff'),
+         url('fonts/panefresco400wtregular-webfont-webfont.ttf') format('truetype'),
+         url('fonts/panefresco400wtregular-webfont-webfont.svg#panefresco_400wtregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'panefresco_999wtregular';
+    src: url('fonts/panefresco999wtregular-webfont-webfont.eot');
+    src: url('fonts/panefresco999wtregular-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/panefresco999wtregular-webfont-webfont.woff2') format('woff2'),
+         url('fonts/panefresco999wtregular-webfont-webfont.woff') format('woff'),
+         url('fonts/panefresco999wtregular-webfont-webfont.ttf') format('truetype'),
+         url('fonts/panefresco999wtregular-webfont-webfont.svg#panefresco_999wtregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'panefresco_999wtitalic';
+    src: url('fonts/panefresco999wt-italic-webfont-webfont.eot');
+    src: url('fonts/panefresco999wt-italic-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/panefresco999wt-italic-webfont-webfont.woff2') format('woff2'),
+         url('fonts/panefresco999wt-italic-webfont-webfont.woff') format('woff'),
+         url('fonts/panefresco999wt-italic-webfont-webfont.ttf') format('truetype'),
+         url('fonts/panefresco999wt-italic-webfont-webfont.svg#panefresco_999wtitalic') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -96,11 +128,10 @@ $bld-font-it: "Panefresco750wtItalic", sans-serif;
 /* FONT-MIXIN
 ********************************/
 
-@mixin font($color,$font-family,$font-size: 1.6) {
+@mixin font($color,$font-family,$font-size) {
 	color:$color;
 	font-family:$font-family;
-	font-size:($font-size * 10) + px;
-	font-size:$font-size + rem;
+	font-size:$font-size;
 	font-style:normal;
 	font-weight:normal;
 }
@@ -248,11 +279,14 @@ a.full {
 }
 
 // Button styles
-@mixin button($bdrs,$color,$padding,$font-size) {
-	@include border-radius($bdrs);
+@mixin button($color,$padding,$font-size) {
+	@include border-radius(10px);
+  @include box-shadow(0, 3px, 0, darken($color,10px), $inset: false);
 	background:$color;
-	color:$wht;
-	font-size:($font-size * 10) + px;
-	font-size:$font-size +rem;
+  color:$wht;
+  display:inline-block;
+  font-family:$bld-font;
+	font-size:$font-size;
 	padding:$padding;
+  text-transform:uppercase;
 }
