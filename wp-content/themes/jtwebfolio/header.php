@@ -41,8 +41,8 @@ $args = array( 'menu' => 'Main Nav' );
 				</nav><!-- #site-navigation -->
 
 				<div class="toggles">
-					<a href="#" class="menu-toggle"><?php get_template_part('assets/img/inline', 'menu_toggle.svg'); ?></a>
-					<a href="/contact" class="hire-me"><?php get_template_part('assets/img/inline', 'hire_button.svg'); ?></a>
+					<a href="#" class="menu-toggle"></a>
+					<a href="/contact" class="hire-me"></a>
 				</div>
 			</div>
 		</header><!-- #masthead -->

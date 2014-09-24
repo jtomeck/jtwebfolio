@@ -1,12 +1,17 @@
 jQuery(document).ready(function($){
-
+	
 	var body = $("body");
+
+	// BROWSER DETECTION
+	var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
+	var isChrome = navigator.userAgent.match('CriOS');
 
 	// MAIN NAVIGATION
 	var menuToggle = $(".menu-toggle");
 	var menu = $(".mobile-navigation");
-	var menuHeight = $(window).outerHeight() - 165;
+	var menuHeight = $(window).innerHeight();
 
+	// MENU FUNCTIONALITY
 	menuToggle.click(function(e){
 		if( menu.hasClass("toggled") ) {
 			body.removeClass("toggled");
@@ -19,11 +24,22 @@ jQuery(document).ready(function($){
 		}else{
 			body.addClass("toggled");
 			menu.addClass("toggled");
-			menu.animate({
-				height: menuHeight
-			}, 500, function(){
-				//Animation Complete
-			});
+			if(isSafari && !isChrome) {
+				// Detect browser to correct browser height with address bar issues in safari
+				menu.animate({
+					// Set menuHeight in safari
+					height: menuHeight-96
+				}, 500, function(){
+					//Animation Complete
+				});
+			}else{
+				menu.animate({
+					// Set menuHeight in all other browsers
+					height: menuHeight-165
+				}, 500, function(){
+					//Animation Complete
+				});
+			}
 		}
 		e.preventDefault();
 	});

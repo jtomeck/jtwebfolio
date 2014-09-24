@@ -587,10 +587,12 @@ body {
   line-height: 1em; }
   body.toggled {
     overflow: hidden; }
+    body.toggled .site-header .toggles .menu-toggle {
+      background: url(../img/menu_toggle-close.svg) center center no-repeat; }
     body.toggled .site-content {
       opacity: 0; }
     body.toggled .site-footer {
-      display: 0; }
+      opacity: 0; }
 
 a {
   text-decoration: none; }
@@ -625,13 +627,13 @@ a {
   overflow: hidden;
   position: relative; }
   .mobile-navigation .menu-main-navigation-container {
-    -webkit-transition: top 0.5s ease-in-out;
-    -moz-transition: top 0.5s ease-in-out;
-    -ms-transition: top 0.5s ease-in-out;
-    -o-transition: top 0.5s ease-in-out;
-    transition: top 0.5s ease-in-out;
+    -webkit-transition: top 0.85s;
+    -moz-transition: top 0.85s;
+    -ms-transition: top 0.85s;
+    -o-transition: top 0.85s;
+    transition: top 0.85s;
     left: 0;
-    padding: 50px 30px 0;
+    padding: 35px 30px 0;
     position: absolute;
     right: 0;
     top: -480px; }
@@ -724,9 +726,11 @@ a {
       width: 18px;
       top: -20px; }
     .site-header .toggles .menu-toggle {
+      background: url(../img/menu_toggle.svg) center center no-repeat;
       left: 50%;
       margin-left: -109px; }
     .site-header .toggles .hire-me {
+      background: url(../img/hire_button.svg) center center no-repeat;
       right: 50%;
       margin-right: -110px;
       top: -21px; }

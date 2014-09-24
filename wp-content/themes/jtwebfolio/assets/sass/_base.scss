@@ -12,11 +12,18 @@ body {
 	line-height:1em;
 	&.toggled {
 		overflow:hidden;
+		.site-header {
+			.toggles {
+				.menu-toggle {
+					background:url(../img/menu_toggle-close.svg) center center no-repeat;
+				}
+			}
+		}
 		.site-content {
 			opacity:0;
 		}
 		.site-footer {
-			display:0;
+			opacity:0;
 		}
 	}
 }
@@ -42,9 +49,9 @@ a {
 	overflow:hidden;
 	position:relative;
 	.menu-main-navigation-container {
-		@include transition(top .5s ease-in-out);
+		@include transition(top .85s);
 		left:0;
-		padding:50px 30px 0;
+		padding:35px 30px 0;
 		position:absolute;
 		right:0;
 		top:-480px;
@@ -169,10 +176,12 @@ a {
 			top:-20px;
 		}
 		.menu-toggle {
+			background:url(../img/menu_toggle.svg) center center no-repeat;
 			left:50%;
 			margin-left:-109px;
 		}
 		.hire-me {
+			background:url(../img/hire_button.svg) center center no-repeat;
 			right:50%;
 			margin-right:-110px;
 			top:-21px;
