@@ -31,6 +31,77 @@ body {
 /* TYPOGRAPHY
 ********************************/
 
+.site-content {
+	h1,h2,h3,h4,h5,h6 {
+		line-height:.75em;
+		margin:0 0 .25em;
+		text-transform:uppercase;
+	}
+}
+
+h1, {
+	@include font($drkgry,$md-font,42px);
+}
+h2, {
+	@include font($drkgry,$md-font,38px);
+}
+h3, {
+	@include font($drkgry,$md-font,32px);
+}
+h4, {
+	@include font($drkgry,$md-font,24px);
+}
+h5, {
+	@include font($drkgry,$md-font,18px);
+}
+h6, {
+	@include font($drkgry,$md-font,16px);
+}
+
+p {
+	@include font($drkgry,$font,14px);
+	line-height:1.5em;
+	margin:.5em 0;
+	// Bolding and Italicizing inside P tags
+	b, strong {
+		font-family:$bld-font;
+		font-weight:normal;
+		font-style:normal;
+		& em, & i {
+			font-family:$bld-font-it;
+			font-style:normal;
+		}
+	}
+	i, em {
+		font-family:$font-it;
+		font-style:normal;
+		& b, & strong {
+			font-family:$bld-font-it;
+			font-weight:normal;
+			font-style:normal;
+		}
+	}
+}
+// Bolding and Italicizing outside of P tags
+b, strong {
+	font-family:$bld-font;
+	font-weight:normal;
+	font-style:normal;
+	& em, & i {
+		font-family:$bld-font-it;
+		font-style:normal;
+	}
+}
+i, em {
+	font-family:$font-it;
+	font-style:normal;
+	& b, & strong {
+		font-family:$bld-font-it;
+		font-weight:normal;
+		font-style:normal;
+	}
+}
+
 a {
 	text-decoration:none;
 	&:visited,
@@ -40,9 +111,32 @@ a {
 	}
 }
 
+/* BUTTONS & FORMS
+********************************/
+
 .btn {
-  @include button($grn,10px 15px,20px);
+  @include button($grn,15px 17px 13px,20px);
 }
+
+/* CTA SECTIONS
+********************************/
+
+.cta {
+	background:$drkgry;
+	text-align:center;
+	.wrapper {
+		padding:40px 30px !important;
+	}
+	.cta-title {
+		@include font($ltgry,$bld-font,24px);
+		margin-bottom:.5em;
+	}
+	.cta-text {
+		@include font($wht,$font,12px);
+		margin-bottom:20px;
+	}
+}
+//.cta
 
 /* MOBILE NAVIGATION
 ********************************/
@@ -144,6 +238,11 @@ a {
 
 /* HEADER
 ********************************/
+
+.wrapper {
+	@include clearfix;
+}
+
 .site-header {
 	background:url(../img/mobile_header_bg.png) bottom center no-repeat;
 	position:fixed;
@@ -194,8 +293,19 @@ a {
 }
 //.site-header
 .site-content {
+	.wrapper {
+		padding:0 30px;
+	}
 	.main-banner {
 		text-align:center;
+		&:after {
+			background:url(../img/circle_arrow_divide.svg) center center no-repeat;
+			content:"";
+			display:block;
+			height:22px;
+			margin:25px auto 0;
+			width:22px;
+		}
 		.main-title {
 			@include font($drkgry,$bld-font,42px);
 			text-transform:uppercase;
@@ -206,8 +316,85 @@ a {
 		}
 	}
 	//.main-banner
+	.home-skills {
+		padding-top:40px;
+		.skills-header {
+			.skills-title {
+				@include font($ltgry,$bldr-font,112px);
+				text-align:center;
+				text-transform:lowercase;
+			}
+		}
+		//.skills-header
+		.skills-list-wrap {
+			background:$ltgry;
+			margin-top:-42px;
+			.wrapper {
+				margin-top:-20px;
+				padding-bottom:20px;
+			}
+			.skills-list {
+				@include clearfix;
+				position:relative;
+				.skill {
+					float:left;
+					margin-right:3.5%;
+					margin-top:-40px;
+					width:31%;
+					&:nth-child(3) {
+						margin-right:0;
+					}
+					&:nth-child(4) {
+						margin-left:17%;
+					}
+					&:nth-child(4),&:nth-child(5) {
+						margin-top:-17px;
+					}
+					.skill-icon {
+						img {
+							width:100%;
+							height:100%;
+						}
+					}
+					.skill-text {
+						height:0;
+						overflow:hidden;
+						position:absolute;
+					}
+				}
+				//.skill
+			}
+			//.skills-list
+		}
+		//.skills-list-wrap
+	}
+	//.home-skills
 }
 // .site-content
+.site-footer {
+	background:$drkrgry;
+	text-align:center;
+	.site-info {
+		padding:20px 30px;
+	}
+	span {
+		@include font(#a5abaf,$font,11px);
+		display:inline-block;
+	}
+	img {
+		display:inline-block;
+		margin:0 5px;
+		vertical-align:middle;
+	}
+	a {
+		@include font(#a5abaf,$font,11px);
+		&:visited, &:hover, &:active {
+			text-decoration:none;
+		}
+	}
+}
+
+//transition on menu open
 .site-content, .site-footer {
 	@include transition(opacity .25s ease-in-out);
 }

@@ -596,11 +596,99 @@ body {
 
 /* TYPOGRAPHY
 ********************************/
+.site-content h1, .site-content h2, .site-content h3, .site-content h4, .site-content h5, .site-content h6 {
+  line-height: .75em;
+  margin: 0 0 .25em;
+  text-transform: uppercase; }
+
+h1 {
+  color: #2c2f31;
+  font-family: "panefresco_400wtregular", sans-serif;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: normal; }
+
+h2 {
+  color: #2c2f31;
+  font-family: "panefresco_400wtregular", sans-serif;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: normal; }
+
+h3 {
+  color: #2c2f31;
+  font-family: "panefresco_400wtregular", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: normal; }
+
+h4 {
+  color: #2c2f31;
+  font-family: "panefresco_400wtregular", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: normal; }
+
+h5 {
+  color: #2c2f31;
+  font-family: "panefresco_400wtregular", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal; }
+
+h6 {
+  color: #2c2f31;
+  font-family: "panefresco_400wtregular", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal; }
+
+p {
+  color: #2c2f31;
+  font-family: "panefresco_1wtregular", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5em;
+  margin: .5em 0; }
+  p b, p strong {
+    font-family: "panefresco_750wtregular", sans-serif;
+    font-weight: normal;
+    font-style: normal; }
+    p b em, p b i, p strong em, p strong i {
+      font-family: "panefresco_750wtitalic", sans-serif;
+      font-style: normal; }
+  p i, p em {
+    font-family: "panefresco_1wtitalic", sans-serif;
+    font-style: normal; }
+    p i b, p i strong, p em b, p em strong {
+      font-family: "panefresco_750wtitalic", sans-serif;
+      font-weight: normal;
+      font-style: normal; }
+
+b, strong {
+  font-family: "panefresco_750wtregular", sans-serif;
+  font-weight: normal;
+  font-style: normal; }
+  b em, b i, strong em, strong i {
+    font-family: "panefresco_750wtitalic", sans-serif;
+    font-style: normal; }
+
+i, em {
+  font-family: "panefresco_1wtitalic", sans-serif;
+  font-style: normal; }
+  i b, i strong, em b, em strong {
+    font-family: "panefresco_750wtitalic", sans-serif;
+    font-weight: normal;
+    font-style: normal; }
+
 a {
   text-decoration: none; }
   a:visited, a:hover, a:active {
     text-decoration: none; }
 
+/* BUTTONS & FORMS
+********************************/
 .btn {
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
@@ -618,8 +706,30 @@ a {
   display: inline-block;
   font-family: "panefresco_750wtregular", sans-serif;
   font-size: 20px;
-  padding: 10px 15px;
+  padding: 15px 17px 13px;
   text-transform: uppercase; }
+
+/* CTA SECTIONS
+********************************/
+.cta {
+  background: #2c2f31;
+  text-align: center; }
+  .cta .wrapper {
+    padding: 40px 30px !important; }
+  .cta .cta-title {
+    color: #c7cdd3;
+    font-family: "panefresco_750wtregular", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: .5em; }
+  .cta .cta-text {
+    color: #fff;
+    font-family: "panefresco_1wtregular", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 20px; }
 
 /* MOBILE NAVIGATION
 ********************************/
@@ -701,6 +811,14 @@ a {
 
 /* HEADER
 ********************************/
+.wrapper {
+  zoom: 1; }
+  .wrapper:before, .wrapper:after {
+    content: "";
+    display: table; }
+  .wrapper:after {
+    clear: both; }
+
 .site-header {
   background: url(../img/mobile_header_bg.png) bottom center no-repeat;
   position: fixed;
@@ -737,8 +855,17 @@ a {
       margin-right: -110px;
       top: -21px; }
 
+.site-content .wrapper {
+  padding: 0 30px; }
 .site-content .main-banner {
   text-align: center; }
+  .site-content .main-banner:after {
+    background: url(../img/circle_arrow_divide.svg) center center no-repeat;
+    content: "";
+    display: block;
+    height: 22px;
+    margin: 25px auto 0;
+    width: 22px; }
   .site-content .main-banner .main-title {
     color: #2c2f31;
     font-family: "panefresco_750wtregular", sans-serif;
@@ -753,6 +880,73 @@ a {
       font-style: normal;
       font-weight: normal;
       display: block; }
+.site-content .home-skills {
+  padding-top: 40px; }
+  .site-content .home-skills .skills-header .skills-title {
+    color: #c7cdd3;
+    font-family: "panefresco_999wtregular", sans-serif;
+    font-size: 112px;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    text-transform: lowercase; }
+  .site-content .home-skills .skills-list-wrap {
+    background: #c7cdd3;
+    margin-top: -42px; }
+    .site-content .home-skills .skills-list-wrap .wrapper {
+      margin-top: -20px;
+      padding-bottom: 20px; }
+    .site-content .home-skills .skills-list-wrap .skills-list {
+      zoom: 1;
+      position: relative; }
+      .site-content .home-skills .skills-list-wrap .skills-list:before, .site-content .home-skills .skills-list-wrap .skills-list:after {
+        content: "";
+        display: table; }
+      .site-content .home-skills .skills-list-wrap .skills-list:after {
+        clear: both; }
+      .site-content .home-skills .skills-list-wrap .skills-list .skill {
+        float: left;
+        margin-right: 3.5%;
+        margin-top: -40px;
+        width: 31%; }
+        .site-content .home-skills .skills-list-wrap .skills-list .skill:nth-child(3) {
+          margin-right: 0; }
+        .site-content .home-skills .skills-list-wrap .skills-list .skill:nth-child(4) {
+          margin-left: 17%; }
+        .site-content .home-skills .skills-list-wrap .skills-list .skill:nth-child(4), .site-content .home-skills .skills-list-wrap .skills-list .skill:nth-child(5) {
+          margin-top: -17px; }
+        .site-content .home-skills .skills-list-wrap .skills-list .skill .skill-icon img {
+          width: 100%;
+          height: 100%; }
+        .site-content .home-skills .skills-list-wrap .skills-list .skill .skill-text {
+          height: 0;
+          overflow: hidden;
+          position: absolute; }
+
+.site-footer {
+  background: #1f2022;
+  text-align: center; }
+  .site-footer .site-info {
+    padding: 20px 30px; }
+  .site-footer span {
+    color: #a5abaf;
+    font-family: "panefresco_1wtregular", sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: normal;
+    display: inline-block; }
+  .site-footer img {
+    display: inline-block;
+    margin: 0 5px;
+    vertical-align: middle; }
+  .site-footer a {
+    color: #a5abaf;
+    font-family: "panefresco_1wtregular", sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: normal; }
+    .site-footer a:visited, .site-footer a:hover, .site-footer a:active {
+      text-decoration: none; }
 
 .site-content, .site-footer {
   -webkit-transition: opacity 0.25s ease-in-out;

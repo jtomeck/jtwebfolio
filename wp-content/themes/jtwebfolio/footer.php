@@ -12,9 +12,9 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'jtwebfolio' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'jtwebfolio' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'jtwebfolio' ), 'jtwebfolio', '<a href="http://--" rel="designer">Jared Tomeck</a>' ); ?>
+			<span>&copy; <?php echo date("Y") ?> Jared Tomeck</span>
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer_logo.svg" alt="logo">
+			<span><a href="mailto:jtwebfolio@gmail.com">jtwebfolio@gmail.com</a></span>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
