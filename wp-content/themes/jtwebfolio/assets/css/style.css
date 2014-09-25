@@ -594,6 +594,8 @@ body {
     body.toggled .site-footer {
       opacity: 0; }
 
+/* TYPOGRAPHY
+********************************/
 a {
   text-decoration: none; }
   a:visited, a:hover, a:active {
@@ -734,6 +736,23 @@ a {
       right: 50%;
       margin-right: -110px;
       top: -21px; }
+
+.site-content .main-banner {
+  text-align: center; }
+  .site-content .main-banner .main-title {
+    color: #2c2f31;
+    font-family: "panefresco_750wtregular", sans-serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase; }
+    .site-content .main-banner .main-title span {
+      color: #2c2f31;
+      font-family: "panefresco_400wtregular", sans-serif;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: normal;
+      display: block; }
 
 .site-content, .site-footer {
   -webkit-transition: opacity 0.25s ease-in-out;

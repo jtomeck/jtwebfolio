@@ -28,6 +28,9 @@ body {
 	}
 }
 
+/* TYPOGRAPHY
+********************************/
+
 a {
 	text-decoration:none;
 	&:visited,
@@ -190,6 +193,21 @@ a {
 	//.toggles
 }
 //.site-header
+.site-content {
+	.main-banner {
+		text-align:center;
+		.main-title {
+			@include font($drkgry,$bld-font,42px);
+			text-transform:uppercase;
+			span {
+				@include font($drkgry,$md-font,20px);
+				display:block;
+			}
+		}
+	}
+	//.main-banner
+}
+// .site-content
 .site-content, .site-footer {
 	@include transition(opacity .25s ease-in-out);
 }
