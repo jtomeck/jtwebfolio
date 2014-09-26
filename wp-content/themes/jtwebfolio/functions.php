@@ -140,3 +140,8 @@ require get_template_directory() . '/inc/jetpack.php';
  * Load supercpt file.
  */
 require get_template_directory() . '/inc/supercpt.php';
+
+/**
+ * Theme options page.
+ */
+require get_template_directory() . '/inc/theme-options.php';
