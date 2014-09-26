@@ -49,22 +49,22 @@ body {
 }
 
 h1, {
-	@include font($drkgry,$md-font,42px);
+	@include font($drkgry,$font,42px);
 }
 h2, {
-	@include font($drkgry,$md-font,38px);
+	@include font($drkgry,$font,38px);
 }
 h3, {
-	@include font($drkgry,$md-font,32px);
+	@include font($drkgry,$font,32px);
 }
 h4, {
-	@include font($drkgry,$md-font,24px);
+	@include font($drkgry,$font,24px);
 }
 h5, {
-	@include font($drkgry,$md-font,18px);
+	@include font($drkgry,$font,18px);
 }
 h6, {
-	@include font($drkgry,$md-font,16px);
+	@include font($drkgry,$font,16px);
 }
 
 p {
@@ -73,11 +73,11 @@ p {
 	margin:.5em 0;
 	// Bolding and Italicizing inside P tags
 	b, strong {
-		font-family:$bld-font;
+		font-family:$md-font;
 		font-weight:normal;
 		font-style:normal;
 		& em, & i {
-			font-family:$bld-font-it;
+			font-family:$md-font-it;
 			font-style:normal;
 		}
 	}
@@ -85,7 +85,7 @@ p {
 		font-family:$font-it;
 		font-style:normal;
 		& b, & strong {
-			font-family:$bld-font-it;
+			font-family:$md-font-it;
 			font-weight:normal;
 			font-style:normal;
 		}
@@ -93,11 +93,11 @@ p {
 }
 // Bolding and Italicizing outside of P tags
 b, strong {
-	font-family:$bld-font;
+	font-family:$md-font;
 	font-weight:normal;
 	font-style:normal;
 	& em, & i {
-		font-family:$bld-font-it;
+		font-family:$md-font-it;
 		font-style:normal;
 	}
 }
@@ -105,7 +105,7 @@ i, em {
 	font-family:$font-it;
 	font-style:normal;
 	& b, & strong {
-		font-family:$bld-font-it;
+		font-family:$md-font-it;
 		font-weight:normal;
 		font-style:normal;
 	}
@@ -137,7 +137,7 @@ a {
 		padding:40px 30px !important;
 	}
 	.cta-title {
-		@include font($ltgry,$bld-font,24px);
+		@include font($ltgry,$md-font,24px);
 		margin-bottom:.5em;
 	}
 	.cta-text {
@@ -171,7 +171,7 @@ a {
 				width:46.5%;
 				a {
 					@include border-radius(10px);
-					@include font($wht,$md-font,18px);
+					@include font($wht,$font,18px);
 					background:$drkrgry;
 					display:block;
 					min-height:100px;
@@ -371,7 +371,7 @@ a {
     		transition-delay: .5s;
 			text-transform:uppercase;
 			span {
-				@include font($drkgry,$md-font,20px);
+				@include font($drkgry,$font,20px);
 				display:block;
 			}
 		}
@@ -381,7 +381,7 @@ a {
 		padding-top:40px;
 		.skills-header {
 			.skills-title {
-				@include font($ltgry,$bldr-font,112px);
+				@include font($ltgry,$bld-font,112px);
 				text-align:center;
 				text-transform:lowercase;
 			}
@@ -401,6 +401,7 @@ a {
 					float:left;
 					margin-right:3.5%;
 					margin-top:-40px;
+					position:static;
 					width:31%;
 					&:nth-child(3) {
 						margin-right:0;
@@ -408,10 +409,58 @@ a {
 					&:nth-child(4) {
 						margin-left:17%;
 					}
-					&:nth-child(4),&:nth-child(5) {
+					&:nth-child(4),
+					&:nth-child(5) {
+						@include transition(margin-top .25s ease-in-out);
+						height:auto;
 						margin-top:-17px;
 					}
+					&.toggled {
+						margin-top:105px;
+						&.text-toggled {
+							.skill-icon {
+								&:after {
+									border-color: transparent transparent $drkrgry transparent;
+									border-style: solid;
+									border-width: 0 10px 16px 10px;
+									top:-11px;
+									content:"";
+									display:block;
+									height: 0;
+									left:50%;
+									margin-left:-10px;
+									position:absolute;
+									width: 0;
+								}
+							}
+						}
+					}
+					&.text-toggled {
+						.skill-icon {
+							&:after {
+								border-color: $drkrgry transparent transparent transparent;
+								border-style: solid;
+								border-width: 16px 10px 0 10px;
+								bottom:-7px;
+								content:"";
+								display:block;
+								height: 0;
+								left:50%;
+								margin-left:-10px;
+								position:absolute;
+								width: 0;
+							}
+						}
+						.skill-text {
+							@include transition(opacity .25s .25s ease-in-out);
+							height:auto;
+							-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+							filter: alpha(opacity=1);
+							opacity: 1;
+						}
+					}
 					.skill-icon {
+						position:relative;
 						img {
 							width:100%;
 							height:100%;
@@ -419,8 +468,19 @@ a {
 					}
 					.skill-text {
 						height:0;
+						left:0;
+						-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+						filter: alpha(opacity=0);
+						opacity: 0;
 						overflow:hidden;
 						position:absolute;
+						right:0;
+						text-align:center;
+						top:58px;
+						p {
+							font-size:16px;
+							line-height:1.4em;
+						}
 					}
 				}
 				//.skill

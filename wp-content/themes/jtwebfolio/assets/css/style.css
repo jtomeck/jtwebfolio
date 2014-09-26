@@ -579,7 +579,7 @@ BASE (MOBILE) SIZE
 
 body {
   color: #2c2f31;
-  font-family: "panefresco_1wtregular", sans-serif;
+  font-family: "panefresco_400wtregular", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: normal;
@@ -655,7 +655,7 @@ h6 {
 
 p {
   color: #2c2f31;
-  font-family: "panefresco_1wtregular", sans-serif;
+  font-family: "panefresco_400wtregular", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: normal;
@@ -669,7 +669,7 @@ p {
       font-family: "panefresco_750wtitalic", sans-serif;
       font-style: normal; }
   p i, p em {
-    font-family: "panefresco_1wtitalic", sans-serif;
+    font-family: "panefresco_400wtitalic", sans-serif;
     font-style: normal; }
     p i b, p i strong, p em b, p em strong {
       font-family: "panefresco_750wtitalic", sans-serif;
@@ -685,7 +685,7 @@ b, strong {
     font-style: normal; }
 
 i, em {
-  font-family: "panefresco_1wtitalic", sans-serif;
+  font-family: "panefresco_400wtitalic", sans-serif;
   font-style: normal; }
   i b, i strong, em b, em strong {
     font-family: "panefresco_750wtitalic", sans-serif;
@@ -735,7 +735,7 @@ a {
     margin-bottom: .5em; }
   .cta .cta-text {
     color: #fff;
-    font-family: "panefresco_1wtregular", sans-serif;
+    font-family: "panefresco_400wtregular", sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: normal;
@@ -928,7 +928,7 @@ a {
     width: 22px; }
   .site-content .main-banner .main-title {
     color: #2c2f31;
-    font-family: "panefresco_750wtregular", sans-serif;
+    font-family: "panefresco_999wtregular", sans-serif;
     font-size: 42px;
     font-style: normal;
     font-weight: normal;
@@ -970,20 +970,75 @@ a {
         float: left;
         margin-right: 3.5%;
         margin-top: -40px;
+        position: static;
         width: 31%; }
         .site-content .home-skills .skills-list-wrap .skills-list .skill:nth-child(3) {
           margin-right: 0; }
         .site-content .home-skills .skills-list-wrap .skills-list .skill:nth-child(4) {
           margin-left: 17%; }
         .site-content .home-skills .skills-list-wrap .skills-list .skill:nth-child(4), .site-content .home-skills .skills-list-wrap .skills-list .skill:nth-child(5) {
+          -webkit-transition: margin-top 0.25s ease-in-out;
+          -moz-transition: margin-top 0.25s ease-in-out;
+          -ms-transition: margin-top 0.25s ease-in-out;
+          -o-transition: margin-top 0.25s ease-in-out;
+          transition: margin-top 0.25s ease-in-out;
+          height: auto;
           margin-top: -17px; }
-        .site-content .home-skills .skills-list-wrap .skills-list .skill .skill-icon img {
-          width: 100%;
-          height: 100%; }
+        .site-content .home-skills .skills-list-wrap .skills-list .skill.toggled {
+          margin-top: 105px; }
+          .site-content .home-skills .skills-list-wrap .skills-list .skill.toggled.text-toggled .skill-icon:after {
+            border-color: transparent transparent #1f2022 transparent;
+            border-style: solid;
+            border-width: 0 10px 16px 10px;
+            top: -11px;
+            content: "";
+            display: block;
+            height: 0;
+            left: 50%;
+            margin-left: -10px;
+            position: absolute;
+            width: 0; }
+        .site-content .home-skills .skills-list-wrap .skills-list .skill.text-toggled .skill-icon:after {
+          border-color: #1f2022 transparent transparent transparent;
+          border-style: solid;
+          border-width: 16px 10px 0 10px;
+          bottom: -7px;
+          content: "";
+          display: block;
+          height: 0;
+          left: 50%;
+          margin-left: -10px;
+          position: absolute;
+          width: 0; }
+        .site-content .home-skills .skills-list-wrap .skills-list .skill.text-toggled .skill-text {
+          -webkit-transition: opacity 0.25s 0.25s ease-in-out;
+          -moz-transition: opacity 0.25s 0.25s ease-in-out;
+          -ms-transition: opacity 0.25s 0.25s ease-in-out;
+          -o-transition: opacity 0.25s 0.25s ease-in-out;
+          transition: opacity 0.25s 0.25s ease-in-out;
+          height: auto;
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+          filter: alpha(opacity=1);
+          opacity: 1; }
+        .site-content .home-skills .skills-list-wrap .skills-list .skill .skill-icon {
+          position: relative; }
+          .site-content .home-skills .skills-list-wrap .skills-list .skill .skill-icon img {
+            width: 100%;
+            height: 100%; }
         .site-content .home-skills .skills-list-wrap .skills-list .skill .skill-text {
           height: 0;
+          left: 0;
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+          filter: alpha(opacity=0);
+          opacity: 0;
           overflow: hidden;
-          position: absolute; }
+          position: absolute;
+          right: 0;
+          text-align: center;
+          top: 58px; }
+          .site-content .home-skills .skills-list-wrap .skills-list .skill .skill-text p {
+            font-size: 16px;
+            line-height: 1.4em; }
 
 .site-footer {
   background: #1f2022;
@@ -992,7 +1047,7 @@ a {
     padding: 22px 0; }
   .site-footer span {
     color: #a5abaf;
-    font-family: "panefresco_1wtregular", sans-serif;
+    font-family: "panefresco_400wtregular", sans-serif;
     font-size: 11px;
     font-style: normal;
     font-weight: normal;
@@ -1003,7 +1058,7 @@ a {
     vertical-align: middle; }
   .site-footer a {
     color: #a5abaf;
-    font-family: "panefresco_1wtregular", sans-serif;
+    font-family: "panefresco_400wtregular", sans-serif;
     font-size: 11px;
     font-style: normal;
     font-weight: normal; }
