@@ -8,6 +8,7 @@
  */
 
 $args = array( 'menu' => 'Main Nav' );
+$options = get_option('theme_options');
 
 ?>
 
@@ -45,9 +46,9 @@ $args = array( 'menu' => 'Main Nav' );
 					<a href="/contact" class="hire-me"></a>
 				</div>
 				<div class="social">
-					<a href="<?php echo get_option('dribbbleurl','#'); ?>" class="dribbble">Dribbble</a>
-					<a href="<?php echo get_option('twitterurl','#'); ?>" class="dribbble">Twitter</a>
-					<a href="<?php echo get_option('linkedinurl','#'); ?>" class="dribbble">LinkedIn</a>
+					<a href="<?php echo $options['dribbbleurl_setting']; ?>" class="dribbble">Dribbble</a>
+					<a href="<?php echo $options['twitterurl_setting']; ?>" class="twitter">Twitter</a>
+					<a href="<?php echo $options['linkedinurl_setting']; ?>" class="linkedin">LinkedIn</a>
 				</div>
 			</div>
 		</header><!-- #masthead -->

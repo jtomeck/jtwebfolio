@@ -26,9 +26,9 @@ function register_and_build_fields() {
 	register_setting('theme_options', 'theme_options', 'validate_setting');
 	add_settings_section('homepage_settings', 'Homepage Settings', 'section_homepage', __FILE__);
 	function section_homepage() {}
-	add_settings_field('dribbbleurl', 'Dribbble URL', 'dribbbleurl', __FILE__, 'homepage_settings');
-	add_settings_field('twitterurl', 'Twitter URL', 'twitterurl', __FILE__, 'homepage_settings');
-	add_settings_field('linkedinurl', 'LinkedIn URL', 'linkedinurl', __FILE__, 'homepage_settings');
+	add_settings_field('dribbbleurl', 'Dribbble URL', 'dribbbleurl_setting', __FILE__, 'homepage_settings');
+	add_settings_field('twitterurl', 'Twitter URL', 'twitterurl_setting', __FILE__, 'homepage_settings');
+	add_settings_field('linkedinurl', 'LinkedIn URL', 'linkedinurl_setting', __FILE__, 'homepage_settings');
 }
 function validate_setting($theme_options) {
 	return $theme_options;
