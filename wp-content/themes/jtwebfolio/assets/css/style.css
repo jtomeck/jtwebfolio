@@ -919,7 +919,7 @@ a {
   padding: 0 30px; }
 .site-content .main-banner {
   text-align: center; }
-  .site-content .main-banner:after {
+  .site-content .main-banner .slide_link {
     background: url(../img/circle_arrow_divide.svg) center center no-repeat;
     content: "";
     display: block;
@@ -1035,7 +1035,7 @@ a {
           position: absolute;
           right: 0;
           text-align: center;
-          top: 58px; }
+          top: 62px; }
           .site-content .home-skills .skills-list-wrap .skills-list .skill .skill-text p {
             font-size: 16px;
             line-height: 1.4em; }
