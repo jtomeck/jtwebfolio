@@ -5,7 +5,7 @@
  *
  * You can add more if you wish
  *
- * @package CMH
+ * @package jtwebfolio
  **/
 
 require get_template_directory() . '/inc/supercpt-work.php';

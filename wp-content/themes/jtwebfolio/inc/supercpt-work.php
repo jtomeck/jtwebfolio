@@ -3,7 +3,7 @@
 /**
  * SPT Docs
  *
- * @package CMH
+ * @package jtwebfolio
  **/
 
 add_action( 'after_setup_theme', 'jtw_work' );

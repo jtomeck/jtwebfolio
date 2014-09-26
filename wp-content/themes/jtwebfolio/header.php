@@ -44,6 +44,9 @@ $args = array( 'menu' => 'Main Nav' );
 					<a href="#" class="menu-toggle"></a>
 					<a href="/contact" class="hire-me"></a>
 				</div>
+				<div class="social">
+					
+				</div>
 			</div>
 		</header><!-- #masthead -->
 
