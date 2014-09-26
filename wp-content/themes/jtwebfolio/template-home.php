@@ -23,12 +23,13 @@ get_header(); ?>
             <h1 class="main-title"><?php echo $main_heading; ?></h1>
             <p class="main-text"><?php echo $main_text; ?></p>
         </div><!-- .wrapper -->
+        <a href="#skills" class="slide_link"></a>
     </section><!-- .main-banner -->
 
     <section class="home-skills">
         <div class="skills-header">
             <div class="wrapper">
-                <h1 class="skills-title">Skills</h1>
+                <h1 id="skills" class="skills-title">Skills</h1>
             </div>
         </div>
         <div class="skills-list-wrap">

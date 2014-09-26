@@ -1,6 +1,22 @@
 jQuery(document).ready(function($){
-	
+	// MISC VARIABLES
 	var body = $("body");
+
+	// SMOOTH ANCHOR SCROLL
+	$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top
+	        }, 1000);
+	        return false;
+	      }
+	    }
+	  });
+	});
 
 	// BROWSER DETECTION
 	var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
@@ -54,7 +70,7 @@ jQuery(document).ready(function($){
 			skill.removeClass("text-toggled");
 			$(this).addClass("text-toggled");
 		}
-		
+
 		if( skill.is(".text-toggled") ) {
 			skillLastTwo.addClass("toggled");
 		}else{
