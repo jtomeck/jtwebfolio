@@ -26,21 +26,21 @@ function register_and_build_fields() {
 	register_setting('theme_options', 'theme_options', 'validate_setting');
 	add_settings_section('homepage_settings', 'Homepage Settings', 'section_homepage', __FILE__);
 	function section_homepage() {}
-	add_settings_field('dribbbleurl', 'Dribbble URL', 'dribbbleurl_setting', __FILE__, 'homepage_settings');
-	add_settings_field('twitterurl', 'Twitter URL', 'twitterurl_setting', __FILE__, 'homepage_settings');
-	add_settings_field('linkedinurl', 'LinkedIn URL', 'linkedinurl_setting', __FILE__, 'homepage_settings');
+	add_settings_field('dribbbleurl', 'Dribbble URL', 'dribbbleurl', __FILE__, 'homepage_settings');
+	add_settings_field('twitterurl', 'Twitter URL', 'twitterurl', __FILE__, 'homepage_settings');
+	add_settings_field('linkedinurl', 'LinkedIn URL', 'linkedinurl', __FILE__, 'homepage_settings');
 }
 function validate_setting($theme_options) {
 	return $theme_options;
 }
 function dribbbleurl() {
-	$options = get_option('theme_options');  echo "<input name='theme_options[facebookurl]' type='text' value='{$options['facebookurl']}' />";
+	$options = get_option('theme_options');  echo "<input name='theme_options[dribbbleurl]' type='text' value='{$options['dribbbleurl']}' />";
 }
 function twitterurl() {
-	$options = get_option('theme_options');  echo "<input name='theme_options[googleurl]' type='text' value='{$options['googleurl']}' />";
+	$options = get_option('theme_options');  echo "<input name='theme_options[twitterurl]' type='text' value='{$options['twitterurl']}' />";
 }
 function linkedinurl() {
-	$options = get_option('theme_options');  echo "<input name='theme_options[twitterurl]' type='text' value='{$options['twitterurl']}' />";
+	$options = get_option('theme_options');  echo "<input name='theme_options[linkedinurl]' type='text' value='{$options['linkedinurl']}' />";
 }
 add_action('admin_menu', 'theme_options_page');
 function theme_options_page() {  add_options_page('Theme Settings', 'Theme Settings', 'administrator', __FILE__, 'build_options_page');}

@@ -46,9 +46,9 @@ $options = get_option('theme_options');
 					<a href="/contact" class="hire-me"></a>
 				</div>
 				<div class="social">
-					<a href="<?php echo $options['dribbbleurl_setting']; ?>" class="dribbble">Dribbble</a>
-					<a href="<?php echo $options['twitterurl_setting']; ?>" class="twitter">Twitter</a>
-					<a href="<?php echo $options['linkedinurl_setting']; ?>" class="linkedin">LinkedIn</a>
+					<a href="<?php echo $options['dribbbleurl']; ?>" class="dribbble">Dribbble</a>
+					<a href="<?php echo $options['twitterurl']; ?>" class="twitter">Twitter</a>
+					<a href="<?php echo $options['linkedinurl']; ?>" class="linkedin">LinkedIn</a>
 				</div>
 			</div>
 		</header><!-- #masthead -->
