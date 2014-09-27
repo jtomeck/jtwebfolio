@@ -1,0 +1,122 @@
+/* CTA SECTIONS
+********************************/
+
+.cta {
+	.wrapper {}
+	.cta-title {}
+	.cta-text {}
+}
+//.cta
+
+/* MOBILE NAVIGATION
+********************************/
+.mobile-navigation {
+	display:none;
+}
+//.mobile-navigation
+
+.wrapper {}
+
+.site-header {
+	background:$drkgry;
+	bottom:0;
+	left:0;
+	right:auto;
+	top:0;
+	width:20%;
+	.wrapper {
+		background:none;
+	}
+	.site-branding {
+		.site-title, .site-description {
+			img {}
+		}
+		.site-description {}
+	}
+	//.site-branding
+	.main-navigation {}
+	.toggles {
+		display:none;
+		.menu-toggle, .hire-me {}
+		.menu-toggle {}
+		.hire-me {}
+	}
+	//.toggles
+	.social {
+		a {
+			&.dribbble {}
+			&.twitter {}
+			&.linkedin {}
+		}
+	}
+}
+//.site-header
+.site-content {
+	float:right;
+	width:80%;
+	.wrapper {}
+	.main-banner {
+		.slide_link {}
+		.main-title {
+			span {}
+		}
+		.main-text {}
+	}
+	//.main-banner
+	.home-skills {
+		.skills-header {
+			.skills-title {}
+		}
+		//.skills-header
+		.skills-list-wrap {
+			.wrapper {}
+			.skills-list {
+				&:after {}
+				.skill {
+					&:nth-child(3) {}
+					&:nth-child(4) {}
+					&:nth-child(4),
+					&:nth-child(5) {}
+					&:nth-child(5) {}
+					&.toggled {
+						&.text-toggled {
+							.skill-icon {
+								&:after {}
+							}
+							//.skill-icon
+						}
+						//.text-toggled
+					}
+					//.toggled
+					&.text-toggled {
+						.skill-icon {
+							&:after {}
+						}
+						.skill-text {}
+					}
+					//.text-toggled
+					.skill-icon {
+						img {}
+					}
+					.skill-text {
+						p {}
+					}
+				}
+				//.skill
+			}
+			//.skills-list
+		}
+		//.skills-list-wrap
+	}
+	//.home-skills
+}
+// .site-content
+.site-footer {
+	clear:both;
+	.site-info {}
+	span {}
+	img {}
+	a {
+		&:visited, &:hover, &:active {}
+	}
+}

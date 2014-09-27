@@ -749,11 +749,11 @@ a {
   overflow: hidden;
   position: relative; }
   .mobile-navigation .menu-main-navigation-container {
-    -webkit-transition: top 0.5s ease-in-out;
-    -moz-transition: top 0.5s ease-in-out;
-    -ms-transition: top 0.5s ease-in-out;
-    -o-transition: top 0.5s ease-in-out;
-    transition: top 0.5s ease-in-out;
+    -webkit-transition: top 0.4s ease-in-out;
+    -moz-transition: top 0.4s ease-in-out;
+    -ms-transition: top 0.4s ease-in-out;
+    -o-transition: top 0.4s ease-in-out;
+    transition: top 0.4s ease-in-out;
     left: 0;
     padding: 35px 30px 0;
     position: absolute;
@@ -1018,8 +1018,8 @@ a {
           -o-transition: opacity 0.25s 0.25s ease-in-out;
           transition: opacity 0.25s 0.25s ease-in-out;
           height: auto;
-          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
-          filter: alpha(opacity=1);
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+          filter: alpha(opacity=100);
           opacity: 1; }
         .site-content .home-skills .skills-list-wrap .skills-list .skill .skill-icon {
           position: relative; }
@@ -1077,6 +1077,17 @@ a {
   background: url(../img/mobile_bg.png) top center no-repeat;
   padding-top: 150px; }
 
+/* ADDITIONAL BREAKPOINTS
+********************************/
+@media screen and (min-width: 360px) {
+  .site-content .home-skills .skills-list-wrap .skills-list .skill .skill-text {
+    top: 80px; } }
+@media screen and (min-width: 400px) {
+  .site-content .home-skills .skills-list-wrap .skills-list .skill .skill-text {
+    top: 98px; } }
+@media screen and (min-width: 460px) {
+  .site-content .home-skills .skills-list-wrap .skills-list .skill .skill-text {
+    top: 120px; } }
 /* ROTATE ORIENTATION
 ********************************/
 @media screen and (max-height: 420px) {
@@ -1139,18 +1150,6 @@ a {
               position: absolute;
               top: -18px;
               width: 69px; }
-          .mobile-navigation .menu-main-navigation-container .menu .menu-item.about a:before {
-            background: url(../img/mobile_icon_about.svg) no-repeat;
-            background-size: 100%; }
-          .mobile-navigation .menu-main-navigation-container .menu .menu-item.work a:before {
-            background: url(../img/mobile_icon_work.svg) no-repeat;
-            background-size: 100%; }
-          .mobile-navigation .menu-main-navigation-container .menu .menu-item.blog a:before {
-            background: url(../img/mobile_icon_blog.svg) no-repeat;
-            background-size: 100%; }
-          .mobile-navigation .menu-main-navigation-container .menu .menu-item.contact a:before {
-            background: url(../img/mobile_icon_contact.svg) no-repeat;
-            background-size: 100%; }
           .mobile-navigation .menu-main-navigation-container .menu .menu-item:nth-child(2n) {
             margin-right: 0; }
     .mobile-navigation.toggled .menu-main-navigation-container {
@@ -1299,9 +1298,77 @@ LARGER MOBILE DEVICES
         top: 76px; }
         .site-content .home-skills .skills-list-wrap .skills-list .skill .skill-text p {
           font-size: 18px; } }
+@media only screen and (min-width: 481px) and (min-width: 515px) {
+  .site-content .home-skills .skills-list-wrap .skills-list {
+    padding-bottom: 35px; }
+    .site-content .home-skills .skills-list-wrap .skills-list .skill .skill-text {
+      top: 90px; } }
+@media only screen and (min-width: 481px) and (min-width: 580px) {
+  .site-content .home-skills .skills-list-wrap .skills-list .skill .skill-text {
+    top: 108px; } }
+@media only screen and (min-width: 650px) {
+  .site-content .main-banner .main-text {
+    font-size: 20px; }
+  .site-content .home-skills .skills-list-wrap .skills-list {
+    zoom: 1;
+    padding-bottom: 0; }
+    .site-content .home-skills .skills-list-wrap .skills-list:before, .site-content .home-skills .skills-list-wrap .skills-list:after {
+      content: "";
+      display: table; }
+    .site-content .home-skills .skills-list-wrap .skills-list:after {
+      clear: both; }
+    .site-content .home-skills .skills-list-wrap .skills-list .skill {
+      margin-right: 4%;
+      margin-top: -25px;
+      width: 17.2%; }
+      .site-content .home-skills .skills-list-wrap .skills-list .skill:nth-child(3) {
+        margin-right: 2%; }
+      .site-content .home-skills .skills-list-wrap .skills-list .skill:nth-child(4) {
+        margin-left: 0; }
+      .site-content .home-skills .skills-list-wrap .skills-list .skill:nth-child(4), .site-content .home-skills .skills-list-wrap .skills-list .skill:nth-child(5) {
+        margin-top: -25px; }
+      .site-content .home-skills .skills-list-wrap .skills-list .skill:nth-child(5) {
+        margin-right: 0; }
+      .site-content .home-skills .skills-list-wrap .skills-list .skill .skill-icon:after {
+        display: none !important; }
+      .site-content .home-skills .skills-list-wrap .skills-list .skill .skill-text {
+        height: auto;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        filter: alpha(opacity=100);
+        opacity: 1;
+        padding-top: 8px;
+        position: static; }
+        .site-content .home-skills .skills-list-wrap .skills-list .skill .skill-text p {
+          font-size: 14px; } }
 /*
 TABLET & SMALLER LAPTOPS
 */
+@media only screen and (min-width: 768px) {
+  /* CTA SECTIONS
+  ********************************/
+  /* MOBILE NAVIGATION
+  ********************************/
+  .mobile-navigation {
+    display: none; }
+
+  .site-header {
+    background: #2c2f31;
+    bottom: 0;
+    left: 0;
+    right: auto;
+    top: 0;
+    width: 20%; }
+    .site-header .wrapper {
+      background: none; }
+    .site-header .toggles {
+      display: none; }
+
+  .site-content {
+    float: right;
+    width: 80%; }
+
+  .site-footer {
+    clear: both; } }
 /*
 DESKTOP
 */

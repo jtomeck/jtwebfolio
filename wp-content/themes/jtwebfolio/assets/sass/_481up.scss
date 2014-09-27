@@ -186,3 +186,44 @@
 		&:visited, &:hover, &:active {}
 	}
 }
+
+@media screen and (min-width:515px) {
+	.site-content {
+		.home-skills{
+			.skills-list-wrap {
+				.skills-list {
+					padding-bottom:35px;
+					.skill {
+						.skill-text {
+							top:90px;
+						}
+					}
+				}
+			}
+			//.skills-list-wrap
+		}
+		//.home-skills
+	}
+	//.site-content
+}
+// end Media Query
+
+@media screen and (min-width:580px) {
+	.site-content {
+		.home-skills{
+			.skills-list-wrap {
+				.skills-list {
+					.skill {
+						.skill-text {
+							top:108px;
+						}
+					}
+				}
+			}
+			//.skills-list-wrap
+		}
+		//.home-skills
+	}
+	//.site-content
+}
+// end Media Query
