@@ -9,14 +9,14 @@ jQuery(document).ready(function($){
 	      var target = $(this.hash);
 	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 	      if (target.length) {
-	      	if ($(window).width() < 960) {
+      		if ($(window).width() < 420 && $(window).height() > 420) {
 		        $('html,body').animate({
 		          scrollTop: target.offset().top - 140
 		        }, 500);
 		        return false;
 		    }else{
 		    	$('html,body').animate({
-		          scrollTop: target.offset().top - 30
+		          scrollTop: target.offset().top - 80
 		        }, 500);
 		        return false;
 		    }
