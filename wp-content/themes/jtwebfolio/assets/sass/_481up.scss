@@ -1,0 +1,188 @@
+/* CTA SECTIONS
+********************************/
+
+.cta {
+	.wrapper {}
+	.cta-title {
+		font-size:28px;
+	}
+	.cta-text {
+		font-size:18px;
+	}
+}
+//.cta
+
+/* MOBILE NAVIGATION
+********************************/
+.mobile-navigation {
+	.menu-main-navigation-container {
+		.menu {
+			.menu-item {
+				a {
+					&:before {}
+				}
+				//a
+				&.about {
+					a {
+						&:before {}
+					}
+				}
+				//.about
+				&.work {
+					a {
+						&:before {}
+					}
+				}
+				//.work
+				&.blog {
+					a {
+						&:before {}
+					}
+				}
+				//.blog
+				&.contact {
+					a {
+						&:before {}
+					}
+				}
+				//.contact
+				&:nth-child(2n) {}
+			}
+			//.menu-item
+		}
+		//.menu
+	}
+	//.menu-main-navigation-container
+	&.toggled {
+		.menu-main-navigation-container {}
+	}
+}
+//.mobile-navigation
+
+.wrapper {}
+
+.site-header {
+	.wrapper {}
+	.site-branding {
+		.site-title, .site-description {
+			img {}
+		}
+		.site-description {}
+	}
+	//.site-branding
+	.main-navigation {}
+	.toggles {
+		.menu-toggle, .hire-me {}
+		.menu-toggle {}
+		.hire-me {}
+	}
+	//.toggles
+	.social {
+		a {
+			&.dribbble {}
+			&.twitter {}
+			&.linkedin {}
+		}
+	}
+}
+//.site-header
+.site-content {
+	.wrapper {}
+	.main-banner {
+		.slide_link {}
+		.main-title {
+			font-size:62px;
+			span {
+				font-size:30px;
+			}
+		}
+		.main-text {
+			font-size:16px;
+		}
+	}
+	//.main-banner
+	.home-skills {
+		.skills-header {
+			.skills-title {}
+		}
+		//.skills-header
+		.skills-list-wrap {
+			.wrapper {}
+			.skills-list {
+				padding-bottom:10px;
+				&:after {
+					color:lighten($drkgry,50%);
+					content:"click a skill to display its description";
+					font-size:24px;
+					padding-top:30px;
+					text-align:center;
+					width:100%;
+				}
+				.skill {
+					margin-right:2%;
+					margin-top:-25px;
+					width:18.4%;
+					&:nth-child(3) {
+						margin-right:2%;
+					}
+					&:nth-child(4) {
+						margin-left:0;
+					}
+					&:nth-child(4),
+					&:nth-child(5) {
+						margin-top:-25px;
+					}
+					&:nth-child(5) {
+						margin-right:0;
+					}
+					&.toggled {
+						margin-top:-25px;
+						&.text-toggled {
+							.skill-icon {
+								&:after {
+									border-color: $drkrgry transparent transparent transparent;
+									border-width: 16px 10px 0 10px;
+									bottom:-7px;
+									top:auto;
+								}
+							}
+							//.skill-icon
+						}
+						//.text-toggled
+					}
+					//.toggled
+					&.text-toggled {
+						.skill-icon {
+							&:after {}
+						}
+						.skill-text {}
+					}
+					//.text-toggled
+					.skill-icon {
+						img {}
+					}
+					.skill-text {
+						background:$ltgry;
+						top:76px;
+						p {
+							font-size:18px;
+						}
+					}
+				}
+				//.skill
+			}
+			//.skills-list
+		}
+		//.skills-list-wrap
+	}
+	//.home-skills
+}
+// .site-content
+.site-footer {
+	.site-info {}
+	span {}
+	img {}
+	a {
+		&:visited, &:hover, &:active {}
+	}
+}
