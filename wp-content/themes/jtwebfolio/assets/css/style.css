@@ -825,7 +825,7 @@ a {
         .mobile-navigation .menu-main-navigation-container .menu .menu-item:nth-child(2n) {
           margin-right: 0; }
   .mobile-navigation.toggled {
-    padding-bottom: 160%; }
+    padding-bottom: 90%; }
     .mobile-navigation.toggled .menu-main-navigation-container {
       top: 0; }
 
