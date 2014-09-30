@@ -595,11 +595,11 @@ body {
   line-height: 1;
   padding: 0; }
   body.toggled {
-    -webkit-transition: padding 0.65s ease-in-out;
-    -moz-transition: padding 0.65s ease-in-out;
-    -ms-transition: padding 0.65s ease-in-out;
-    -o-transition: padding 0.65s ease-in-out;
-    transition: padding 0.65s ease-in-out;
+    -webkit-transition: padding 0.35s ease-in-out;
+    -moz-transition: padding 0.35s ease-in-out;
+    -ms-transition: padding 0.35s ease-in-out;
+    -o-transition: padding 0.35s ease-in-out;
+    transition: padding 0.35s ease-in-out;
     overflow: hidden;
     padding-top: 100%; }
     body.toggled .site-header .toggles .menu-toggle {
