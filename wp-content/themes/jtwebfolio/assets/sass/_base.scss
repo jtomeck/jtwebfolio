@@ -603,49 +603,23 @@ a {
 @media screen and (max-height:420px) {
 	
 	.mobile-navigation {
-		background:$drkgry;
-		height:0;
-		overflow:hidden;
-		position:relative;
 		.menu-main-navigation-container {
-			@include transition(top .85s);
-			left:0;
-			padding:35px 30px 0;
-			position:absolute;
-			right:0;
-			top:-480px;
 			.menu {
-				@include clearfix;
-				margin:0;
-				padding:0;
 				.menu-item {
 					float:left;
-					margin:0 7% 30px 0;
-					width:46.5%;
+					margin:0 4% 30px 0;
+					width:22%;
 					a {
-						@include border-radius(10px);
-						@include font($wht,$font,18px);
-						background:$drkrgry;
-						display:block;
-						min-height:100px;
-						padding-top:70px;
-						position:relative;
-						text-align:center;
-						text-transform:lowercase;
-						$width:69px;
 						&:before {
-							content:"";
-							display:block;
-							height:75px;
-							left:50%;
-							margin-left:-$width/2;
-							position:absolute;
-							top:-18px;
-							width:$width;
+							margin-left:-30px;
+							width:60px;
 						}
 					}
 					//a
-					&:nth-child(2n) {
+					&:nth-child(2) {
+						margin-right:4%;
+					}
+					&:last-child {
 						margin-right:0;
 					}
 				}
@@ -655,19 +629,12 @@ a {
 		}
 		//.menu-main-navigation-container
 		&.toggled {
-			.menu-main-navigation-container {
-				top:0;
-			}
+			.menu-main-navigation-container {}
 		}
 	}
 	//.mobile-navigation
 	
 	.site-header {
-		position:fixed;
-		text-align:center;
-		top:0;
-		width:100%;
-		z-index:1000;
 		.wrapper {
 			@include clearfix;
 			background:$drkgry none;
