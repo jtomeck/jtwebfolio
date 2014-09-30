@@ -23,7 +23,7 @@ get_header(); ?>
             <h1 class="main-title"><?php echo $main_heading; ?></h1>
             <p class="main-text"><?php echo $main_text; ?></p>
         </div><!-- .wrapper -->
-        <a href="#skills" class="slide_link"></a>
+        <a href="#skills" class="slide_link pulse"></a>
     </section><!-- .main-banner -->
 
     <section class="home-skills">
