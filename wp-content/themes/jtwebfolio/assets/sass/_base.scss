@@ -9,13 +9,13 @@ body,html {
 }
 
 body {
-	@include transition(padding-top .25s ease-in-out);
+	@include transition(padding-top .65s ease-in-out);
 	@include font($drkgry,$font,14px);
 	background:$ltrgry;
 	line-height:1;
 	padding:0;
 	&.toggled {
-		@include transition(padding .25s ease-in-out);
+		@include transition(padding .65s ease-in-out);
 		overflow:hidden;
 		padding-top:100%;
 		.site-header {
@@ -34,9 +34,7 @@ body {
 				pointer-events:auto;
 			}
 		}
-		.site-content,.site-footer{
-			@include transition(opacity .75s .5s ease-in-out);
-		}
+		.site-content,.site-footer{}
 		.site-content {
 			opacity:0;
 		}
