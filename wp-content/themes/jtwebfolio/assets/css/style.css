@@ -1085,11 +1085,11 @@ a {
       text-decoration: none; }
 
 .site-content, .site-footer {
-  -webkit-transition: opacity 0.65s ease-in-out;
-  -moz-transition: opacity 0.65s ease-in-out;
-  -ms-transition: opacity 0.65s ease-in-out;
-  -o-transition: opacity 0.65s ease-in-out;
-  transition: opacity 0.65s ease-in-out; }
+  -webkit-transition: opacity 0.35s ease-in-out;
+  -moz-transition: opacity 0.35s ease-in-out;
+  -ms-transition: opacity 0.35s ease-in-out;
+  -o-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out; }
 
 .site-content {
   background: url(../img/mobile_bg.png) top center no-repeat;
