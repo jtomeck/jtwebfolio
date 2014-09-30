@@ -4,7 +4,9 @@
 	padding:0;
 }
 
-body,html {}
+body,html {
+	height:100%;
+}
 
 body {
 	@include font($drkgry,$font,14px);
@@ -150,6 +152,7 @@ a {
 /* MOBILE NAVIGATION
 ********************************/
 .mobile-navigation {
+	@include transition(padding .25s ease-in-out);
 	background:$drkgry;
 	height:0;
 	overflow:hidden;
@@ -238,6 +241,7 @@ a {
 	}
 	//.menu-main-navigation-container
 	&.toggled {
+		padding-bottom:160%;
 		.menu-main-navigation-container {
 			top:0;
 		}

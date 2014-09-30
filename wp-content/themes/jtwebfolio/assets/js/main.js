@@ -39,15 +39,16 @@ jQuery(document).ready(function($){
 		if( menu.hasClass("toggled") ) {
 			body.removeClass("toggled");
 			menu.removeClass("toggled");
-			menu.animate({
+			/*menu.animate({
 				height: "0"
 			}, 500, function(){
 				//Animation Complete
-			});
+			});*/
 		}else{
 			body.addClass("toggled");
 			menu.addClass("toggled");
-			if(isSafari && !isChrome) {
+
+			/*if(isSafari && !isChrome) {
 				// Detect browser to correct browser height with address bar issues in safari
 				menu.animate({
 					// Set menuHeight in safari
@@ -62,7 +63,8 @@ jQuery(document).ready(function($){
 				}, 500, function(){
 					//Animation Complete
 				});
-			}
+			}*/
+
 		}
 		e.preventDefault();
 	});

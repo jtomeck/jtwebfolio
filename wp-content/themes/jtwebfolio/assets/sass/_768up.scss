@@ -10,23 +10,13 @@
 
 /* MOBILE NAVIGATION
 ********************************/
-.mobile-navigation {
-	display:none;
-}
+.mobile-navigation {}
 //.mobile-navigation
 
 .wrapper {}
 
 .site-header {
-	background:$drkgry;
-	bottom:0;
-	left:0;
-	right:auto;
-	top:0;
-	width:20%;
-	.wrapper {
-		background:none;
-	}
+	.wrapper {}
 	.site-branding {
 		.site-title, .site-description {
 			img {}
@@ -36,7 +26,6 @@
 	//.site-branding
 	.main-navigation {}
 	.toggles {
-		display:none;
 		.menu-toggle, .hire-me {}
 		.menu-toggle {}
 		.hire-me {}
@@ -52,8 +41,6 @@
 }
 //.site-header
 .site-content {
-	float:right;
-	width:80%;
 	.wrapper {}
 	.main-banner {
 		.slide_link {}
@@ -112,7 +99,6 @@
 }
 // .site-content
 .site-footer {
-	clear:both;
 	.site-info {}
 	span {}
 	img {}
