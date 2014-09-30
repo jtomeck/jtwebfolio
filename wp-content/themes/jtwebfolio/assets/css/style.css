@@ -577,6 +577,9 @@ BASE (MOBILE) SIZE
   margin: 0;
   padding: 0; }
 
+body, html {
+  height: 100%; }
+
 body {
   color: #2c2f31;
   font-family: "panefresco_400wtregular", sans-serif;
@@ -744,6 +747,11 @@ a {
 /* MOBILE NAVIGATION
 ********************************/
 .mobile-navigation {
+  -webkit-transition: padding 0.25s ease-in-out;
+  -moz-transition: padding 0.25s ease-in-out;
+  -ms-transition: padding 0.25s ease-in-out;
+  -o-transition: padding 0.25s ease-in-out;
+  transition: padding 0.25s ease-in-out;
   background: #2c2f31;
   height: 0;
   overflow: hidden;
@@ -816,8 +824,10 @@ a {
           background-size: 100%; }
         .mobile-navigation .menu-main-navigation-container .menu .menu-item:nth-child(2n) {
           margin-right: 0; }
-  .mobile-navigation.toggled .menu-main-navigation-container {
-    top: 0; }
+  .mobile-navigation.toggled {
+    padding-bottom: 160%; }
+    .mobile-navigation.toggled .menu-main-navigation-container {
+      top: 0; }
 
 /* HEADER
 ********************************/
@@ -1347,6 +1357,14 @@ TABLET & SMALLER LAPTOPS
   /* CTA SECTIONS
   ********************************/
   /* MOBILE NAVIGATION
+  ********************************/ }
+/*
+DESKTOP
+*/
+@media only screen and (min-width: 960px) {
+  /* CTA SECTIONS
+  ********************************/
+  /* MOBILE NAVIGATION
   ********************************/
   .mobile-navigation {
     display: none; }
@@ -1369,9 +1387,6 @@ TABLET & SMALLER LAPTOPS
 
   .site-footer {
     clear: both; } }
-/*
-DESKTOP
-*/
 /*
 iPHONE 5 MEDIA QUERY
 Want to get fancy for no good reason? Knock yourself out.
