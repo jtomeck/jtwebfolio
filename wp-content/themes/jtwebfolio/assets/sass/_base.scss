@@ -15,7 +15,7 @@ body {
 	line-height:1;
 	padding:0;
 	&.toggled {
-		@include transition(padding .65s ease-in-out);
+		@include transition(padding .35s ease-in-out);
 		overflow:hidden;
 		padding-top:100%;
 		.site-header {
