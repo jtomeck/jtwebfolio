@@ -9,15 +9,11 @@ body,html {
 }
 
 body {
-	@include transition(padding-top .65s ease-in-out);
 	@include font($drkgry,$font,14px);
 	background:$ltrgry;
 	line-height:1;
-	padding:0;
 	&.toggled {
-		@include transition(padding .35s ease-in-out);
 		overflow:hidden;
-		padding-top:100%;
 		.site-header {
 			.toggles {
 				.menu-toggle {
@@ -163,10 +159,10 @@ a {
 	overflow:hidden;
 	position:relative;
 	.menu-main-navigation-container {
-		@include transition(top .4s ease-in-out);
-		left:0;
+		@include transition(margin-top .5s ease-in-out);
+		margin-top:-500px;
 		padding:35px 30px 0;
-		right:0;
+		width:100%;
 		.menu {
 			@include clearfix;
 			margin:0;
@@ -244,8 +240,9 @@ a {
 	}
 	//.menu-main-navigation-container
 	&.toggled {
-		max-height:2000px;
+		max-height:600px;
 		.menu-main-navigation-container {
+			margin-top:0;
 		}
 	}
 }
@@ -528,7 +525,7 @@ a {
 
 //transition on menu open
 .site-content, .site-footer {
-	@include transition(opacity .35s ease-in-out);
+	@include transition(opacity .35s 0 ease-in-out);
 }
 .site-content {
 	background:url(../img/mobile_bg.png) top center no-repeat;
