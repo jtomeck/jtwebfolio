@@ -1282,6 +1282,9 @@ DESKTOP
 @media only screen and (min-width: 960px) {
   /* CTA SECTIONS
   ********************************/
+  .home .cta {
+    display: none; }
+
   /* MOBILE NAVIGATION
   ********************************/
   .mobile-navigation {
@@ -1293,15 +1296,19 @@ DESKTOP
     left: 0;
     right: auto;
     top: 0;
-    width: 20%; }
+    width: 18%; }
     .site-header .wrapper {
       background: none; }
+    .site-header .site-branding .site-description {
+      display: block; }
+      .site-header .site-branding .site-description img {
+        margin: 5px auto 0; }
     .site-header .toggles {
       display: none; }
 
   .site-content {
     float: right;
-    width: 80%; }
+    width: 82%; }
 
   .site-footer {
     clear: both; } }
