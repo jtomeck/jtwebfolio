@@ -9,7 +9,7 @@ jQuery(document).ready(function($){
 	      var target = $(this.hash);
 	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 	      if (target.length) {
-      		if ($(window).width() > 420 && $(window).height() < 420) {
+      		if ($(window).width() > 400 && $(window).height() < 400) {
 		    	$('html,body').animate({
 		          scrollTop: target.offset().top - 90
 		        }, 500);
@@ -32,39 +32,17 @@ jQuery(document).ready(function($){
 	// MAIN NAVIGATION
 	var menuToggle = $(".menu-toggle");
 	var menu = $(".mobile-navigation");
-	var menuHeight = $(window).innerHeight();
+	var screenHeight = $(window).innerHeight();
 
 	// MENU FUNCTIONALITY
 	menuToggle.click(function(e){
 		if( menu.hasClass("toggled") ) {
 			body.removeClass("toggled");
 			menu.removeClass("toggled");
-			/*menu.animate({
-				height: "0"
-			}, 500, function(){
-				//Animation Complete
-			});*/
+			
 		}else{
 			body.addClass("toggled");
 			menu.addClass("toggled");
-
-			/*if(isSafari && !isChrome) {
-				// Detect browser to correct browser height with address bar issues in safari
-				menu.animate({
-					// Set menuHeight in safari
-					height: menuHeight-96
-				}, 500, function(){
-					//Animation Complete
-				});
-			}else{
-				menu.animate({
-					// Set menuHeight in all other browsers
-					height: menuHeight-165
-				}, 500, function(){
-					//Animation Complete
-				});
-			}*/
-
 		}
 		e.preventDefault();
 	});
