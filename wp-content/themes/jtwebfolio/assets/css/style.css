@@ -1117,7 +1117,7 @@ a {
     top: 120px; } }
 /* ROTATE ORIENTATION
 ********************************/
-@media screen and (max-height: 400px) {
+@media screen and (max-height: 350px) {
   .mobile-navigation .menu-main-navigation-container .menu .menu-item {
     float: left;
     margin: 0 4% 30px 0;

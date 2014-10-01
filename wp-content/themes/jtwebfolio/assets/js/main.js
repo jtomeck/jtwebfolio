@@ -9,7 +9,7 @@ jQuery(document).ready(function($){
 	      var target = $(this.hash);
 	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 	      if (target.length) {
-      		if ($(window).width() > 400 && $(window).height() < 400) {
+      		if ($(window).width() > 350 && $(window).height() < 350) {
 		    	$('html,body').animate({
 		          scrollTop: target.offset().top - 90
 		        }, 500);
