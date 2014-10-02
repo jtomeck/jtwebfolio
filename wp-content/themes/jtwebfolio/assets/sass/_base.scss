@@ -152,14 +152,13 @@ a {
 /* MOBILE NAVIGATION
 ********************************/
 .mobile-navigation {
-	@include transition(max-height .5s ease-in-out);
+	@include transition(margin-top .5s ease-in-out);
 	background:$drkgry;
-	max-height:0;
+	height:283px;
+	margin-top:-283px;
 	overflow:hidden;
 	position:relative;
 	.menu-main-navigation-container {
-		@include transition(margin-top .5s ease-in-out);
-		margin-top:-500px;
 		padding:35px 30px 0;
 		width:100%;
 		.menu {
@@ -239,10 +238,8 @@ a {
 	}
 	//.menu-main-navigation-container
 	&.toggled {
-		max-height:600px;
-		.menu-main-navigation-container {
-			margin-top:0;
-		}
+		margin-top:0;
+		.menu-main-navigation-container {}
 	}
 }
 //.mobile-navigation
@@ -394,18 +391,20 @@ a {
 		.skills-list-wrap {
 			background:$ltgry;
 			margin-top: -42px;
+			padding-bottom:20px;
 			.wrapper {
 				margin-top:-20px;
 				padding-bottom:20px;
 			}
-			.skills-list {
+			.skills-icons {
 				@include clearfix;
+				margin:0;
 				position:relative;
-				.skill {
+				.skill-icon {
 					float:left;
 					margin-right:3.5%;
-					margin-top:-40px;
-					position:static;
+					margin-top:-28px;
+					position:relative;
 					width:31%;
 					&:nth-child(3) {
 						margin-right:0;
@@ -417,38 +416,20 @@ a {
 					&:nth-child(5) {
 						@include transition(margin-top .25s ease-in-out);
 						height:auto;
-						margin-top:-17px;
+						margin-top:-13px;
+					}
+					img {
+						height:auto;
+						width:100%;
 					}
 					&.toggled {
 						margin-top:105px;
-						&.text-toggled {
-							.skill-icon {
-								&:after {
-									border-color: transparent transparent $drkrgry transparent;
-									border-style: solid;
-									border-width: 0 10px 16px 10px;
-									top:-11px;
-									content:"";
-									display:block;
-									height: 0;
-									left:50%;
-									margin-left:-10px;
-									position:absolute;
-									width: 0;
-								}
-							}
-							//.skill-icon
-						}
-						//.text-toggled
-					}
-					//.toggled
-					&.text-toggled {
-						.skill-icon {
+						&.triangle-toggled {
 							&:after {
-								border-color: $drkrgry transparent transparent transparent;
+								border-color: transparent transparent $drkrgry transparent;
 								border-style: solid;
-								border-width: 16px 10px 0 10px;
-								bottom:-7px;
+								border-width: 0 10px 16px 10px;
+								top:-11px;
 								content:"";
 								display:block;
 								height: 0;
@@ -458,14 +439,25 @@ a {
 								width: 0;
 							}
 						}
-						.skill-text {
-							height:auto;
-							-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-							filter: alpha(opacity=100);
-							opacity: 1;
+						//.text-toggled
+					}
+					//.toggled
+					&.triangle-toggled {
+						&:after {
+							border-color: $drkrgry transparent transparent transparent;
+							border-style: solid;
+							border-width: 16px 10px 0 10px;
+							bottom:-7px;
+							content:"";
+							display:block;
+							height: 0;
+							left:50%;
+							margin-left:-10px;
+							position:absolute;
+							width: 0;
 						}
 					}
-					//.text-toggled
+					//.triangle-toggled
 					.skill-icon {
 						position:relative;
 						img {
@@ -473,27 +465,39 @@ a {
 							height:100%;
 						}
 					}
-					.skill-text {
-						@include transition(opacity .25s .25s ease-in-out);
-						height:0;
-						left:0;
-						-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-						filter: alpha(opacity=0);
-						opacity: 0;
-						overflow:hidden;
-						position:absolute;
-						right:0;
-						text-align:center;
-						top:60px;
-						p {
-							font-size:16px;
-							line-height:1.4em;
-						}
-					}
 				}
 				//.skill
 			}
-			//.skills-list
+			//.skills-icons
+			.skills-text {
+				margin:-180px 0 0;
+				position:relative;
+				.skill-text {
+					@include transition(opacity .25s 0 ease-in-out);
+					-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+					filter: alpha(opacity=0);
+					font-size:16px;
+					left:0;
+					line-height:1.4em;
+					opacity: 0;
+					overflow:hidden;
+					pointer-events:none;
+					position:absolute;
+					right:0;
+					text-align:center;
+					top:0;
+					width:100%;
+					p {
+					}
+					&.text-toggled {
+						@include transition(opacity .25s .25s ease-in-out);
+						-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+						filter: alpha(opacity=100);
+						opacity: 1;
+					}
+				}
+			}
+			//.skills-text
 		}
 		//.skills-list-wrap
 	}
@@ -537,36 +541,13 @@ a {
 /* ADDITIONAL BREAKPOINTS
 ********************************/
 
-@media screen and (min-width:360px) {
-	.site-content {
-		.home-skills{
-			.skills-list-wrap {
-				.skills-list {
-					.skill {
-						.skill-text {
-							top:80px;
-						}
-					}
-				}
-			}
-			//.skills-list-wrap
-		}
-		//.home-skills
-	}
-	//.site-content
-}
-// end Media Query
-
 @media screen and (min-width:400px) {
 	.site-content {
 		.home-skills{
 			.skills-list-wrap {
-				.skills-list {
-					.skill {
-						.skill-text {
-							top:98px;
-						}
-					}
+				.skills-text {
+					margin-top:-200px;
+					.skill-text {}
 				}
 			}
 			//.skills-list-wrap
@@ -576,27 +557,6 @@ a {
 	//.site-content
 }
 // end Media Query
-
-@media screen and (min-width:460px) {
-	.site-content {
-		.home-skills{
-			.skills-list-wrap {
-				.skills-list {
-					.skill {
-						.skill-text {
-							top:120px;
-						}
-					}
-				}
-			}
-			//.skills-list-wrap
-		}
-		//.home-skills
-	}
-	//.site-content
-}
-// end Media Query
-
 
 
 /* ROTATE ORIENTATION
@@ -605,6 +565,8 @@ a {
 @media screen and (max-height:350px) {
 	
 	.mobile-navigation {
+		margin-top:-161px;
+		height:161px;
 		.menu-main-navigation-container {
 			.menu {
 				.menu-item {

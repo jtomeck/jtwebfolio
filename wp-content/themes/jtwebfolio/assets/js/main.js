@@ -48,20 +48,31 @@ jQuery(document).ready(function($){
 	});
 
 	// HOMEPAGE SKILLS FUNCTIONALITY
-	skill = $(".home-skills .skill");
-	skillLastTwo = $(".home-skills .skill").slice(-2);
-	skill.click(function(){
-		if( $(this).hasClass("text-toggled") ){
-			$(this).removeClass("text-toggled");
+	skillIcon = $(".skills-icons .skill-icon");
+	skillIconLastTwo = $(".skills-icons .skill-icon").slice(-2);
+	skillText = $(".skills-text .skill-text");
+	skillTextNum = $(".skills-text .skill-text:eq(" + $(this).index() + ")");
+	skillIcon.click(function(){
+		// Toggle triangle
+		if( $(this).hasClass("triangle-toggled") ){
+			$(this).removeClass("triangle-toggled");
 		}else{
-			skill.removeClass("text-toggled");
-			$(this).addClass("text-toggled");
+			skillIcon.removeClass("triangle-toggled");
+			$(this).addClass("triangle-toggled");
+		}
+		/* If any icon has the triangle visible, add
+		 * the toggle class to the last two skills */
+		if( skillIcon.is(".triangle-toggled") ) {
+			skillIconLastTwo.addClass("toggled");
+		}else{
+			skillIconLastTwo.removeClass("toggled");
 		}
 
-		if( skill.is(".text-toggled") ) {
-			skillLastTwo.addClass("toggled");
+		if( $(".skills-text .skill-text:eq(" + $(this).index() + ")").hasClass("text-toggled") ) {
+			$(".skills-text .skill-text:eq(" + $(this).index() + ")").removeClass("text-toggled");
 		}else{
-			skillLastTwo.removeClass("toggled");
+			skillText.removeClass("text-toggled");
+			$(".skills-text .skill-text:eq(" + $(this).index() + ")").addClass("text-toggled");
 		}
 	});
 });
