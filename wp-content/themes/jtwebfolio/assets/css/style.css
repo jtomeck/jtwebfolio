@@ -767,7 +767,7 @@ a {
 ********************************/
 .mobile-navigation {
   background: #2c2f31;
-  height: -283px;
+  height: 283px;
   overflow: hidden;
   position: relative; }
   .mobile-navigation .menu-main-navigation-container {
@@ -1148,21 +1148,23 @@ a {
 ********************************/
 @media screen and (max-height: 350px) {
   .mobile-navigation {
-    height: -161px; }
-    .mobile-navigation .menu-main-navigation-container .menu .menu-item {
-      float: left;
-      margin: 0 4% 30px 0;
-      width: 22%; }
-      .mobile-navigation .menu-main-navigation-container .menu .menu-item a:before {
-        margin-left: -30px;
-        width: 60px; }
-      .mobile-navigation .menu-main-navigation-container .menu .menu-item:nth-child(2) {
-        margin-right: 4%; }
-      .mobile-navigation .menu-main-navigation-container .menu .menu-item:last-child {
-        margin-right: 0; }
+    height: 180px; }
+    .mobile-navigation .menu-main-navigation-container {
+      padding-top: 42px; }
+      .mobile-navigation .menu-main-navigation-container .menu .menu-item {
+        float: left;
+        margin: 0 4% 30px 0;
+        width: 22%; }
+        .mobile-navigation .menu-main-navigation-container .menu .menu-item a:before {
+          margin-left: -30px;
+          width: 60px; }
+        .mobile-navigation .menu-main-navigation-container .menu .menu-item:nth-child(2) {
+          margin-right: 4%; }
+        .mobile-navigation .menu-main-navigation-container .menu .menu-item:last-child {
+          margin-right: 0; }
 
   .site-header {
-    margin-top: -161px; }
+    margin-top: -180px; }
     .site-header .wrapper {
       zoom: 1;
       background: #2c2f31 none;

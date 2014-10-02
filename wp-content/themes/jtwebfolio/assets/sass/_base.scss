@@ -151,7 +151,7 @@ a {
 
 /* MOBILE NAVIGATION
 ********************************/
-$head-marg:-283px;
+$head-marg:283px;
 .mobile-navigation {
 	background:$drkgry;
 	height:$head-marg;
@@ -248,7 +248,7 @@ $head-marg:-283px;
 
 .site-header {
 	@include transition(margin-top .5s ease-in-out);
-	margin-top:$head-marg;
+	margin-top:-$head-marg;
 	position:fixed;
 	text-align:center;
 	top:0;
@@ -563,10 +563,11 @@ $head-marg:-283px;
 ********************************/
 
 @media screen and (max-height:350px) {
-	$head-marg-rotate: -161px;
+	$head-marg-rotate: 180px;
 	.mobile-navigation {
 		height:$head-marg-rotate;
 		.menu-main-navigation-container {
+			padding-top:42px;
 			.menu {
 				.menu-item {
 					float:left;
@@ -598,7 +599,7 @@ $head-marg:-283px;
 	//.mobile-navigation
 	
 	.site-header {
-		margin-top:$head-marg-rotate;
+		margin-top:-$head-marg-rotate;
 		.wrapper {
 			@include clearfix;
 			background:$drkgry none;
