@@ -31,18 +31,17 @@ jQuery(document).ready(function($){
 
 	// MAIN NAVIGATION
 	var menuToggle = $(".menu-toggle");
-	var menu = $(".mobile-navigation");
+	var header = $(".site-header");
 	var screenHeight = $(window).innerHeight();
 
 	// MENU FUNCTIONALITY
 	menuToggle.click(function(e){
-		if( menu.hasClass("toggled") ) {
+		if( header.hasClass("toggled") ) {
 			body.removeClass("toggled");
-			menu.removeClass("toggled");
-			
+			header.removeClass("toggled");
 		}else{
 			body.addClass("toggled");
-			menu.addClass("toggled");
+			header.addClass("toggled");
 		}
 		e.preventDefault();
 	});

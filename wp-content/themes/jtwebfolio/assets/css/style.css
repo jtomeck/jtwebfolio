@@ -766,19 +766,8 @@ a {
 /* MOBILE NAVIGATION
 ********************************/
 .mobile-navigation {
-  -webkit-transition: margin-top 0.5s ease-in-out;
-  -moz-transition: margin-top 0.5s ease-in-out;
-  -ms-transition: margin-top 0.5s ease-in-out;
-  -o-transition: margin-top 0.5s ease-in-out;
-  transition: margin-top 0.5s ease-in-out;
-  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -o-transform: translateZ(0);
-  transform: translateZ(0);
   background: #2c2f31;
-  height: 283px;
-  margin-top: -283px;
+  height: -283px;
   overflow: hidden;
   position: relative; }
   .mobile-navigation .menu-main-navigation-container {
@@ -841,8 +830,6 @@ a {
           background-size: 100%; }
         .mobile-navigation .menu-main-navigation-container .menu .menu-item:nth-child(2n) {
           margin-right: 0; }
-  .mobile-navigation.toggled {
-    margin-top: 0; }
 
 /* HEADER
 ********************************/
@@ -855,6 +842,17 @@ a {
     clear: both; }
 
 .site-header {
+  -webkit-transition: margin-top 0.5s ease-in-out;
+  -moz-transition: margin-top 0.5s ease-in-out;
+  -ms-transition: margin-top 0.5s ease-in-out;
+  -o-transition: margin-top 0.5s ease-in-out;
+  transition: margin-top 0.5s ease-in-out;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  margin-top: -283px;
   position: fixed;
   text-align: center;
   top: 0;
@@ -945,6 +943,8 @@ a {
         margin-right: -76px;
         top: 78px;
         width: 50px; }
+  .site-header.toggled {
+    margin-top: 0; }
 
 .site-content .wrapper {
   padding: 0 30px; }
@@ -1148,8 +1148,7 @@ a {
 ********************************/
 @media screen and (max-height: 350px) {
   .mobile-navigation {
-    margin-top: -161px;
-    height: 161px; }
+    height: -161px; }
     .mobile-navigation .menu-main-navigation-container .menu .menu-item {
       float: left;
       margin: 0 4% 30px 0;
@@ -1162,48 +1161,55 @@ a {
       .mobile-navigation .menu-main-navigation-container .menu .menu-item:last-child {
         margin-right: 0; }
 
-  .site-header .wrapper {
-    zoom: 1;
-    background: #2c2f31 none;
-    min-height: 45px;
-    margin-top: -1px;
-    padding: 10px 20px; }
-    .site-header .wrapper:before, .site-header .wrapper:after {
-      content: "";
-      display: table; }
-    .site-header .wrapper:after {
-      clear: both; }
-  .site-header .site-branding {
-    float: left;
-    padding: 0; }
-    .site-header .site-branding .site-title, .site-header .site-branding .site-description {
-      display: block;
-      vertical-align: middle; }
-      .site-header .site-branding .site-title img, .site-header .site-branding .site-description img {
+  .site-header {
+    margin-top: -161px; }
+    .site-header .wrapper {
+      zoom: 1;
+      background: #2c2f31 none;
+      min-height: 45px;
+      margin-top: -1px;
+      padding: 10px 20px; }
+      .site-header .wrapper:before, .site-header .wrapper:after {
+        content: "";
+        display: table; }
+      .site-header .wrapper:after {
+        clear: both; }
+    .site-header .site-branding {
+      float: left;
+      padding: 0; }
+      .site-header .site-branding .site-title, .site-header .site-branding .site-description {
         display: block;
-        height: auto;
-        width: 100%; }
-    .site-header .site-branding .site-title {
-      display: inline-block;
-      margin-right: 5px;
-      width: 35px; }
-    .site-header .site-branding .site-description {
-      display: inline-block;
-      width: 90px; }
-  .site-header .toggles {
-    float: right;
-    padding-top: 7px; }
-    .site-header .toggles .menu-toggle, .site-header .toggles .hire-me {
-      display: inline-block;
-      margin: 0;
-      position: static; }
-    .site-header .toggles .menu-toggle {
-      background-position: center 2.5px;
-      margin-right: 5px; }
-  .site-header .social {
-    left: 0;
-    top: -15px;
-    width: 100%; }
+        vertical-align: middle; }
+        .site-header .site-branding .site-title img, .site-header .site-branding .site-description img {
+          display: block;
+          height: auto;
+          width: 100%; }
+      .site-header .site-branding .site-title {
+        display: inline-block;
+        margin-right: 5px;
+        width: 35px; }
+      .site-header .site-branding .site-description {
+        display: inline-block;
+        width: 90px; }
+    .site-header .toggles {
+      float: right;
+      padding-top: 7px; }
+      .site-header .toggles .menu-toggle, .site-header .toggles .hire-me {
+        display: inline-block;
+        margin: 0;
+        position: static; }
+      .site-header .toggles .menu-toggle {
+        background-position: center 2.5px;
+        margin-right: 5px; }
+    .site-header .social {
+      background: #aaafb2;
+      left: 0;
+      top: -15px;
+      width: 100%; }
+      .site-header .social a.twitter {
+        top: 89px; }
+    .site-header.toggled {
+      margin-top: 0; }
 
   .site-content {
     padding-top: 110px; } }
