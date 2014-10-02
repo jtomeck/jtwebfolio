@@ -1209,7 +1209,7 @@ a {
 /*
 LARGER MOBILE DEVICES
 */
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 480px) {
   /* CTA SECTIONS
   ********************************/
   .cta .cta-title {
@@ -1264,12 +1264,12 @@ LARGER MOBILE DEVICES
     min-height: 70px; }
     .site-content .home-skills .skills-list-wrap .skills-text .skill-text {
       background: #c7cdd3; } }
-@media only screen and (min-width: 481px) and (min-width: 515px) {
+@media only screen and (min-width: 480px) and (min-width: 515px) {
   .site-content .home-skills .skills-list-wrap .skills-list {
     padding-bottom: 35px; }
     .site-content .home-skills .skills-list-wrap .skills-list .skill .skill-text {
       top: 90px; } }
-@media only screen and (min-width: 481px) and (min-width: 580px) {
+@media only screen and (min-width: 480px) and (min-width: 580px) {
   .site-content .home-skills .skills-list-wrap .skills-list .skill .skill-text {
     top: 108px; } }
 @media only screen and (min-width: 650px) {
