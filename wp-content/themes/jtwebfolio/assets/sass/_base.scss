@@ -296,6 +296,7 @@ $head-marg:283px;
 	z-index:1000;
 	.wrapper {
 		background:url(../img/mobile_header_bg.png) bottom center no-repeat;
+		margin-top:-1px; // fixes broken line in transition
 		min-height:104px;
 		position:relative;
 		z-index:initial;

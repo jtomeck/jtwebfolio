@@ -878,6 +878,7 @@ a {
   z-index: 1000; }
   .site-header .wrapper {
     background: url(../img/mobile_header_bg.png) bottom center no-repeat;
+    margin-top: -1px;
     min-height: 104px;
     position: relative;
     z-index: initial; }
