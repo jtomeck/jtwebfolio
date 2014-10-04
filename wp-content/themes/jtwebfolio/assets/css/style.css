@@ -865,11 +865,11 @@ a {
     clear: both; }
 
 .site-header {
-  -webkit-transition: margin-top 0.5s ease-in-out;
-  -moz-transition: margin-top 0.5s ease-in-out;
-  -ms-transition: margin-top 0.5s ease-in-out;
-  -o-transition: margin-top 0.5s ease-in-out;
-  transition: margin-top 0.5s ease-in-out;
+  -webkit-transition: margin-top 0.25s ease;
+  -moz-transition: margin-top 0.25s ease;
+  -ms-transition: margin-top 0.25s ease;
+  -o-transition: margin-top 0.25s ease;
+  transition: margin-top 0.25s ease;
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
   -ms-transform: translateZ(0);
