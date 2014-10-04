@@ -594,9 +594,6 @@ BASE (MOBILE) SIZE
   margin: 0;
   padding: 0; }
 
-body, html {
-  height: 100%; }
-
 body {
   color: #2c2f31;
   font-family: "panefresco_400wtregular", sans-serif;
