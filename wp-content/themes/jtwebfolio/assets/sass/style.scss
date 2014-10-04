@@ -57,6 +57,13 @@ DESKTOP
 
 } // end of media query
 
+@media only screen and (min-width: 1280px) {
+
+    // styles in 1030up.scss
+    @import "1280up";
+
+} // end of media query
+
 /*
 iPHONE 5 MEDIA QUERY
 Want to get fancy for no good reason? Knock yourself out.

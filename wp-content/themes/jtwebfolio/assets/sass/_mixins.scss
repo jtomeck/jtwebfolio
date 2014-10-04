@@ -22,10 +22,10 @@ $font: "panefresco_400wtregular", sans-serif;
 $md-font: "panefresco_750wtregular", sans-serif;
 $bld-font: "panefresco_999wtregular", sans-serif;
 $font-it: "panefresco_400wtitalic", sans-serif;
-$font-lt-it: "panefresco_1wtitalic", sans-serif;
+$lt-font: "panefresco_1wtregular", sans-serif;
+$lt-font-it: "panefresco_1wtitalic", sans-serif;
 $md-font-it: "panefresco_750wtitalic", sans-serif;
 $bld-font-it: "panefresco_999wtitalic", sans-serif;
-$bldr-font-lt-it: "panefresco_1wtitalic", sans-serif;
 
 /* FONT-FACE
 ********************************/
@@ -296,6 +296,7 @@ a.full {
 	-ms-transition: $args;
 	-o-transition: $args;
 	transition: $args;
+  //fix any bugginess of transitions on mobile
   -webkit-transform: translateZ(0,0,0);
   -ms-transform: translateZ(0,0,0);
   -o-transform: translateZ(0,0,0);
@@ -304,6 +305,10 @@ a.full {
   -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
   transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 @mixin transform($args...) {

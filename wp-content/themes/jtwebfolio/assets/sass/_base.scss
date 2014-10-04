@@ -122,8 +122,10 @@ a {
 /* BUTTONS & FORMS
 ********************************/
 
+$btn-padding:13px 17px 11px;
+
 .btn {
-  @include button($grn,13px 17px 11px,20px);
+  @include button($grn,$btn-padding,20px);
 }
 
 /* CTA SECTIONS
@@ -149,8 +151,8 @@ a {
 			color:$pnk;
 		}
 		.btn {
-			@include box-shadow(0, 3px, 0, darken(desaturate($pnk,50%),15%), $inset: false);
-			background:$pnk;
+			@include button($pnk,$btn-padding,20px);
+			@include box-shadow(0, 3px, 0, darken(desaturate($pnk,50%),20%), $inset: false);
 		}
 	}
 
@@ -160,8 +162,8 @@ a {
 			color:$grn;
 		}
 		.btn {
-			@include box-shadow(0, 3px, 0, darken($grn,15%), $inset: false);
-			background:$grn;
+			@include button($grn,$btn-padding,20px);
+			
 		}
 	}
 
@@ -171,8 +173,8 @@ a {
 			color:$ylw;
 		}
 		.btn {
+			@include button($ylw,$btn-padding,20px);
 			@include box-shadow(0, 3px, 0, darken($ylw,15%), $inset: false);
-			background:$ylw;
 		}
 	}
 
@@ -182,8 +184,8 @@ a {
 			color:$blu;
 		}
 		.btn {
+			@include button($blu,$btn-padding,20px);
 			@include box-shadow(0, 3px, 0, darken($blu,15%), $inset: false);
-			background:$blu;
 		}
 	}
 }
@@ -395,6 +397,9 @@ $head-marg:283px;
 .site-content {
 	.wrapper {
 		padding:0 30px;
+		.cta & {
+			padding:40px 30px;
+		}
 	}
 
 	// HOMEPAGE STYLES
@@ -609,10 +614,10 @@ $head-marg:283px;
 
 			.add-skills {
 				background:$ltgry;
-				padding:30px;
+				padding:40px 30px;
 				text-align:center;
 				.add-skills-header {
-					padding-bottom:25px;
+					padding-bottom:15px;
 					.add-skills-title {
 						@include font($drkgry,$md-font,20px);
 						text-transform:none;

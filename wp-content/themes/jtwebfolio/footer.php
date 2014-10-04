@@ -20,8 +20,10 @@ $menu_toggle = $cfs->get('jtw_toggle_menu');
 	<?php if( $cta_heading && $cta_text) : ?>
         <section class="cta<?php if ( is_page(5) ) { echo ' mobile'; } ?>">
             <div class="wrapper">
-                <h3 class="cta-title"><?php echo $cta_heading; ?></h3>
-                <p class="cta-text"><?php echo $cta_text; ?></p>
+            	<div class="cta-content">
+	                <h3 class="cta-title"><?php echo $cta_heading; ?></h3>
+	                <p class="cta-text"><?php echo $cta_text; ?></p>
+	            </div>
                 <?php if( $menu_toggle ) : ?>
                     <?php if( $btn_link && $btn_label ) : ?>
                         <a href="<?php echo $btn_link; ?>" class="btn menu-toggle"><?php echo $btn_label; ?></a>

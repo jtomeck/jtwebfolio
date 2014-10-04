@@ -2,9 +2,23 @@
 ********************************/
 
 .cta {
-	.wrapper {}
-	.cta-title {}
-	.cta-text {}
+	.wrapper {
+		@include clearfix;
+		padding:7% 10% !important;
+	}
+	.cta-content {
+		float:left;
+		text-align:left;
+		width:65%;
+		.cta-title {
+			font-size:32px;
+		}
+		.cta-text {}
+	}
+	.btn {
+		float:right;
+		margin-top:46px;
+	}
 }
 .home {
 	.cta {
@@ -29,7 +43,7 @@
 	margin:0;
 	right:auto;
 	top:0;
-	width:18%;
+	width:24%;
 	.wrapper {
 		background:none;
 	}
@@ -138,10 +152,29 @@
 	}
 	//.toggles
 	.social {
+		@include opacity(100);
+		background:none;
+		height:auto;
+		padding-top:25px;
+		pointer-events:auto;
+		position:static;
 		a {
+			display:inline-block;
+			position:static;
 			&.dribbble {}
-			&.twitter {}
+			&.twitter {
+				background-size:62%;
+				height:50px;
+				width:50px;
+			}
 			&.linkedin {}
+			&.dribbble, &.twitter, &.linkedin {
+				bottom:auto;
+				margin:0;
+				left:auto;
+				right:auto;
+				top:auto;
+			}
 		}
 	}
 }
@@ -149,70 +182,167 @@
 .site-content {
 	background:url(../img/bg_desktop.png) -200px top no-repeat;
 	float:right;
-	width:82%;
-	.wrapper {}
+	width:76%;
+	.wrapper {
+		padding:0 8%;
+	}
+
+	// HOMEPAGE STYLES
+	/***********************************/
+
 	.main-banner {
+		.wrapper {}
 		.slide_link {}
 		.main-title {
-			span {}
+			font-size:66px;
+			span {
+				font-size:33px;
+			}
 		}
-		.main-text {}
+		.main-text {
+			font-family:$lt-font;
+			font-size:26px;
+			line-height:1.5em;
+			margin:0 auto;
+			max-width:610px;
+		}
 	}
 	//.main-banner
 	.home-skills {
 		.skills-header {
-			.skills-title {}
+			.skills-title {
+				font-size:232px;
+			}
 		}
 		//.skills-header
 		.skills-list-wrap {
-			.wrapper {}
-			.skills-list {
-				&:after {}
-				.skill {
+			margin-top:-90px;
+			.wrapper {
+				padding: 0 9% 4%;
+			}
+			.skills-icons {
+				.skill-icon {
 					&:nth-child(3) {}
 					&:nth-child(4) {}
 					&:nth-child(4),
 					&:nth-child(5) {}
-					&:nth-child(5) {}
+					img {}
 					&.toggled {
-						&.text-toggled {
-							.skill-icon {
-								&:after {}
+						&.triangle-toggled {
+							&:after {
+								display:none;
 							}
-							//.skill-icon
 						}
 						//.text-toggled
 					}
 					//.toggled
-					&.text-toggled {
-						.skill-icon {
-							&:after {}
+					&.triangle-toggled {
+						&:after {
+							display:none;
 						}
-						.skill-text {}
 					}
-					//.text-toggled
+					//.triangle-toggled
 					.skill-icon {
 						img {}
-					}
-					.skill-text {
-						p {}
 					}
 				}
 				//.skill
 			}
-			//.skills-list
+			//.skills-icons
+			.skills-text {
+				.skill-text {
+					font-size:24px;
+					pointer-events:auto;
+					&.text-toggled {}
+				}
+			}
+			//.skills-text
 		}
 		//.skills-list-wrap
 	}
 	//.home-skills
+
+
+	/***********************************/
+	// END OF HOMEPAGE STYLES
+	
+	// INTERIOR STYLES
+	/***********************************/
+	
+	.content-area {
+		.type-page {
+			.entry-header {
+				.entry-info {
+					top:12%;
+					.entry-icon {
+						margin-bottom:25px;
+						width:140px;
+						img {}
+					}
+					.entry-tagline {
+						.entry-title {}
+					}
+				}
+				//.entry-info
+				.entry-image {
+					padding-bottom:48%;
+					img {}
+				}
+				//.entry-image
+			}
+			//.entry-header
+			.entry-content {
+				padding:7% 10%;
+			}
+			//.entry-content
+
+			.add-skills {
+				.add-skills-header {
+					.add-skills-title {}
+				}
+				//.add-skills-header
+				.add-skills-content {
+					.skills {
+						.skill {
+							.skill-icon {
+								img {}
+							}
+							//.skill-icon
+							&:last-child {}
+						}
+						//.skill
+					}
+					//.skills
+				}
+				//.add-skills-content
+			}
+			//.add-skills
+		}
+		//.type-page
+	}
+	//.content-area
+
+	/***********************************/
+	// END OF INTERIOR STYLES
 }
 // .site-content
 .site-footer {
 	clear:both;
+	float:right;
+	width:76%;
 	.site-info {}
-	span {}
+	span {
+		font-size:14px;
+	}
 	img {}
 	a {
+		font-size:14px;
 		&:visited, &:hover, &:active {}
+	}
+}
+
+.site-content {
+	.home & {
+		padding-top:100px;
 	}
 }

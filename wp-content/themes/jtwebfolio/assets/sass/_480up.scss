@@ -3,11 +3,13 @@
 
 .cta {
 	.wrapper {}
-	.cta-title {
-		font-size:28px;
-	}
-	.cta-text {
-		font-size:18px;
+	.cta-content {
+		.cta-title {
+			font-size:28px;
+		}
+		.cta-text {
+			font-size:18px;
+		}
 	}
 }
 //.cta
@@ -16,37 +18,25 @@
 ********************************/
 .mobile-navigation {
 	.menu-main-navigation-container {
+		padding-top:55px;
 		.menu {
 			.menu-item {
+				float:left;
+				margin:0 4% 30px 0;
+				width:22%;
 				a {
-					&:before {}
+					&:before {
+						margin-left:-30px;
+						width:60px;
+					}
 				}
 				//a
-				&.about {
-					a {
-						&:before {}
-					}
+				&:nth-child(2) {
+					margin-right:4%;
 				}
-				//.about
-				&.work {
-					a {
-						&:before {}
-					}
+				&:last-child {
+					margin-right:0;
 				}
-				//.work
-				&.blog {
-					a {
-						&:before {}
-					}
-				}
-				//.blog
-				&.contact {
-					a {
-						&:before {}
-					}
-				}
-				//.contact
-				&:nth-child(2n) {}
 			}
 			//.menu-item
 		}
@@ -88,6 +78,10 @@
 //.site-header
 .site-content {
 	.wrapper {}
+
+	// HOMEPAGE STYLES
+	/***********************************/
+
 	.main-banner {
 		.slide_link {}
 		.main-title {
@@ -174,6 +168,69 @@
 		//.skills-list-wrap
 	}
 	//.home-skills
+
+
+	/***********************************/
+	// END OF HOMEPAGE STYLES
+	
+	// INTERIOR STYLES
+	/***********************************/
+	
+	.content-area {
+		.type-page {
+			.entry-header {
+				.entry-info {
+					.entry-icon {
+						img {}
+					}
+					.entry-tagline {
+						.entry-title {}
+					}
+				}
+				//.entry-info
+				.entry-image {
+					padding-bottom:80%;
+					img {}
+				}
+				//.entry-image
+			}
+			//.entry-header
+			.entry-content {}
+			//.entry-content
+
+			.add-skills {
+				.add-skills-header {
+					.add-skills-title {}
+					.add-skills-text {}
+				}
+				//.add-skills-header
+				.add-skills-content {
+					.skills {
+						.skill {
+							.skill-icon {
+								img {}
+							}
+							//.skill-icon
+							&:last-child {}
+						}
+						//.skill
+					}
+					//.skills
+				}
+				//.add-skills-content
+				.add-skills-header, .add-skills-content {
+					margin:0 auto;
+					max-width:75%;
+				}
+			}
+			//.add-skills
+		}
+		//.type-page
+	}
+	//.content-area
+
+	/***********************************/
+	// END OF INTERIOR STYLES
 }
 // .site-content
 .site-footer {

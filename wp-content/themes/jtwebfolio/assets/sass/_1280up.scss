@@ -2,22 +2,13 @@
 ********************************/
 
 .cta {
-	background:darken($drkgry,3%);
-	.wrapper {
-		padding:6% 8% 5% !important;
-	}
+	.wrapper {}
 	.cta-content {
-		.cta-title {
-			font-size:36px;
-		}
-		.cta-text {
-			font-size:22px;
-		}
+		.cta-title {}
+		.cta-text {}
 	}
 	.btn {
-		font-size:24px !important;
-		padding-top:18px !important;
-		padding-bottom:15px !important;
+		font-size:32px !important;
 	}
 }
 .home {
@@ -33,7 +24,7 @@
 .wrapper {}
 
 .site-header {
-	width:20%;
+	width:17%;
 	.wrapper {}
 	.site-branding {
 		.site-title, .site-description {
@@ -93,7 +84,7 @@
 }
 //.site-header
 .site-content {
-	width:80%;
+	width:83%;
 	.wrapper {}
 
 	// HOMEPAGE STYLES
@@ -108,74 +99,49 @@
 	}
 	//.main-banner
 	.home-skills {
-		padding-top:85px;
 		.skills-header {
 			.skills-title {
-				font-size:300px;
+				font-size:332px;
 			}
 		}
 		//.skills-header
 		.skills-list-wrap {
-			margin-top:-130px;
 			.wrapper {}
-			$marg-right: 5.75%;
-			$width: 15.4%;
-			.skills-icons {
-				.skill-icon {
-					margin-right:$marg-right;
-					margin-top:-55px;
-					width:$width;
-					&:nth-child(3) {
-						margin-right:$marg-right;
-					}
+			.skills-list {
+				&:after {}
+				.skill {
+					&:nth-child(3) {}
 					&:nth-child(4) {}
 					&:nth-child(4),
-					&:nth-child(5) {
-						margin-top:-55px;
-					}
-					&:nth-child(5) {
-						margin-right:0;
-					}
-					img {}
+					&:nth-child(5) {}
+					&:nth-child(5) {}
 					&.toggled {
-						&.triangle-toggled {
-							&:after {}
+						&.text-toggled {
+							.skill-icon {
+								&:after {}
+							}
+							//.skill-icon
 						}
 						//.text-toggled
 					}
 					//.toggled
-					&.triangle-toggled {
-						&:after {}
+					&.text-toggled {
+						.skill-icon {
+							&:after {}
+						}
+						.skill-text {}
 					}
-					//.triangle-toggled
+					//.text-toggled
 					.skill-icon {
 						img {}
 					}
+					.skill-text {
+						p {}
+					}
 				}
 				//.skill
-				&:after {
-					display:none;
-				}
 			}
-			//.skills-icons
-			.skills-text {
-				@include clearfix;
-				clear:both;
-				padding-top:15px;
-				.skill-text {
-					@include opacity(100);
-					float:left;
-					font-size:17px;
-					margin-right:$marg-right;
-					position:static;
-					width:$width;
-					&:nth-child(5) {
-						margin:0;
-					}
-					&.text-toggled {}
-				}
-			}
-			//.skills-text
+			//.skills-list
 		}
 		//.skills-list-wrap
 	}
@@ -196,36 +162,26 @@
 						img {}
 					}
 					.entry-tagline {
-						width:590px;
 						.entry-title {}
 					}
 				}
 				//.entry-info
 				.entry-image {
+					padding-bottom:36%;
 					img {}
 				}
 				//.entry-image
 			}
 			//.entry-header
-			.entry-content {
-				padding:6% 8%;
-				p {
-					font-size:18px;
-				}
-			}
+			.entry-content {}
 			//.entry-content
 
 			.add-skills {
-				padding:5% 7% 5%;
 				.add-skills-header {
 					.add-skills-title {}
-					.add-skills-text {
-						font-size:22px;
-					}
 				}
 				//.add-skills-header
 				.add-skills-content {
-					max-width:513px;
 					.skills {
 						.skill {
 							.skill-icon {
@@ -251,7 +207,7 @@
 }
 // .site-content
 .site-footer {
-	width:80%;
+	width:83%;
 	.site-info {}
 	span {}
 	img {}
