@@ -287,7 +287,7 @@ $head-marg:283px;
 }
 
 .site-header {
-	@include transition(margin-top .25s ease);
+	@include transition(margin-top .35s ease-in-out);
 	margin-top:-$head-marg;
 	position:fixed;
 	text-align:center;
