@@ -64,41 +64,39 @@
 		//.skills-header
 		.skills-list-wrap {
 			.wrapper {}
-			.skills-list {
-				&:after {}
-				.skill {
+			.skills-icons {
+				.skill-icon {
 					&:nth-child(3) {}
 					&:nth-child(4) {}
 					&:nth-child(4),
 					&:nth-child(5) {}
-					&:nth-child(5) {}
+					img {}
 					&.toggled {
-						&.text-toggled {
-							.skill-icon {
-								&:after {}
-							}
-							//.skill-icon
+						&.triangle-toggled {
+							&:after {}
 						}
 						//.text-toggled
 					}
 					//.toggled
-					&.text-toggled {
-						.skill-icon {
-							&:after {}
-						}
-						.skill-text {}
+					&.triangle-toggled {
+						&:after {}
 					}
-					//.text-toggled
+					//.triangle-toggled
 					.skill-icon {
 						img {}
-					}
-					.skill-text {
-						p {}
 					}
 				}
 				//.skill
 			}
-			//.skills-list
+			//.skills-icons
+			.skills-text {
+				.skill-text {
+					font-size:24px;
+					pointer-events:auto;
+					&.text-toggled {}
+				}
+			}
+			//.skills-text
 		}
 		//.skills-list-wrap
 	}

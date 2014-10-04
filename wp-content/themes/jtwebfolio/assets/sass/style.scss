@@ -23,6 +23,13 @@ LARGER MOBILE DEVICES
 
 } // end of media query
 
+@media only screen and (min-width: 550px) {
+
+    // styles in 768up.scss
+    @import "550up";
+
+} // end of media query
+
 @media only screen and (min-width: 650px) {
 
     // styles in 768up.scss

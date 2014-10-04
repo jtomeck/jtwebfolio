@@ -1535,40 +1535,12 @@ LARGER MOBILE DEVICES
 @media only screen and (min-width: 480px) and (min-width: 580px) {
   .site-content .home-skills .skills-list-wrap .skills-list .skill .skill-text {
     top: 108px; } }
+@media only screen and (min-width: 550px) {
+  .site-content .home-skills .skills-list-wrap .skills-text .skill-text {
+    font-size: 22px; } }
 @media only screen and (min-width: 650px) {
   .site-content .main-banner .main-text {
-    font-size: 20px; }
-  .site-content .home-skills .skills-list-wrap .skills-list {
-    zoom: 1;
-    padding-bottom: 0; }
-    .site-content .home-skills .skills-list-wrap .skills-list:before, .site-content .home-skills .skills-list-wrap .skills-list:after {
-      content: "";
-      display: table; }
-    .site-content .home-skills .skills-list-wrap .skills-list:after {
-      clear: both; }
-    .site-content .home-skills .skills-list-wrap .skills-list .skill {
-      margin-right: 4%;
-      margin-top: -25px;
-      width: 17.2%; }
-      .site-content .home-skills .skills-list-wrap .skills-list .skill:nth-child(3) {
-        margin-right: 2%; }
-      .site-content .home-skills .skills-list-wrap .skills-list .skill:nth-child(4) {
-        margin-left: 0; }
-      .site-content .home-skills .skills-list-wrap .skills-list .skill:nth-child(4), .site-content .home-skills .skills-list-wrap .skills-list .skill:nth-child(5) {
-        margin-top: -25px; }
-      .site-content .home-skills .skills-list-wrap .skills-list .skill:nth-child(5) {
-        margin-right: 0; }
-      .site-content .home-skills .skills-list-wrap .skills-list .skill .skill-icon:after {
-        display: none !important; }
-      .site-content .home-skills .skills-list-wrap .skills-list .skill .skill-text {
-        height: auto;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-        filter: alpha(opacity=100);
-        opacity: 1;
-        padding-top: 8px;
-        position: static; }
-        .site-content .home-skills .skills-list-wrap .skills-list .skill .skill-text p {
-          font-size: 14px; } }
+    font-size: 20px; } }
 /*
 TABLET & SMALLER LAPTOPS
 */
@@ -1585,6 +1557,9 @@ TABLET & SMALLER LAPTOPS
     /***********************************/
     /***********************************/
     /***********************************/ }
+    .site-content .home-skills .skills-list-wrap .skills-text .skill-text {
+      font-size: 24px;
+      pointer-events: auto; }
     .site-content .content-area .type-page .entry-header .entry-info .entry-tagline .entry-title {
       font-size: 38px; }
     .site-content .content-area .type-page .entry-header .entry-image {

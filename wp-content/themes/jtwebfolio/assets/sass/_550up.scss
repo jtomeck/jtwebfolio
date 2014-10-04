@@ -1,0 +1,45 @@
+.site-content {
+	.home-skills {
+		.skills-header {
+			.skills-title {}
+		}
+		//.skills-header
+		.skills-list-wrap {
+			.wrapper {}
+			.skills-icons {
+				.skill-icon {
+					&:nth-child(3) {}
+					&:nth-child(4) {}
+					&:nth-child(4),
+					&:nth-child(5) {}
+					img {}
+					&.toggled {
+						&.triangle-toggled {
+							&:after {}
+						}
+						//.text-toggled
+					}
+					//.toggled
+					&.triangle-toggled {
+						&:after {}
+					}
+					//.triangle-toggled
+					.skill-icon {
+						img {}
+					}
+				}
+				//.skill
+			}
+			//.skills-icons
+			.skills-text {
+				.skill-text {
+					font-size:22px;
+					&.text-toggled {}
+				}
+			}
+			//.skills-text
+		}
+		//.skills-list-wrap
+	}
+	//.home-skills
+}
