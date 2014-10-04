@@ -825,7 +825,9 @@ $head-marg:283px;
 	}
 	//.site-header
 	.site-content {
-		padding-top:110px;
+		.home & {
+			padding-top:110px;
+		}
 	}
 }
 //end Media Query
