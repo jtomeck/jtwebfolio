@@ -10,6 +10,7 @@ body {
 	@include font($drkgry,$font,14px);
 	background:$ltrgry;
 	line-height:1;
+	padding-bottom:-1px;
 	&.toggled {
 		overflow:hidden;
 		.site-header {
@@ -31,6 +32,9 @@ body {
 		.site-footer {
 			opacity:0;
 		}
+	}
+	.site {
+		margin-bottom:-1px;
 	}
 }
 

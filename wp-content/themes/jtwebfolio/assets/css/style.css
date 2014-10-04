@@ -601,7 +601,8 @@ body {
   font-style: normal;
   font-weight: normal;
   background: #dae1e7;
-  line-height: 1; }
+  line-height: 1;
+  padding-bottom: -1px; }
   body.toggled {
     overflow: hidden; }
     body.toggled .site-header .toggles .menu-toggle {
@@ -615,6 +616,8 @@ body {
       opacity: 0; }
     body.toggled .site-footer {
       opacity: 0; }
+  body .site {
+    margin-bottom: -1px; }
 
 /* TYPOGRAPHY
 ********************************/
