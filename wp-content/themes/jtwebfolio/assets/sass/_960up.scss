@@ -26,6 +26,7 @@
 	background:$drkgry;
 	bottom:0;
 	left:0;
+	margin:0;
 	right:auto;
 	top:0;
 	width:18%;
@@ -33,18 +34,102 @@
 		background:none;
 	}
 	.site-branding {
+		padding-bottom:40px;
 		.site-title, .site-description {
 			img {}
+		}
+		.site-title {
+			margin-top:15px;
 		}
 		.site-description {
 			display:block;
 			img {
-				margin:5px auto 0;
+				margin:8px auto 0;
 			}
 		}
 	}
 	//.site-branding
-	.main-navigation {}
+	.main-navigation {
+		display:block;
+		.menu-main-navigation-container {
+			.menu {
+				margin:0;
+				padding:0;
+				.menu-item {
+					@include transition(background .25s ease-in-out, background-color .25s ease-in-out);
+					background:$drkrgry;
+					text-align:right;
+					a {
+						@include transition(padding-right .25s ease-in-out);
+						@include font($wht,$font,24px);
+						display:block;
+						padding:26px 80px 24px 15px;
+						text-transform:lowercase;
+					}
+					&:hover {
+						a {
+							padding-right:90px;
+						}
+					}
+
+					// link variables
+					$xpos: calc(100% + 26px);
+					$ypos: 16px;
+					$bgsize: 90px;
+					&.about {
+						background:$pnk url(../img/icon_about.svg) $xpos $ypos no-repeat;
+						background-size:$bgsize;
+						a {
+							text-shadow:0 1px 0 darken(desaturate($pnk,15%),15%);
+						}
+						&:hover {
+							$color:darken(desaturate($pnk,20%),4%);
+							background-color:$color;
+						}
+					}
+					&.work {
+						background:$grn url(../img/icon_work.svg) $xpos $ypos no-repeat;
+						background-size:$bgsize;
+						a {
+							text-shadow:0 1px 0 darken($grn,10%);
+						}
+						&:hover {
+							$color:darken($grn,3%);
+							background-color:$color;
+							text-shadow:0 1px 0 $color;
+						}
+					}
+					&.blog {
+						background:$ylw url(../img/icon_blog.svg) $xpos $ypos no-repeat;
+						background-size:$bgsize;
+						a {
+							text-shadow:0 1px 0 darken(desaturate($ylw,15%),20%);
+						}
+						&:hover {
+							$color:darken(desaturate($ylw,10%),4%);
+							background-color:$color;
+							text-shadow:0 1px 0 $color;
+						}
+					}
+					&.contact {
+						background:$blu url(../img/icon_contact.svg) $xpos $ypos no-repeat;
+						background-size:$bgsize;
+						a {
+							text-shadow:0 1px 0 darken($blu,10%);
+						}
+						&:hover {
+							background-color:darken(desaturate($blu,10%),4%);
+							text-shadow:0 1px 0 ;
+						}
+					}
+				}
+				//.page_item
+			}
+			//.menu
+		}
+		//.menu-main-navigation-container
+	}
+	//.main-navigation
 	.toggles {
 		display:none;
 		.menu-toggle, .hire-me {}
@@ -62,6 +147,7 @@
 }
 //.site-header
 .site-content {
+	background:url(../img/bg_desktop.png) -200px top no-repeat;
 	float:right;
 	width:82%;
 	.wrapper {}

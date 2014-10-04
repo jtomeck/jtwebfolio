@@ -71,8 +71,8 @@ h6, {
 
 p {
 	@include font($drkgry,$font,14px);
-	line-height:1.5em;
-	margin:.5em 0;
+	line-height:1.8em;
+	margin:0 0 1em;
 	// Bolding and Italicizing inside P tags
 	b, strong {
 		font-family:$md-font;
@@ -143,8 +143,51 @@ a {
 		margin-bottom:.5em;
 	}
 	.cta-text {
-		@include font($wht,$font,12px);
+		@include font($wht,$font,14px);
 		margin-bottom:20px;
+	}
+	// ABOUT PAGE CTA
+	.about & {
+		.cta-title {
+			color:$pnk;
+		}
+		.btn {
+			@include box-shadow(0, 3px, 0, darken(desaturate($pnk,50%),15%), $inset: false);
+			background:$pnk;
+		}
+	}
+
+	// WORK PAGE CTA
+	.work & {
+		.cta-title {
+			color:$grn;
+		}
+		.btn {
+			@include box-shadow(0, 3px, 0, darken($grn,15%), $inset: false);
+			background:$grn;
+		}
+	}
+
+	// BLOG PAGE CTA
+	.blog & {
+		.cta-title {
+			color:$ylw;
+		}
+		.btn {
+			@include box-shadow(0, 3px, 0, darken($ylw,15%), $inset: false);
+			background:$ylw;
+		}
+	}
+
+	// CONTACT PAGE CTA
+	.blog & {
+		.cta-title {
+			color:$blu;
+		}
+		.btn {
+			@include box-shadow(0, 3px, 0, darken($blu,15%), $inset: false);
+			background:$blu;
+		}
 	}
 }
 //.cta
@@ -352,10 +395,14 @@ $head-marg:283px;
 	}
 }
 //.site-header
+
 .site-content {
 	.wrapper {
 		padding:0 30px;
 	}
+
+	// HOMEPAGE STYLES
+	/***********************************/
 	.main-banner {
 		text-align:center;
 		.slide_link {
@@ -502,6 +549,119 @@ $head-marg:283px;
 		//.skills-list-wrap
 	}
 	//.home-skills
+
+	/***********************************/
+	// END OF HOMEPAGE STYLES
+	
+	// INTERIOR STYLES
+	/***********************************/
+	
+	.content-area {
+		.type-page {
+			.entry-header {
+				position:relative;
+				.entry-info {
+					bottom:0;
+					left:0;
+					margin:auto;
+					position:absolute;
+					right:0;
+					top:32%;
+					text-align:center;
+					z-index:2;
+					.entry-icon {
+						margin:0 auto 20px;
+						width:100px;
+						img {
+							height:auto;
+							width:100%;
+						}
+					}
+					.entry-tagline {
+						margin:0 auto;
+						width:80%;
+						.entry-title {
+							@include font($wht,$font,28px);
+							line-height:1.2em;
+							text-transform:none;
+						}
+					}
+				}
+				//.entry-info
+				.entry-image {
+					background:$drkgry;
+					height:0;
+					overflow:hidden;
+					padding-bottom:120%;
+					position:relative;
+					img {
+						@include blur(5px);
+						@include transform(translate(-50%,-50%));
+						@include opacity(30);
+						height:100%;
+						left:50%;
+						position:absolute;
+						top:50%;
+						width:auto;
+						z-index:1;
+					}
+				}
+				//.entry-image
+			}
+			//.entry-header
+			.entry-content {
+				padding:30px;
+				text-align:center;
+			}
+			//.entry-content
+
+			.add-skills {
+				background:$ltgry;
+				padding:30px;
+				text-align:center;
+				.add-skills-header {
+					padding-bottom:25px;
+					.add-skills-title {
+						@include font($drkgry,$md-font,20px);
+						text-transform:none;
+					}
+				}
+				//.add-skills-header
+				.add-skills-content {
+					.skills {
+						@include clearfix;
+						margin:0;
+						.skill {
+							float:left;
+							margin-right:3%;
+							position:relative;
+							width:31.3333%;
+							.skill-icon {
+								img {
+									height:auto;
+									width:100%;
+								}
+							}
+							//.skill-icon
+							&:last-child {
+								margin:0;
+							}
+						}
+						//.skill
+					}
+					//.skills
+				}
+				//.add-skills-content
+			}
+			//.add-skills
+		}
+		//.type-page
+	}
+	//.content-area
+
+	/***********************************/
+	// END OF INTERIOR STYLES
+	
 }
 // .site-content
 .site-footer {
@@ -533,7 +693,9 @@ $head-marg:283px;
 }
 .site-content {
 	background:url(../img/mobile_bg.png) top center no-repeat;
-	padding-top:150px;
+	.home & {
+		padding-top:150px;
+	}
 }
 
 

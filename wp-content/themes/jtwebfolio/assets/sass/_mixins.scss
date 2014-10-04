@@ -7,6 +7,7 @@ $wht: #fff;
 $pnk: #ff8772;
 $grn: #009491;
 $ylw: #ffc845;
+$blu: #70b1c9;
 
 $ltgry: #c7cdd3;
 $ltrgry: #dae1e7;
@@ -184,6 +185,13 @@ a.full {
 /* MISC MIXINS
 ********************************/
 
+@mixin blur($blur) {
+  -webkit-filter: blur($blur);
+  -moz-filter: blur($blur);
+  -o-filter: blur($blur);
+  filter: blur($blur);
+}
+
 // Box model
 @mixin box-sizing($box-model) {
 	-webkit-box-sizing: $box-model;
@@ -275,6 +283,12 @@ a.full {
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
 }
 
+@mixin opacity($percent) {
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity="$percent")";
+  filter: alpha(opacity=$percent);
+  opacity: $percent/100;
+}
+
 // Transitions
 @mixin transition($args...) {
 	-webkit-transition: $args;
@@ -287,6 +301,14 @@ a.full {
   -ms-transform: translateZ(0);
   -o-transform: translateZ(0);
   transform: translateZ(0);
+}
+
+@mixin transform($args...) {
+  -webkit-transform: $args;
+  -moz-transform: $args;
+  -ms-transform: $args;
+  -o-transform: $args;
+  transform: $args;
 }
 
 @mixin clearfix {
@@ -310,7 +332,7 @@ a.full {
 // Button styles
 @mixin button($color,$padding,$font-size) {
 	@include border-radius(10px);
-  @include box-shadow(0, 3px, 0, darken($color,10px), $inset: false);
+  @include box-shadow(0, 3px, 0, darken($color,10%), $inset: false);
 	background:$color;
   color:$wht;
   display:inline-block;
@@ -318,4 +340,7 @@ a.full {
 	font-size:$font-size;
 	padding:$padding;
   text-transform:uppercase;
+  &:hover {
+    background:lighten($color,2%);
+  }
 }

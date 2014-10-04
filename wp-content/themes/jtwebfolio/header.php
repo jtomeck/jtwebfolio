@@ -24,7 +24,7 @@ $options = get_option('theme_options');
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class($post->post_name); ?>>
 
 	<div id="page" class="hfeed site">
 		<header id="masthead" class="site-header" role="banner">
