@@ -296,6 +296,10 @@ a.full {
 	-ms-transition: $args;
 	-o-transition: $args;
 	transition: $args;
+  -webkit-transform: translateZ(0,0,0);
+  -ms-transform: translateZ(0,0,0);
+  -o-transform: translateZ(0,0,0);
+  transform: translateZ(0,0,0);
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;

@@ -870,6 +870,10 @@ a {
   -ms-transition: margin-top 0.4s ease-in-out;
   -o-transition: margin-top 0.4s ease-in-out;
   transition: margin-top 0.4s ease-in-out;
+  -webkit-transform: translateZ(0, 0, 0);
+  -ms-transform: translateZ(0, 0, 0);
+  -o-transform: translateZ(0, 0, 0);
+  transform: translateZ(0, 0, 0);
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
@@ -922,6 +926,10 @@ a {
     -ms-transition: opacity 0.15s 0 ease-in-out;
     -o-transition: opacity 0.15s 0 ease-in-out;
     transition: opacity 0.15s 0 ease-in-out;
+    -webkit-transform: translateZ(0, 0, 0);
+    -ms-transform: translateZ(0, 0, 0);
+    -o-transform: translateZ(0, 0, 0);
+    transform: translateZ(0, 0, 0);
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     -ms-transform-style: preserve-3d;
@@ -1042,6 +1050,10 @@ a {
             -ms-transition: margin-top 0.25s ease-in-out;
             -o-transition: margin-top 0.25s ease-in-out;
             transition: margin-top 0.25s ease-in-out;
+            -webkit-transform: translateZ(0, 0, 0);
+            -ms-transform: translateZ(0, 0, 0);
+            -o-transform: translateZ(0, 0, 0);
+            transform: translateZ(0, 0, 0);
             -webkit-transform-style: preserve-3d;
             -moz-transform-style: preserve-3d;
             -ms-transform-style: preserve-3d;
@@ -1094,6 +1106,10 @@ a {
           -ms-transition: opacity 0.25s 0 ease-in-out;
           -o-transition: opacity 0.25s 0 ease-in-out;
           transition: opacity 0.25s 0 ease-in-out;
+          -webkit-transform: translateZ(0, 0, 0);
+          -ms-transform: translateZ(0, 0, 0);
+          -o-transform: translateZ(0, 0, 0);
+          transform: translateZ(0, 0, 0);
           -webkit-transform-style: preserve-3d;
           -moz-transform-style: preserve-3d;
           -ms-transform-style: preserve-3d;
@@ -1114,6 +1130,10 @@ a {
             -ms-transition: opacity 0.25s 0.25s ease-in-out;
             -o-transition: opacity 0.25s 0.25s ease-in-out;
             transition: opacity 0.25s 0.25s ease-in-out;
+            -webkit-transform: translateZ(0, 0, 0);
+            -ms-transform: translateZ(0, 0, 0);
+            -o-transform: translateZ(0, 0, 0);
+            transform: translateZ(0, 0, 0);
             -webkit-transform-style: preserve-3d;
             -moz-transform-style: preserve-3d;
             -ms-transform-style: preserve-3d;
@@ -1236,6 +1256,10 @@ a {
   -ms-transition: opacity 0.35s 0 ease-in-out;
   -o-transition: opacity 0.35s 0 ease-in-out;
   transition: opacity 0.35s 0 ease-in-out;
+  -webkit-transform: translateZ(0, 0, 0);
+  -ms-transform: translateZ(0, 0, 0);
+  -o-transform: translateZ(0, 0, 0);
+  transform: translateZ(0, 0, 0);
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
@@ -1473,6 +1497,10 @@ DESKTOP
           -ms-transition: background 0.25s ease-in-out, background-color 0.25s ease-in-out;
           -o-transition: background 0.25s ease-in-out, background-color 0.25s ease-in-out;
           transition: background 0.25s ease-in-out, background-color 0.25s ease-in-out;
+          -webkit-transform: translateZ(0, 0, 0);
+          -ms-transform: translateZ(0, 0, 0);
+          -o-transform: translateZ(0, 0, 0);
+          transform: translateZ(0, 0, 0);
           -webkit-transform-style: preserve-3d;
           -moz-transform-style: preserve-3d;
           -ms-transform-style: preserve-3d;
@@ -1485,6 +1513,10 @@ DESKTOP
             -ms-transition: padding-right 0.25s ease-in-out;
             -o-transition: padding-right 0.25s ease-in-out;
             transition: padding-right 0.25s ease-in-out;
+            -webkit-transform: translateZ(0, 0, 0);
+            -ms-transform: translateZ(0, 0, 0);
+            -o-transform: translateZ(0, 0, 0);
+            transform: translateZ(0, 0, 0);
             -webkit-transform-style: preserve-3d;
             -moz-transform-style: preserve-3d;
             -ms-transform-style: preserve-3d;
