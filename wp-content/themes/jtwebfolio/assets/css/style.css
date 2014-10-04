@@ -1135,6 +1135,10 @@ a {
       padding-bottom: 125%;
       position: relative; }
       .site-content .content-area .type-page .entry-header .entry-image img {
+        -webkit-filter: blur(3px);
+        -moz-filter: blur(3px);
+        -o-filter: blur(3px);
+        filter: blur(3px);
         -webkit-transform: translate(-50%, -50%);
         -moz-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
