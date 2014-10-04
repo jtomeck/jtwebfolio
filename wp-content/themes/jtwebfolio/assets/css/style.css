@@ -1594,6 +1594,7 @@ DESKTOP
   ********************************/
   .cta .wrapper {
     zoom: 1;
+    background: #252729;
     padding: 7% 10% !important; }
     .cta .wrapper:before, .cta .wrapper:after {
       content: "";

@@ -4,6 +4,7 @@
 .cta {
 	.wrapper {
 		@include clearfix;
+		background:darken($drkgry,3%);
 		padding:7% 10% !important;
 	}
 	.cta-content {
