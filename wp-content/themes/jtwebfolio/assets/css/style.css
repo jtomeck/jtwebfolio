@@ -1135,18 +1135,14 @@ a {
       padding-bottom: 125%;
       position: relative; }
       .site-content .content-area .type-page .entry-header .entry-image img {
-        -webkit-filter: blur(3px);
-        -moz-filter: blur(3px);
-        -o-filter: blur(3px);
-        filter: blur(3px);
         -webkit-transform: translate(-50%, -50%);
         -moz-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         -o-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" 30 ")";
-        filter: alpha(opacity=30);
-        opacity: 0.3;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" 25 ")";
+        filter: alpha(opacity=25);
+        opacity: 0.25;
         height: 100%;
         left: 50%;
         position: absolute;

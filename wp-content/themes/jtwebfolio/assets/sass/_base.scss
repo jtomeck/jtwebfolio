@@ -586,9 +586,9 @@ $head-marg:283px;
 					padding-bottom:125%;
 					position:relative;
 					img {
-						@include blur(3px);
+						//@include blur(3px);
 						@include transform(translate(-50%,-50%));
-						@include opacity(30);
+						@include opacity(25);
 						height:100%;
 						left:50%;
 						position:absolute;
