@@ -296,6 +296,10 @@ a.full {
 	-ms-transition: $args;
 	-o-transition: $args;
 	transition: $args;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
 @mixin transform($args...) {

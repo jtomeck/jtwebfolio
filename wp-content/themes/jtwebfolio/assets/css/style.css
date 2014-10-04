@@ -865,11 +865,15 @@ a {
     clear: both; }
 
 .site-header {
-  -webkit-transition: margin-top 0.5s ease-in-out;
-  -moz-transition: margin-top 0.5s ease-in-out;
-  -ms-transition: margin-top 0.5s ease-in-out;
-  -o-transition: margin-top 0.5s ease-in-out;
-  transition: margin-top 0.5s ease-in-out;
+  -webkit-transition: margin-top 0.4s ease-in-out;
+  -moz-transition: margin-top 0.4s ease-in-out;
+  -ms-transition: margin-top 0.4s ease-in-out;
+  -o-transition: margin-top 0.4s ease-in-out;
+  transition: margin-top 0.4s ease-in-out;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
   margin-top: -283px;
   position: fixed;
   text-align: center;
@@ -918,6 +922,10 @@ a {
     -ms-transition: opacity 0.15s 0 ease-in-out;
     -o-transition: opacity 0.15s 0 ease-in-out;
     transition: opacity 0.15s 0 ease-in-out;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
     background: url(../img/mobile_bg.png) top center no-repeat;
     height: 222px;
     pointer-events: none;
@@ -1034,6 +1042,10 @@ a {
             -ms-transition: margin-top 0.25s ease-in-out;
             -o-transition: margin-top 0.25s ease-in-out;
             transition: margin-top 0.25s ease-in-out;
+            -webkit-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+            -ms-transform-style: preserve-3d;
+            transform-style: preserve-3d;
             height: auto;
             margin-top: -13px; }
           .site-content .home-skills .skills-list-wrap .skills-icons .skill-icon img {
@@ -1082,6 +1094,10 @@ a {
           -ms-transition: opacity 0.25s 0 ease-in-out;
           -o-transition: opacity 0.25s 0 ease-in-out;
           transition: opacity 0.25s 0 ease-in-out;
+          -webkit-transform-style: preserve-3d;
+          -moz-transform-style: preserve-3d;
+          -ms-transform-style: preserve-3d;
+          transform-style: preserve-3d;
           font-size: 16px;
           left: 0;
           line-height: 1.4em;
@@ -1098,6 +1114,10 @@ a {
             -ms-transition: opacity 0.25s 0.25s ease-in-out;
             -o-transition: opacity 0.25s 0.25s ease-in-out;
             transition: opacity 0.25s 0.25s ease-in-out;
+            -webkit-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+            -ms-transform-style: preserve-3d;
+            transform-style: preserve-3d;
             -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" 100 ")";
             filter: alpha(opacity=100);
             opacity: 1; }
@@ -1215,7 +1235,11 @@ a {
   -moz-transition: opacity 0.35s 0 ease-in-out;
   -ms-transition: opacity 0.35s 0 ease-in-out;
   -o-transition: opacity 0.35s 0 ease-in-out;
-  transition: opacity 0.35s 0 ease-in-out; }
+  transition: opacity 0.35s 0 ease-in-out;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d; }
 
 .site-content {
   background: url(../img/mobile_bg.png) top center no-repeat; }
@@ -1449,6 +1473,10 @@ DESKTOP
           -ms-transition: background 0.25s ease-in-out, background-color 0.25s ease-in-out;
           -o-transition: background 0.25s ease-in-out, background-color 0.25s ease-in-out;
           transition: background 0.25s ease-in-out, background-color 0.25s ease-in-out;
+          -webkit-transform-style: preserve-3d;
+          -moz-transform-style: preserve-3d;
+          -ms-transform-style: preserve-3d;
+          transform-style: preserve-3d;
           background: #1f2022;
           text-align: right; }
           .site-header .main-navigation .menu-main-navigation-container .menu .menu-item a {
@@ -1457,6 +1485,10 @@ DESKTOP
             -ms-transition: padding-right 0.25s ease-in-out;
             -o-transition: padding-right 0.25s ease-in-out;
             transition: padding-right 0.25s ease-in-out;
+            -webkit-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+            -ms-transform-style: preserve-3d;
+            transform-style: preserve-3d;
             color: #fff;
             font-family: "panefresco_400wtregular", sans-serif;
             font-size: 24px;
