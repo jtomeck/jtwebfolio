@@ -566,7 +566,7 @@ $head-marg:283px;
 					margin:auto;
 					position:absolute;
 					right:0;
-					top:32%;
+					top:35%;
 					text-align:center;
 					z-index:2;
 					.entry-icon {
@@ -581,7 +581,7 @@ $head-marg:283px;
 						margin:0 auto;
 						width:80%;
 						.entry-title {
-							@include font($wht,$font,28px);
+							@include font($wht,$font,25px);
 							line-height:1.2em;
 							text-transform:none;
 						}
@@ -592,7 +592,7 @@ $head-marg:283px;
 					background:$drkgry;
 					height:0;
 					overflow:hidden;
-					padding-bottom:120%;
+					padding-bottom:125%;
 					position:relative;
 					img {
 						@include blur(5px);
