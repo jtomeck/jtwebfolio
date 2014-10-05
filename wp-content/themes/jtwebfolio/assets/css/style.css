@@ -1308,10 +1308,6 @@ a {
       padding-bottom: 125%;
       position: relative; }
       .site-content .content-area .entry-header .entry-image img {
-        -webkit-filter: blur(3px);
-        -moz-filter: blur(3px);
-        -o-filter: blur(3px);
-        filter: blur(3px);
         -webkit-transform: translate(-50%, -50%);
         -moz-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
@@ -1386,11 +1382,6 @@ a {
     padding: 0 35px;
     max-width: 615px; }
   .site-content .content-area .type-jtw_work .entry-header .entry-image img {
-    -webkit-transform: translate(-50%, -50%) rotate(-5deg);
-    -moz-transform: translate(-50%, -50%) rotate(-5deg);
-    -ms-transform: translate(-50%, -50%) rotate(-5deg);
-    -o-transform: translate(-50%, -50%) rotate(-5deg);
-    transform: translate(-50%, -50%) rotate(-5deg);
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" 10 ")";
     filter: alpha(opacity=10);
     opacity: 0.1; }

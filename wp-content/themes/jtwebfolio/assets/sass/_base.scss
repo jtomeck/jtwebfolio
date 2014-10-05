@@ -621,7 +621,6 @@ $head-marg:283px;
 				padding-bottom:125%;
 				position:relative;
 				img {
-					@include blur(3px);
 					@include transform(translate(-50%,-50%));
 					@include opacity(20);
 					height:100%;
@@ -710,7 +709,6 @@ $head-marg:283px;
 				//.entry-info
 				.entry-image {
 					img {
-						@include transform(translate(-50%,-50%) rotate(-5deg));
 						@include opacity(10);
 					}
 				}
