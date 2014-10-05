@@ -65,7 +65,7 @@ $cta_buttons = $cfs->get('jtw_project_cta_buttons');
         <div class="wrapper">
         	<div class="cta-content">
                 <h3 class="cta-title">What did you think?</h3>
-                <p class="cta-text">If this peaked your interest, there's more where this came from.</p>
+                <p class="cta-text">If this piqued your interest, there's more where this came from.</p>
                 <h6 class="cta-whats-next">So, what's next?</h6>
             </div>
             <div class="cta-buttons">
