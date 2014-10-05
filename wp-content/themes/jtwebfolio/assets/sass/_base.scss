@@ -710,7 +710,8 @@ $head-marg:283px;
 				//.entry-info
 				.entry-image {
 					img {
-						@include transform(translate(-50%,-50%) rotate(-10deg));
+						@include transform(translate(-50%,-50%) rotate(-5deg));
+						@include opacity(10);
 					}
 				}
 			}

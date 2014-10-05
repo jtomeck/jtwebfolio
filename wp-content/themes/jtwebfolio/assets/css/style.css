@@ -45,7 +45,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/*! normalize.css 2012-07-07T09:50 UTC - http://github.com/necolas/normalize.css */
+/* normalize.css 2012-07-07T09:50 UTC - http://github.com/necolas/normalize.css */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -494,48 +494,56 @@ dd {
   src: url("fonts/panefresco1wtregular-webfont-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/panefresco1wtregular-webfont-webfont.woff2") format("woff2"), url("fonts/panefresco1wtregular-webfont-webfont.woff") format("woff"), url("fonts/panefresco1wtregular-webfont-webfont.ttf") format("truetype"), url("fonts/panefresco1wtregular-webfont-webfont.svg#panefresco_1wtregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'panefresco_1wtitalic';
   src: url("fonts/panefresco1wtitalic-webfont-webfont.eot");
   src: url("fonts/panefresco1wtitalic-webfont-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/panefresco1wtitalic-webfont-webfont.woff2") format("woff2"), url("fonts/panefresco1wtitalic-webfont-webfont.woff") format("woff"), url("fonts/panefresco1wtitalic-webfont-webfont.ttf") format("truetype"), url("fonts/panefresco1wtitalic-webfont-webfont.svg#panefresco_1wtitalic") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'panefresco_400wtitalic';
   src: url("fonts/panefresco400wtitalic-webfont-webfont.eot");
   src: url("fonts/panefresco400wtitalic-webfont-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/panefresco400wtitalic-webfont-webfont.woff2") format("woff2"), url("fonts/panefresco400wtitalic-webfont-webfont.woff") format("woff"), url("fonts/panefresco400wtitalic-webfont-webfont.ttf") format("truetype"), url("fonts/panefresco400wtitalic-webfont-webfont.svg#panefresco_400wtitalic") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'panefresco_750wtregular';
   src: url("fonts/panefresco750wtregular-webfont-webfont.eot");
   src: url("fonts/panefresco750wtregular-webfont-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/panefresco750wtregular-webfont-webfont.woff2") format("woff2"), url("fonts/panefresco750wtregular-webfont-webfont.woff") format("woff"), url("fonts/panefresco750wtregular-webfont-webfont.ttf") format("truetype"), url("fonts/panefresco750wtregular-webfont-webfont.svg#panefresco_750wtregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'panefresco_750wtitalic';
   src: url("fonts/panefresco750wtitalic-webfont-webfont.eot");
   src: url("fonts/panefresco750wtitalic-webfont-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/panefresco750wtitalic-webfont-webfont.woff2") format("woff2"), url("fonts/panefresco750wtitalic-webfont-webfont.woff") format("woff"), url("fonts/panefresco750wtitalic-webfont-webfont.ttf") format("truetype"), url("fonts/panefresco750wtitalic-webfont-webfont.svg#panefresco_750wtitalic") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'panefresco_400wtregular';
   src: url("fonts/panefresco400wtregular-webfont-webfont.eot");
   src: url("fonts/panefresco400wtregular-webfont-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/panefresco400wtregular-webfont-webfont.woff2") format("woff2"), url("fonts/panefresco400wtregular-webfont-webfont.woff") format("woff"), url("fonts/panefresco400wtregular-webfont-webfont.ttf") format("truetype"), url("fonts/panefresco400wtregular-webfont-webfont.svg#panefresco_400wtregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'panefresco_999wtregular';
   src: url("fonts/panefresco999wtregular-webfont-webfont.eot");
   src: url("fonts/panefresco999wtregular-webfont-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/panefresco999wtregular-webfont-webfont.woff2") format("woff2"), url("fonts/panefresco999wtregular-webfont-webfont.woff") format("woff"), url("fonts/panefresco999wtregular-webfont-webfont.ttf") format("truetype"), url("fonts/panefresco999wtregular-webfont-webfont.svg#panefresco_999wtregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'panefresco_999wtitalic';
   src: url("fonts/panefresco999wt-italic-webfont-webfont.eot");
   src: url("fonts/panefresco999wt-italic-webfont-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/panefresco999wt-italic-webfont-webfont.woff2") format("woff2"), url("fonts/panefresco999wt-italic-webfont-webfont.woff") format("woff"), url("fonts/panefresco999wt-italic-webfont-webfont.ttf") format("truetype"), url("fonts/panefresco999wt-italic-webfont-webfont.svg#panefresco_999wtitalic") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 /* FONT-MIXIN
 ********************************/
 /* MISC CLASSES
@@ -569,12 +577,15 @@ a.full {
   from {
     -webkit-transform: scale(1);
     opacity: 0.75; }
+
   50% {
     -webkit-transform: scale(1.25);
     opacity: 1.0; }
+
   to {
     -webkit-transform: scale(1);
     opacity: 0.75; } }
+
 .pulse {
   -webkit-animation-name: 'pulse_animation';
   -webkit-animation-duration: 2000ms;
@@ -730,7 +741,7 @@ a {
   -moz-box-shadow: 0 3px 0 #00615f;
   box-shadow: 0 3px 0 #00615f;
   background: #009491;
-  color: #fff;
+  color: white;
   display: inline-block;
   font-family: "panefresco_750wtregular", sans-serif;
   font-size: 20px;
@@ -738,7 +749,7 @@ a {
   text-transform: uppercase; }
   .btn:hover {
     background: #009e9b;
-    color: #fff; }
+    color: white; }
 
 /* CTA SECTIONS
 ********************************/
@@ -755,7 +766,7 @@ a {
     font-weight: normal;
     margin-bottom: .5em; }
   .cta .cta-text {
-    color: #fff;
+    color: white;
     font-family: "panefresco_400wtregular", sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -776,7 +787,7 @@ a {
     -moz-box-shadow: 0 3px 0 #ff5c3f;
     box-shadow: 0 3px 0 #ff5c3f;
     background: #ff8772;
-    color: #fff;
+    color: white;
     display: inline-block;
     font-family: "panefresco_750wtregular", sans-serif;
     font-size: 20px;
@@ -787,7 +798,7 @@ a {
     box-shadow: 0 3px 0 #c25b49; }
     .about .cta .btn:hover {
       background: #ff907c;
-      color: #fff; }
+      color: white; }
   .work .cta .cta-title {
     color: #009491; }
   .work .cta .btn {
@@ -803,7 +814,7 @@ a {
     -moz-box-shadow: 0 3px 0 #00615f;
     box-shadow: 0 3px 0 #00615f;
     background: #009491;
-    color: #fff;
+    color: white;
     display: inline-block;
     font-family: "panefresco_750wtregular", sans-serif;
     font-size: 20px;
@@ -811,7 +822,7 @@ a {
     text-transform: uppercase; }
     .work .cta .btn:hover {
       background: #009e9b;
-      color: #fff; }
+      color: white; }
   .blog .cta .cta-title {
     color: #ffc845; }
   .blog .cta .btn {
@@ -827,7 +838,7 @@ a {
     -moz-box-shadow: 0 3px 0 #ffb912;
     box-shadow: 0 3px 0 #ffb912;
     background: #ffc845;
-    color: #fff;
+    color: white;
     display: inline-block;
     font-family: "panefresco_750wtregular", sans-serif;
     font-size: 20px;
@@ -838,7 +849,7 @@ a {
     box-shadow: 0 3px 0 #f7ae00; }
     .blog .cta .btn:hover {
       background: #ffcb4f;
-      color: #fff; }
+      color: white; }
   .blog .cta .cta-title {
     color: #70b1c9; }
   .blog .cta .btn {
@@ -854,7 +865,7 @@ a {
     -moz-box-shadow: 0 3px 0 #4b9dbb;
     box-shadow: 0 3px 0 #4b9dbb;
     background: #70b1c9;
-    color: #fff;
+    color: white;
     display: inline-block;
     font-family: "panefresco_750wtregular", sans-serif;
     font-size: 20px;
@@ -865,7 +876,7 @@ a {
     box-shadow: 0 3px 0 #418fac; }
     .blog .cta .btn:hover {
       background: #77b5cc;
-      color: #fff; }
+      color: white; }
   .single-jtw_work .cta .wrapper {
     padding-left: 10% !important;
     padding-right: 10% !important; }
@@ -924,7 +935,7 @@ a {
           -o-border-radius: 10px;
           border-radius: 10px;
           behavior: url(pie/PIE.htc);
-          color: #fff;
+          color: white;
           font-family: "panefresco_400wtregular", sans-serif;
           font-size: 18px;
           font-style: normal;
@@ -1284,7 +1295,7 @@ a {
         margin: 0 auto;
         width: 80%; }
         .site-content .content-area .entry-header .entry-info .entry-tagline .entry-title {
-          color: #fff;
+          color: white;
           font-family: "panefresco_400wtregular", sans-serif;
           font-size: 25px;
           font-style: normal;
@@ -1359,13 +1370,13 @@ a {
       height: auto;
       width: 100%; }
   .site-content .content-area .type-jtw_work .entry-header .entry-info .entry-title {
-    color: #fff;
+    color: white;
     font-family: "panefresco_400wtregular", sans-serif;
     font-size: 32px;
     font-style: normal;
     font-weight: normal; }
   .site-content .content-area .type-jtw_work .entry-header .entry-info .entry-desc {
-    color: #fff;
+    color: white;
     font-family: "panefresco_400wtregular", sans-serif;
     font-size: 14px;
     font-style: normal;
@@ -1375,17 +1386,20 @@ a {
     padding: 0 35px;
     max-width: 615px; }
   .site-content .content-area .type-jtw_work .entry-header .entry-image img {
-    -webkit-transform: translate(-50%, -50%) rotate(-10deg);
-    -moz-transform: translate(-50%, -50%) rotate(-10deg);
-    -ms-transform: translate(-50%, -50%) rotate(-10deg);
-    -o-transform: translate(-50%, -50%) rotate(-10deg);
-    transform: translate(-50%, -50%) rotate(-10deg); }
+    -webkit-transform: translate(-50%, -50%) rotate(-5deg);
+    -moz-transform: translate(-50%, -50%) rotate(-5deg);
+    -ms-transform: translate(-50%, -50%) rotate(-5deg);
+    -o-transform: translate(-50%, -50%) rotate(-5deg);
+    transform: translate(-50%, -50%) rotate(-5deg);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" 10 ")";
+    filter: alpha(opacity=10);
+    opacity: 0.1; }
   .site-content .content-area .type-jtw_work .contribution {
     background: #1f2022;
     padding: 28px 25px 25px;
     text-align: center; }
     .site-content .content-area .type-jtw_work .contribution .contribution-title {
-      color: #fff;
+      color: white;
       font-family: "panefresco_1wtregular", sans-serif;
       font-size: 18px;
       font-style: normal;
@@ -1400,17 +1414,20 @@ a {
       -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" 40 ")";
       filter: alpha(opacity=40);
       opacity: 0.4;
-      margin-top: 10px; }
-@-webkit-keyframes pulse_animation {
-  from {
-    -webkit-transform: scale(1);
-    opacity: 0.3; }
-  50% {
-    -webkit-transform: scale(1.25);
-    opacity: 0.4; }
-  to {
-    -webkit-transform: scale(1);
-    opacity: 0.3; } }
+      margin-top: 10px;
+      @-webkit-keyframes pulse_animation {
+        from {
+          -webkit-transform: scale(1);
+          opacity: 0.3; }
+
+        50% {
+          -webkit-transform: scale(1.25);
+          opacity: 0.4; }
+
+        to {
+          -webkit-transform: scale(1);
+          opacity: 0.3; } }
+ }
   .site-content .content-area .type-jtw_work .entry-content {
     padding: 0 !Important; }
     .site-content .content-area .type-jtw_work .entry-content .detail .wrapper {
@@ -1890,7 +1907,7 @@ DESKTOP
             -moz-backface-visibility: hidden;
             -ms-backface-visibility: hidden;
             backface-visibility: hidden;
-            color: #fff;
+            color: white;
             font-family: "panefresco_400wtregular", sans-serif;
             font-size: 24px;
             font-style: normal;
@@ -2279,5 +2296,3 @@ DESKTOP
 iPHONE 5 MEDIA QUERY
 Want to get fancy for no good reason? Knock yourself out.
 */
-
-/*# sourceMappingURL=style.css.map */
