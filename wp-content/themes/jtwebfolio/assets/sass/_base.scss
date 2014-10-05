@@ -771,9 +771,6 @@ $head-marg:283px;
 					//.detail-header
 					.detail-content {
 						.detail-image {
-							@include border-radius(2%);
-							@include box-shadow(0,5px,20px,rgba(0,0,0,.25));
-							overflow:hidden;
 							.container {
 								img {
 									display:block;
@@ -782,8 +779,11 @@ $head-marg:283px;
 								}	
 							}
 							&.is-website {
+								@include border-radius(2%);
+								@include box-shadow(0,5px,20px,rgba(0,0,0,.25));
 								background:url(../img/browser-topbar.svg) top no-repeat;
 								background-size:101.5%;
+								overflow:hidden;
 								padding-top:9.5%;
 								.container {}
 							}
