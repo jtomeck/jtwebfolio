@@ -2,7 +2,6 @@
 ********************************/
 
 .cta {
-	background:darken($drkgry,3%);
 	.wrapper {
 		padding:6% 8% 5% !important;
 	}
@@ -189,24 +188,24 @@
 	/***********************************/
 	
 	.content-area {
-		.type-page {
-			.entry-header {
-				.entry-info {
-					.entry-icon {
-						img {}
-					}
-					.entry-tagline {
-						width:590px;
-						.entry-title {}
-					}
-				}
-				//.entry-info
-				.entry-image {
+		.entry-header {
+			.entry-info {
+				.entry-icon {
 					img {}
 				}
-				//.entry-image
+				.entry-tagline {
+					width:590px;
+					.entry-title {}
+				}
 			}
-			//.entry-header
+			//.entry-info
+			.entry-image {
+				img {}
+			}
+			//.entry-image
+		}
+		//.entry-header
+		.type-page {
 			.entry-content {
 				padding:6% 8%;
 				p {
@@ -243,6 +242,30 @@
 			//.add-skills
 		}
 		//.type-page
+		.work-archive {
+			.entry-content {
+				.project {
+					width:25%;
+					.project-image {
+						img {}
+					}
+					//.project-image
+					.project-content {
+						.project-title {}
+						.project-tags {
+							.tag {
+								&:first-child {}
+							}
+						}
+						//.project-tags
+					}
+					//.project-content
+				}
+				//.project
+			}
+			//.entry-content
+		}
+		//.work-archive
 	}
 	//.content-area
 

@@ -271,27 +271,27 @@
 	/***********************************/
 	
 	.content-area {
-		.type-page {
-			.entry-header {
-				.entry-info {
-					top:12%;
-					.entry-icon {
-						margin-bottom:25px;
-						width:140px;
-						img {}
-					}
-					.entry-tagline {
-						.entry-title {}
-					}
-				}
-				//.entry-info
-				.entry-image {
-					padding-bottom:48%;
+		.entry-header {
+			.entry-info {
+				top:12%;
+				.entry-icon {
+					margin-bottom:25px;
+					width:140px;
 					img {}
 				}
-				//.entry-image
+				.entry-tagline {
+					.entry-title {}
+				}
 			}
-			//.entry-header
+			//.entry-info
+			.entry-image {
+				padding-bottom:48%;
+				img {}
+			}
+			//.entry-image
+		}
+		//.entry-header
+		.type-page {
 			.entry-content {
 				padding:7% 10%;
 			}
@@ -320,6 +320,71 @@
 			//.add-skills
 		}
 		//.type-page
+		.work-archive {
+			.entry-content {
+				.project {
+					overflow:hidden;
+					.project-image {
+						img {
+							@include transition(all .5s ease-in-out 0);
+						}
+					}
+					//.project-image
+					.project-content {
+						@include transition(all .25s ease-in-out .25s);
+						top:42%;
+						.project-title {
+							font-size:22px;
+						}
+						.project-tags {
+							.tag {
+								font-size:12px;
+								&:first-child {}
+							}
+						}
+						//.project-tags
+					}
+					//.project-content
+					.hover {
+						$dim:76px;
+						@include transition(all .25s ease-in-out .25s);
+						background:url(../img/proj_overlay.svg) no-repeat;
+						background-size:100%;
+						height:$dim;
+						left:50%;
+						margin-left:-$dim/2;
+						margin-top:-$dim/2;
+						position:absolute;
+						top:120%;
+						width:$dim;
+					}
+					&:hover {
+						.project-image {
+							img {
+								@include blur(0);
+								@include transition(all .5s ease-in-out .25s);
+								@include transform(translate(-50%,-50%) rotate(0) scale(1.2));
+								@include opacity(100);
+							}
+						}
+						//:hover .project-image
+						.project-content {
+							@include transition(all .25s ease-in-out 0);
+							top:-100%;
+						}
+						//:hover .project-content
+						.hover {
+							@include transition(all .25s ease-in-out 0);
+							top:50%;
+						}
+					}
+					//:hover
+				}
+				//.project
+			}
+			//.entry-content
+		}
+		//.work-archive
 	}
 	//.content-area
 

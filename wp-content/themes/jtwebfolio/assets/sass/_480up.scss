@@ -177,24 +177,24 @@
 	/***********************************/
 	
 	.content-area {
-		.type-page {
-			.entry-header {
-				.entry-info {
-					.entry-icon {
-						img {}
-					}
-					.entry-tagline {
-						.entry-title {}
-					}
-				}
-				//.entry-info
-				.entry-image {
-					padding-bottom:80%;
+		.entry-header {
+			.entry-info {
+				.entry-icon {
 					img {}
 				}
-				//.entry-image
+				.entry-tagline {
+					.entry-title {}
+				}
 			}
-			//.entry-header
+			//.entry-info
+			.entry-image {
+				padding-bottom:80%;
+				img {}
+			}
+			//.entry-image
+		}
+		//.entry-header
+		.type-page {
 			.entry-content {}
 			//.entry-content
 
@@ -226,6 +226,29 @@
 			//.add-skills
 		}
 		//.type-page
+		.work-archive {
+			.entry-content {
+				.project {
+					.project-image {
+						img {}
+					}
+					//.project-image
+					.project-content {
+						.project-title {}
+						.project-tags {
+							.tag {
+								&:first-child {}
+							}
+						}
+						//.project-tags
+					}
+					//.project-content
+				}
+				//.project
+			}
+			//.entry-content
+		}
+		//.work-archive
 	}
 	//.content-area
 

@@ -14,11 +14,11 @@ function jtw_work() {
     $jtw_work = new Super_Custom_Post_Type(
         'jtw_work',
         'Project',
-        'Projects',
+        'Work',
         array(
             'capability_type' => 'page',
             'rewrite' => array(
-                'slug' => 'work'
+                'slug' => 'jtw_work'
             ),
             'supports' => array(
                 'title',
@@ -41,7 +41,7 @@ function jtw_work() {
     ) );*/
 
     $jtw_skill = new Super_Custom_Taxonomy(
-        'skills',
+        'jtw_skills',
         'Skill',
         'Skills',
         'categories'

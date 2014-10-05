@@ -144,7 +144,7 @@ $btn-padding:13px 17px 11px;
 		margin-bottom:.5em;
 	}
 	.cta-text {
-		@include font($wht,$font,14px);
+		@include font($wht,$font,16px);
 		margin-bottom:20px;
 	}
 	// ABOUT PAGE CTA
@@ -556,58 +556,58 @@ $head-marg:283px;
 	/***********************************/
 	
 	.content-area {
-		.type-page {
-			.entry-header {
-				position:relative;
-				.entry-info {
-					bottom:0;
-					left:0;
-					margin:auto;
-					position:absolute;
-					right:0;
-					top:35%;
-					text-align:center;
-					z-index:2;
-					.entry-icon {
-						margin:0 auto 20px;
-						width:100px;
-						img {
-							height:auto;
-							width:100%;
-						}
-					}
-					.entry-tagline {
-						margin:0 auto;
-						width:80%;
-						.entry-title {
-							@include font($wht,$font,25px);
-							line-height:1.2em;
-							text-transform:none;
-						}
-					}
-				}
-				//.entry-info
-				.entry-image {
-					background:$drkgry;
-					height:0;
-					overflow:hidden;
-					padding-bottom:125%;
-					position:relative;
+		.entry-header {
+			background:$drkgry;
+			position:relative;
+			.entry-info {
+				bottom:0;
+				left:0;
+				margin:auto;
+				position:absolute;
+				right:0;
+				top:35%;
+				text-align:center;
+				z-index:2;
+				.entry-icon {
+					margin:0 auto 20px;
+					width:100px;
 					img {
-						//@include blur(3px);
-						@include transform(translate(-50%,-50%));
-						@include opacity(25);
-						height:100%;
-						left:50%;
-						position:absolute;
-						top:50%;
-						width:auto;
-						z-index:1;
+						height:auto;
+						width:100%;
 					}
 				}
-				//.entry-image
+				.entry-tagline {
+					margin:0 auto;
+					width:80%;
+					.entry-title {
+						@include font($wht,$font,25px);
+						line-height:1.2em;
+						text-transform:none;
+					}
+				}
 			}
-			//.entry-header
+			//.entry-info
+			.entry-image {
+				height:0;
+				overflow:hidden;
+				padding-bottom:125%;
+				position:relative;
+				img {
+					//@include blur(3px);
+					@include transform(translate(-50%,-50%));
+					@include opacity(20);
+					height:100%;
+					left:50%;
+					position:absolute;
+					top:50%;
+					width:auto;
+					z-index:1;
+				}
+			}
+			//.entry-image
+		}
+		//.entry-header
+		.type-page {
 			.entry-content {
 				padding:30px;
 				text-align:center;
@@ -655,6 +655,68 @@ $head-marg:283px;
 			//.add-skills
 		}
 		//.type-page
+		.work-archive {
+			.entry-content {
+				@include clearfix;
+				background:$drkrgry;
+				padding:0 !important;
+				.project {
+					@include box-shadow(0, 0, 50px, rgba(0,0,0,.25), $inset:true);
+					background:$ltrgry;
+					float:left;
+					position:relative;
+					width:50%;
+					.project-image {
+						height:0;
+						overflow:hidden;
+						padding-bottom:100%;
+						position:relative;
+						img {
+							@include blur(1px);
+							@include transform(translate(-50%,-50%) rotate(-10deg));
+							@include opacity(10);
+							display:block;
+							height:120%;
+							left:50%;
+							position:absolute;
+							top:50%;
+							width:auto;
+						}
+					}
+					//.project-image
+					.project-content {
+						position:absolute;
+						top:40%;
+						width:100%;
+						.project-title {
+							font-family:$md-font;
+							margin-bottom:10px;
+						}
+						.project-tags {
+							margin:0;
+							padding:0 20px;
+							text-align:center;
+							.tag {
+								@include font(darken($grn,10%),$font,11px);
+								background:url(../img/tag.svg) 0 1px no-repeat;
+								background-size:11px;
+								display:inline-block;
+								margin:0 0 0 5px;
+								padding-left:15px;
+								&:first-child {
+									margin:0;
+								}
+							}
+						}
+						//.project-tags
+					}
+					//.project-content
+				}
+				//.project
+			}
+			//.entry-content
+		}
+		//.work-archive
 	}
 	//.content-area
 

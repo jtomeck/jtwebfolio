@@ -110,29 +110,29 @@
 	/***********************************/
 	
 	.content-area {
-		.type-page {
-			.entry-header {
-				.entry-info {
-					.entry-icon {
-						img {}
-					}
-					.entry-tagline {
-						.entry-title {
-							font-size:38px;
-						}
+		.entry-header {
+			.entry-info {
+				.entry-icon {
+					img {}
+				}
+				.entry-tagline {
+					.entry-title {
+						font-size:38px;
 					}
 				}
-				//.entry-info
-				.entry-image {
-					padding-bottom:55%;
-					img {
-						height:auto;
-						width:100%;
-					}
-				}
-				//.entry-image
 			}
-			//.entry-header
+			//.entry-info
+			.entry-image {
+				padding-bottom:55%;
+				img {
+					height:auto;
+					width:100%;
+				}
+			}
+			//.entry-image
+		}
+		//.entry-header
+		.type-page {
 			.entry-content {
 				padding:40px 50px;
 				.about & {
@@ -181,6 +181,30 @@
 			//.add-skills
 		}
 		//.type-page
+		.work-archive {
+			.entry-content {
+				.project {
+					width:33.3333%;
+					.project-image {
+						img {}
+					}
+					//.project-image
+					.project-content {
+						.project-title {}
+						.project-tags {
+							.tag {
+								&:first-child {}
+							}
+						}
+						//.project-tags
+					}
+					//.project-content
+				}
+				//.project
+			}
+			//.entry-content
+		}
+		//.work-archive
 	}
 	//.content-area
 
