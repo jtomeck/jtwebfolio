@@ -18,13 +18,13 @@ $cta_buttons = $cfs->get('jtw_project_cta_buttons');
 			<div class="client-logo">
 				<img src="<?php echo $client_logo; ?>" alt="">
 			</div>
-			<h1 class="entry-title"><?php the_title(); ?></h1>
+			<!--<h1 class="entry-title"><?php the_title(); ?></h1> -->
 			<p class="entry-desc"><?php echo $proj_desc; ?></p>
 		</div>
 	</header><!-- .entry-header -->
 	
 	<div class="contribution">
-		<h1 class="contribution-title">What did I create?<span>scroll on, my friend...</span></h1>
+		<h1 class="contribution-title">Here's what I did<span>scroll on, my friend...</span></h1>
 		<a href="#section" class="slide_link pulse-trans"></a>
 	</div>
 
