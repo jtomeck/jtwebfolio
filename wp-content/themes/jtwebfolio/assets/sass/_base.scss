@@ -741,20 +741,6 @@ $head-marg:283px;
 				.slide_link {
 					@include opacity(40);
 					margin-top:10px;
-					@-webkit-keyframes pulse_animation {
-						from {
-							-webkit-transform: scale(1.0);
-							opacity: 0.3;
-						}
-						50% {
-							-webkit-transform: scale(1.25);
-							opacity: 0.4;
-						}
-						to { 
-							-webkit-transform: scale(1.0);
-							opacity: 0.3;
-						}
-					}
 				}
 			}
 			.entry-content {

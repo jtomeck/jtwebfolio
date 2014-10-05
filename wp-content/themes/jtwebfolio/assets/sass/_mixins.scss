@@ -174,8 +174,30 @@ a.full {
   }
 }
 
+@-webkit-keyframes pulse_animation_trans {
+  from {
+    -webkit-transform: scale(1.0);
+    opacity: 0.3;
+  }
+  50% {
+    -webkit-transform: scale(1.25);
+    opacity: 0.4;
+  }
+  to { 
+    -webkit-transform: scale(1.0);
+    opacity: 0.3;
+  }
+}
+
 .pulse {
   -webkit-animation-name: 'pulse_animation';
+  -webkit-animation-duration: 2000ms;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+.pulse-trans {
+  -webkit-animation-name: 'pulse_animation_trans';
   -webkit-animation-duration: 2000ms;
   -webkit-transform-origin: 50% 50%;
   -webkit-animation-iteration-count: infinite;

@@ -25,7 +25,7 @@ $cta_buttons = $cfs->get('jtw_project_cta_buttons');
 	
 	<div class="contribution">
 		<h1 class="contribution-title">What did I create?<span>scroll on, my friend...</span></h1>
-		<a href="#section" class="slide_link pulse"></a>
+		<a href="#section" class="slide_link pulse-trans"></a>
 	</div>
 
 	<div class="entry-content">
