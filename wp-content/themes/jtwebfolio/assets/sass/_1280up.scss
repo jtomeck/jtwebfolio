@@ -10,9 +10,14 @@
 	.btn {
 		font-size:32px !important;
 	}
-}
-.home {
-	.cta {}
+	.single-jtw_work & {
+		.cta-buttons {
+			padding:20px 0;
+			.btn {
+				font-size:28px !important;
+			}
+		}
+	}
 }
 //.cta
 

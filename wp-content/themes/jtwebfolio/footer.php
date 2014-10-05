@@ -9,7 +9,6 @@
 
 $cta_heading = $cfs->get('jtw_cta_heading');
 $cta_text = $cfs->get('jtw_cta_text');
-$cta_heading = $cfs->get('jtw_cta_heading');
 $btn_label = $cfs->get('jtw_cta_button_label');
 $btn_link = $cfs->get('jtw_cta_button_link');
 $menu_toggle = $cfs->get('jtw_toggle_menu');

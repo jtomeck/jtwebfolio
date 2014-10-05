@@ -181,6 +181,46 @@
 			//.add-skills
 		}
 		//.type-page
+		.type-jtw_work {
+			.entry-header {
+				.entry-info {
+					.client-logo {
+						width:28%;
+						img {}
+					}
+					//.client-logo
+					.entry-title {}
+					.entry-desc {}
+				}
+				//.entry-info
+			}
+			//.entry-header
+			.entry-content {
+				.detail {
+					.wrapper {}
+					.detail-header {
+						.detail-title {}
+					}
+					//.detail-header
+					.detail-content {
+						.detail-image {
+							.container {
+								img {}	
+							}
+							&.is-website {
+								.container {}
+							}
+						}
+						//.detail-image
+					}
+					//.detail-content
+					&:nth-of-type(2n) {}
+				}
+				//.detail
+			}
+			//.entry-content
+		}
+		//.type-jtw_work
 		.work-archive {
 			.entry-content {
 				overflow:hidden;

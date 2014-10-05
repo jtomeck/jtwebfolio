@@ -113,11 +113,15 @@ i, em {
 }
 
 a {
+	color:$grn;
 	text-decoration:none;
 	&:visited,
 	&:hover,
 	&:active {
 		text-decoration:none;
+	}
+	&:hover {
+		color:lighten($grn,10%);
 	}
 }
 
@@ -190,8 +194,40 @@ $btn-padding:13px 17px 11px;
 			@include box-shadow(0, 3px, 0, darken($blu,15%), $inset: false);
 		}
 	}
+	.single-jtw_work & {
+		.wrapper {
+			padding-left:10% !important;
+			padding-right:10% !important;
+		}
+		.cta-content {
+			float:none;
+			text-align:center;
+			width:100%;
+			.cta-whats-next {
+				color:lighten($drkrgry,30%);
+				font-size:20px;
+				padding-bottom:25px;
+			}
+		}
+		.btn {
+			display:inline-block;
+			float:none;
+			font-size:15px;
+			margin:0 4px;
+			padding:12px 12px 8px;
+		}
+	}
 }
 //.cta
+
+.slide_link {
+	background:url(../img/circle_arrow_divide.svg) center center no-repeat;
+	content:"";
+	display:block;
+	height:22px;
+	margin:25px auto 0;
+	width:22px;
+}
 
 /* MOBILE NAVIGATION
 ********************************/
@@ -408,14 +444,6 @@ $head-marg:283px;
 	/***********************************/
 	.main-banner {
 		text-align:center;
-		.slide_link {
-			background:url(../img/circle_arrow_divide.svg) center center no-repeat;
-			content:"";
-			display:block;
-			height:22px;
-			margin:25px auto 0;
-			width:22px;
-		}
 		.main-title {
 			@include font($drkgry,$bld-font,42px);
 			-webkit-transition-delay: .5s;
@@ -593,7 +621,7 @@ $head-marg:283px;
 				padding-bottom:125%;
 				position:relative;
 				img {
-					//@include blur(3px);
+					@include blur(3px);
 					@include transform(translate(-50%,-50%));
 					@include opacity(20);
 					height:100%;
@@ -655,6 +683,117 @@ $head-marg:283px;
 			//.add-skills
 		}
 		//.type-page
+		.type-jtw_work {
+			.entry-header {
+				.entry-info {
+					.client-logo {
+						margin:0 auto 30px;
+						width:50%;
+						img {
+							@include opacity(50);
+							height:auto;
+							width:100%;
+						}
+					}
+					//.client-logo
+					.entry-title {
+						@include font($wht,$font,32px);
+					}
+					.entry-desc {
+						@include font($wht,$font,14px);
+						line-height:1.5em;
+						margin:0 auto;
+						padding:0 35px;
+						max-width:615px;
+					}
+				}
+				//.entry-info
+				.entry-image {
+					img {
+						@include transform(translate(-50%,-50%) rotate(-10deg));
+					}
+				}
+			}
+			//.entry-header
+			.contribution {
+				background:$drkrgry;
+				padding:28px 25px 25px;
+				text-align:center;
+				.contribution-title {
+					@include font($wht,$lt-font,18px);
+					line-height:1.3em;
+					margin:0;
+					span {
+						color:lighten($drkrgry,30);
+						display:block;
+						font-size:12px;
+					}
+				}
+				.slide_link {
+					@include opacity(40);
+					margin-top:10px;
+					@-webkit-keyframes pulse_animation {
+						from {
+							-webkit-transform: scale(1.0);
+							opacity: 0.3;
+						}
+						50% {
+							-webkit-transform: scale(1.25);
+							opacity: 0.4;
+						}
+						to { 
+							-webkit-transform: scale(1.0);
+							opacity: 0.3;
+						}
+					}
+				}
+			}
+			.entry-content {
+				padding:0 !Important;
+				.detail {
+					.wrapper {
+						padding:40px 30px 50px;
+					}
+					.detail-header {
+						padding-bottom:20px;
+						text-align:center;
+						.detail-title {
+							@include font($drkgry,$lt-font,24px);
+							line-height:1.2em;
+						}
+					}
+					//.detail-header
+					.detail-content {
+						.detail-image {
+							@include border-radius(2%);
+							@include box-shadow(0,5px,20px,rgba(0,0,0,.25));
+							overflow:hidden;
+							.container {
+								img {
+									display:block;
+									height:auto;
+									width:100%;
+								}	
+							}
+							&.is-website {
+								background:url(../img/browser-topbar.svg) top no-repeat;
+								background-size:101.5%;
+								padding-top:9.5%;
+								.container {}
+							}
+						}
+						//.detail-image
+					}
+					//.detail-content
+					&:nth-of-type(2n) {
+						background:$ltgry;
+					}
+				}
+				//.detail
+			}
+			//.entry-content
+		}
+		//.type-jtw_work
 		.work-archive {
 			.entry-content {
 				@include clearfix;
@@ -674,7 +813,7 @@ $head-marg:283px;
 						img {
 							@include blur(1px);
 							@include transform(translate(-50%,-50%) rotate(-10deg));
-							@include opacity(10);
+							@include opacity(15);
 							display:block;
 							height:120%;
 							left:50%;

@@ -12,6 +12,9 @@
 		.cta-text {
 			font-size:22px;
 		}
+		.cta-whats-next {
+			font-size:24px!important;
+		}
 	}
 	.btn {
 		font-size:24px !important;
@@ -164,7 +167,7 @@
 				.skill-text {
 					@include opacity(100);
 					float:left;
-					font-size:17px;
+					font-size:15px;
 					margin-right:$marg-right;
 					position:static;
 					width:$width;
@@ -242,6 +245,51 @@
 			//.add-skills
 		}
 		//.type-page
+		.type-jtw_work {
+			.entry-header {
+				.entry-info {
+					.client-logo {
+						width:22%;
+						img {}
+					}
+					//.client-logo
+					.entry-title {}
+					.entry-desc {
+						font-size:18px;
+						max-width:660px;
+					}
+				}
+				//.entry-info
+			}
+			//.entry-header
+			.entry-content {
+				.detail {
+					.wrapper {}
+					.detail-header {
+						.detail-title {
+							font-size:46px;
+						}
+					}
+					//.detail-header
+					.detail-content {
+						.detail-image {
+							.container {
+								img {}	
+							}
+							&.is-website {
+								.container {}
+							}
+						}
+						//.detail-image
+					}
+					//.detail-content
+					&:nth-of-type(2n) {}
+				}
+				//.detail
+			}
+			//.entry-content
+		}
+		//.type-jtw_work
 		.work-archive {
 			.entry-content {
 				.project {

@@ -708,9 +708,12 @@ i, em {
     font-style: normal; }
 
 a {
+  color: #009491;
   text-decoration: none; }
   a:visited, a:hover, a:active {
     text-decoration: none; }
+  a:hover {
+    color: #00c7c3; }
 
 /* BUTTONS & FORMS
 ********************************/
@@ -734,7 +737,8 @@ a {
   padding: 13px 17px 11px;
   text-transform: uppercase; }
   .btn:hover {
-    background: #009e9b; }
+    background: #009e9b;
+    color: #fff; }
 
 /* CTA SECTIONS
 ********************************/
@@ -782,7 +786,8 @@ a {
     -moz-box-shadow: 0 3px 0 #c25b49;
     box-shadow: 0 3px 0 #c25b49; }
     .about .cta .btn:hover {
-      background: #ff907c; }
+      background: #ff907c;
+      color: #fff; }
   .work .cta .cta-title {
     color: #009491; }
   .work .cta .btn {
@@ -805,7 +810,8 @@ a {
     padding: 13px 17px 11px;
     text-transform: uppercase; }
     .work .cta .btn:hover {
-      background: #009e9b; }
+      background: #009e9b;
+      color: #fff; }
   .blog .cta .cta-title {
     color: #ffc845; }
   .blog .cta .btn {
@@ -831,7 +837,8 @@ a {
     -moz-box-shadow: 0 3px 0 #f7ae00;
     box-shadow: 0 3px 0 #f7ae00; }
     .blog .cta .btn:hover {
-      background: #ffcb4f; }
+      background: #ffcb4f;
+      color: #fff; }
   .blog .cta .cta-title {
     color: #70b1c9; }
   .blog .cta .btn {
@@ -857,7 +864,33 @@ a {
     -moz-box-shadow: 0 3px 0 #418fac;
     box-shadow: 0 3px 0 #418fac; }
     .blog .cta .btn:hover {
-      background: #77b5cc; }
+      background: #77b5cc;
+      color: #fff; }
+  .single-jtw_work .cta .wrapper {
+    padding-left: 10% !important;
+    padding-right: 10% !important; }
+  .single-jtw_work .cta .cta-content {
+    float: none;
+    text-align: center;
+    width: 100%; }
+    .single-jtw_work .cta .cta-content .cta-whats-next {
+      color: #686b72;
+      font-size: 20px;
+      padding-bottom: 25px; }
+  .single-jtw_work .cta .btn {
+    display: inline-block;
+    float: none;
+    font-size: 15px;
+    margin: 0 4px;
+    padding: 12px 12px 8px; }
+
+.slide_link {
+  background: url(../img/circle_arrow_divide.svg) center center no-repeat;
+  content: "";
+  display: block;
+  height: 22px;
+  margin: 25px auto 0;
+  width: 22px; }
 
 /* MOBILE NAVIGATION
 ********************************/
@@ -1068,13 +1101,6 @@ a {
       padding: 40px 30px; }
   .site-content .main-banner {
     text-align: center; }
-    .site-content .main-banner .slide_link {
-      background: url(../img/circle_arrow_divide.svg) center center no-repeat;
-      content: "";
-      display: block;
-      height: 22px;
-      margin: 25px auto 0;
-      width: 22px; }
     .site-content .main-banner .main-title {
       color: #2c2f31;
       font-family: "panefresco_999wtregular", sans-serif;
@@ -1271,6 +1297,10 @@ a {
       padding-bottom: 125%;
       position: relative; }
       .site-content .content-area .entry-header .entry-image img {
+        -webkit-filter: blur(3px);
+        -moz-filter: blur(3px);
+        -o-filter: blur(3px);
+        filter: blur(3px);
         -webkit-transform: translate(-50%, -50%);
         -moz-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
@@ -1319,6 +1349,105 @@ a {
           width: 100%; }
         .site-content .content-area .type-page .add-skills .add-skills-content .skills .skill:last-child {
           margin: 0; }
+  .site-content .content-area .type-jtw_work .entry-header .entry-info .client-logo {
+    margin: 0 auto 30px;
+    width: 50%; }
+    .site-content .content-area .type-jtw_work .entry-header .entry-info .client-logo img {
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" 50 ")";
+      filter: alpha(opacity=50);
+      opacity: 0.5;
+      height: auto;
+      width: 100%; }
+  .site-content .content-area .type-jtw_work .entry-header .entry-info .entry-title {
+    color: #fff;
+    font-family: "panefresco_400wtregular", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: normal; }
+  .site-content .content-area .type-jtw_work .entry-header .entry-info .entry-desc {
+    color: #fff;
+    font-family: "panefresco_400wtregular", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.5em;
+    margin: 0 auto;
+    padding: 0 35px;
+    max-width: 615px; }
+  .site-content .content-area .type-jtw_work .entry-header .entry-image img {
+    -webkit-transform: translate(-50%, -50%) rotate(-10deg);
+    -moz-transform: translate(-50%, -50%) rotate(-10deg);
+    -ms-transform: translate(-50%, -50%) rotate(-10deg);
+    -o-transform: translate(-50%, -50%) rotate(-10deg);
+    transform: translate(-50%, -50%) rotate(-10deg); }
+  .site-content .content-area .type-jtw_work .contribution {
+    background: #1f2022;
+    padding: 28px 25px 25px;
+    text-align: center; }
+    .site-content .content-area .type-jtw_work .contribution .contribution-title {
+      color: #fff;
+      font-family: "panefresco_1wtregular", sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 1.3em;
+      margin: 0; }
+      .site-content .content-area .type-jtw_work .contribution .contribution-title span {
+        color: #686b72;
+        display: block;
+        font-size: 12px; }
+    .site-content .content-area .type-jtw_work .contribution .slide_link {
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" 40 ")";
+      filter: alpha(opacity=40);
+      opacity: 0.4;
+      margin-top: 10px; }
+@-webkit-keyframes pulse_animation {
+  from {
+    -webkit-transform: scale(1);
+    opacity: 0.3; }
+  50% {
+    -webkit-transform: scale(1.25);
+    opacity: 0.4; }
+  to {
+    -webkit-transform: scale(1);
+    opacity: 0.3; } }
+  .site-content .content-area .type-jtw_work .entry-content {
+    padding: 0 !Important; }
+    .site-content .content-area .type-jtw_work .entry-content .detail .wrapper {
+      padding: 40px 30px 50px; }
+    .site-content .content-area .type-jtw_work .entry-content .detail .detail-header {
+      padding-bottom: 20px;
+      text-align: center; }
+      .site-content .content-area .type-jtw_work .entry-content .detail .detail-header .detail-title {
+        color: #2c2f31;
+        font-family: "panefresco_1wtregular", sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1.2em; }
+    .site-content .content-area .type-jtw_work .entry-content .detail .detail-content .detail-image {
+      background-clip: padding-box;
+      /* stops bg color from leaking outside the border: */
+      -webkit-border-radius: 2%;
+      -moz-border-radius: 2%;
+      -ms-border-radius: 2%;
+      -o-border-radius: 2%;
+      border-radius: 2%;
+      behavior: url(pie/PIE.htc);
+      -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+      overflow: hidden; }
+      .site-content .content-area .type-jtw_work .entry-content .detail .detail-content .detail-image .container img {
+        display: block;
+        height: auto;
+        width: 100%; }
+      .site-content .content-area .type-jtw_work .entry-content .detail .detail-content .detail-image.is-website {
+        background: url(../img/browser-topbar.svg) top no-repeat;
+        background-size: 101.5%;
+        padding-top: 9.5%; }
+    .site-content .content-area .type-jtw_work .entry-content .detail:nth-of-type(2n) {
+      background: #c7cdd3; }
   .site-content .content-area .work-archive .entry-content {
     zoom: 1;
     background: #1f2022;
@@ -1351,9 +1480,9 @@ a {
           -ms-transform: translate(-50%, -50%) rotate(-10deg);
           -o-transform: translate(-50%, -50%) rotate(-10deg);
           transform: translate(-50%, -50%) rotate(-10deg);
-          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" 10 ")";
-          filter: alpha(opacity=10);
-          opacity: 0.1;
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" 15 ")";
+          filter: alpha(opacity=15);
+          opacity: 0.15;
           display: block;
           height: 120%;
           left: 50%;
@@ -1520,6 +1649,9 @@ LARGER MOBILE DEVICES
     font-size: 28px; }
   .cta .cta-content .cta-text {
     font-size: 18px; }
+  .single-jtw_work .cta .btn {
+    font-size: 20px;
+    padding: 13px 17px 11px; }
 
   /* MOBILE NAVIGATION
   ********************************/
@@ -1591,7 +1723,9 @@ LARGER MOBILE DEVICES
       padding-bottom: 80%; }
     .site-content .content-area .type-page .add-skills .add-skills-header, .site-content .content-area .type-page .add-skills .add-skills-content {
       margin: 0 auto;
-      max-width: 75%; } }
+      max-width: 75%; }
+    .site-content .content-area .type-jtw_work .entry-header .entry-info .client-logo {
+      width: 40%; } }
 @media only screen and (min-width: 480px) and (min-width: 515px) {
   .site-content .home-skills .skills-list-wrap .skills-list {
     padding-bottom: 35px; }
@@ -1605,7 +1739,11 @@ LARGER MOBILE DEVICES
     font-size: 22px; } }
 @media only screen and (min-width: 650px) {
   .site-content .main-banner .main-text {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .site-content .content-area .type-jtw_work .entry-header .entry-info .entry-title {
+    font-size: 36px; }
+  .site-content .content-area .type-jtw_work .entry-header .entry-info .entry-desc {
+    font-size: 16px; } }
 /*
 TABLET & SMALLER LAPTOPS
 */
@@ -1651,6 +1789,8 @@ TABLET & SMALLER LAPTOPS
       font-size: 18px; }
     .site-content .content-area .type-page .add-skills .add-skills-header, .site-content .content-area .type-page .add-skills .add-skills-content {
       max-width: 60%; }
+    .site-content .content-area .type-jtw_work .entry-header .entry-info .client-logo {
+      width: 28%; }
     .site-content .content-area .work-archive .entry-content {
       overflow: hidden;
       width: 101%; }
@@ -1835,7 +1975,7 @@ DESKTOP
       font-size: 26px;
       line-height: 1.5em;
       margin: 0 auto;
-      max-width: 610px; }
+      max-width: 620px; }
     .site-content .home-skills .skills-header .skills-title {
       font-size: 232px; }
     .site-content .home-skills .skills-list-wrap {
@@ -1858,6 +1998,16 @@ DESKTOP
       padding-bottom: 48%; }
     .site-content .content-area .type-page .entry-content {
       padding: 7% 10%; }
+    .site-content .content-area .type-jtw_work .entry-header .entry-info .entry-desc {
+      margin: 0 auto; }
+    .site-content .content-area .type-jtw_work .entry-content .detail .wrapper {
+      padding: 50px 10% 80px; }
+    .site-content .content-area .type-jtw_work .entry-content .detail .detail-header .detail-title {
+      font-size: 32px; }
+    .site-content .content-area .type-jtw_work .entry-content .detail .detail-content .detail-image {
+      -webkit-box-shadow: 0 10px 60px rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: 0 10px 60px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 10px 60px rgba(0, 0, 0, 0.25); }
     .site-content .content-area .work-archive .entry-content .project {
       overflow: hidden; }
       .site-content .content-area .work-archive .entry-content .project .project-image img {
@@ -2017,6 +2167,8 @@ DESKTOP
     font-size: 36px; }
   .cta .cta-content .cta-text {
     font-size: 22px; }
+  .cta .cta-content .cta-whats-next {
+    font-size: 24px !important; }
   .cta .btn {
     font-size: 24px !important;
     padding-top: 18px !important;
@@ -2065,7 +2217,7 @@ DESKTOP
             filter: alpha(opacity=100);
             opacity: 1;
             float: left;
-            font-size: 17px;
+            font-size: 15px;
             margin-right: 5.75%;
             position: static;
             width: 15.4%; }
@@ -2083,6 +2235,13 @@ DESKTOP
         font-size: 22px; }
       .site-content .content-area .type-page .add-skills .add-skills-content {
         max-width: 513px; }
+    .site-content .content-area .type-jtw_work .entry-header .entry-info .client-logo {
+      width: 22%; }
+    .site-content .content-area .type-jtw_work .entry-header .entry-info .entry-desc {
+      font-size: 18px;
+      max-width: 660px; }
+    .site-content .content-area .type-jtw_work .entry-content .detail .detail-header .detail-title {
+      font-size: 46px; }
     .site-content .content-area .work-archive .entry-content .project {
       width: 25%; }
 
@@ -2093,6 +2252,10 @@ DESKTOP
   ********************************/
   .cta .btn {
     font-size: 32px !important; }
+  .single-jtw_work .cta .cta-buttons {
+    padding: 20px 0; }
+    .single-jtw_work .cta .cta-buttons .btn {
+      font-size: 28px !important; }
 
   /* MOBILE NAVIGATION
   ********************************/
