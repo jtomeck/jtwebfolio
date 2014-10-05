@@ -29,7 +29,7 @@ $menu_toggle = $cfs->get('jtw_toggle_menu');
                     <?php endif; ?>
                 <?php else : ?>
                     <?php if( $btn_link && $btn_label ) : ?>
-                        <a href="<?php echo $btn_link; ?>" class="btn"><?php echo $btn_label; ?></a>
+                        <a href="<?php bloginfo('url'); ?><?php echo $btn_link; ?>" class="btn"><?php echo $btn_label; ?></a>
                     <?php endif; ?>
                 <?php endif; ?>
             </div>
