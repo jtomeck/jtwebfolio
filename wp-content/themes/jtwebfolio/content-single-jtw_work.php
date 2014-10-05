@@ -24,7 +24,7 @@ $cta_buttons = $cfs->get('jtw_project_cta_buttons');
 			<?php if ( $proj_desc ) : ?>
 			<p class="entry-desc">
 				<?php if ( $done_at_burst ) : ?>
-					<span class="done-at-burst"><strong>NOTE:</strong> I did this work while working at <a href="http://burstmarketing.net">Burst Marketing</a></span>
+					<span class="done-at-burst"><strong>NOTE:</strong> I did this work while working at <a href="http://burstmarketing.net" target="_blank">Burst Marketing</a></span>
 				<?php endif; ?>
 				<?php echo $proj_desc; ?>
 			</p>
