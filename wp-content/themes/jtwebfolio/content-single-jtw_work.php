@@ -16,15 +16,19 @@ $cta_buttons = $cfs->get('jtw_project_cta_buttons');
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<div class="entry-info">
+			<?php if ( $client_logo ) : ?>
 			<div class="client-logo">
 				<img src="<?php echo $client_logo; ?>" alt="">
 			</div>
+			<?php endif; ?>
+			<?php if ( $proj_desc ) : ?>
 			<p class="entry-desc">
 				<?php if ( $done_at_burst ) : ?>
 					<span class="done-at-burst"><strong>NOTE:</strong> I did this work while working at <a href="http://burstmarketing.net">Burst Marketing</a></span>
 				<?php endif; ?>
 				<?php echo $proj_desc; ?>
 			</p>
+			<?php endif; ?>
 		</div>
 	</header><!-- .entry-header -->
 	
