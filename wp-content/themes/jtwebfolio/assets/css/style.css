@@ -1651,8 +1651,11 @@ TABLET & SMALLER LAPTOPS
       font-size: 18px; }
     .site-content .content-area .type-page .add-skills .add-skills-header, .site-content .content-area .type-page .add-skills .add-skills-content {
       max-width: 60%; }
-    .site-content .content-area .work-archive .entry-content .project {
-      width: 33%; } }
+    .site-content .content-area .work-archive .entry-content {
+      overflow: hidden;
+      width: 101%; }
+      .site-content .content-area .work-archive .entry-content .project {
+        width: 33.3333%; } }
 /*
 DESKTOP
 */

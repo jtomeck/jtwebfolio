@@ -183,8 +183,10 @@
 		//.type-page
 		.work-archive {
 			.entry-content {
+				overflow:hidden;
+				width:101%;
 				.project {
-					width:33%;
+					width:33.3333%;
 					.project-image {
 						img {}
 					}
