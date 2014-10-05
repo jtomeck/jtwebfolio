@@ -1,13 +1,13 @@
 /*
 Error: wrong number of arguments (1 for 2) for `lighten'
-        on line 711 of sass/_base.scss, in `font'
-        from line 711 of sass/_base.scss
-        from line 14 of sass/style.scss
+        on line 247 of sass/_480up.scss, in `font'
+        from line 247 of sass/_480up.scss
+        from line 22 of sass/style.scss
 
 Backtrace:
-sass/_base.scss:711:in `font'
-sass/_base.scss:711
-sass/style.scss:14
+sass/_480up.scss:247:in `font'
+sass/_480up.scss:247
+sass/style.scss:22
 /var/lib/gems/1.9.1/gems/sass-3.4.5/lib/sass/script/tree/funcall.rb:303:in `reformat_argument_error'
 /var/lib/gems/1.9.1/gems/sass-3.4.5/lib/sass/script/tree/funcall.rb:146:in `rescue in _perform'
 /var/lib/gems/1.9.1/gems/sass-3.4.5/lib/sass/script/tree/funcall.rb:123:in `_perform'
@@ -122,6 +122,20 @@ sass/style.scss:14
 /var/lib/gems/1.9.1/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
 /var/lib/gems/1.9.1/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
 /var/lib/gems/1.9.1/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:502:in `visit_media'
+/var/lib/gems/1.9.1/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.5/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/1.9.1/gems/sass-3.4.5/lib/sass/stack.rb:115:in `with_frame'
+/var/lib/gems/1.9.1/gems/sass-3.4.5/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/1.9.1/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:52:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/var/lib/gems/1.9.1/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `block in visit'
 /var/lib/gems/1.9.1/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
 /var/lib/gems/1.9.1/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:157:in `visit'
@@ -146,4 +160,4 @@ sass/style.scss:14
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: wrong number of arguments (1 for 2) for `lighten'\A         on line 711 of sass/_base.scss, in `font'\A         from line 711 of sass/_base.scss\A         from line 14 of sass/style.scss"; }
+  content: "Error: wrong number of arguments (1 for 2) for `lighten'\A         on line 247 of sass/_480up.scss, in `font'\A         from line 247 of sass/_480up.scss\A         from line 22 of sass/style.scss"; }
