@@ -2045,7 +2045,7 @@ DESKTOP
       padding: 50px 10% 80px; }
     .site-content .content-area .type-jtw_work .entry-content .detail .detail-header .detail-title {
       font-size: 32px; }
-    .site-content .content-area .type-jtw_work .entry-content .detail .detail-content .detail-image {
+    .site-content .content-area .type-jtw_work .entry-content .detail .detail-content .detail-image.is-website {
       -webkit-box-shadow: 0 10px 60px rgba(0, 0, 0, 0.25);
       -moz-box-shadow: 0 10px 60px rgba(0, 0, 0, 0.25);
       box-shadow: 0 10px 60px rgba(0, 0, 0, 0.25); }

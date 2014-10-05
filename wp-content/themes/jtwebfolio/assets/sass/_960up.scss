@@ -350,11 +350,11 @@
 					//.detail-header
 					.detail-content {
 						.detail-image {
-							@include box-shadow(0,10px,60px,rgba(0,0,0,.25));
 							.container {
 								img {}	
 							}
 							&.is-website {
+								@include box-shadow(0,10px,60px,rgba(0,0,0,.25));
 								.container {}
 							}
 						}
