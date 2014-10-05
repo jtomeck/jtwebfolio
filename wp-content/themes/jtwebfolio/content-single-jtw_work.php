@@ -5,6 +5,7 @@
 
 $client_logo = $cfs->get('jtw_client_logo');
 $proj_desc = $cfs->get('jtw_project_desc');
+$done_at_burst = $cfs->get('jtw_done_at_burst');
 $details = $cfs->get('jtw_details_section');
 $cta_heading = $cfs->get('jtw_project_cta_heading');
 $cta_text = $cfs->get('jtw_project_cta_text');
@@ -18,8 +19,12 @@ $cta_buttons = $cfs->get('jtw_project_cta_buttons');
 			<div class="client-logo">
 				<img src="<?php echo $client_logo; ?>" alt="">
 			</div>
-			<!--<h1 class="entry-title"><?php the_title(); ?></h1> -->
-			<p class="entry-desc"><?php echo $proj_desc; ?></p>
+			<p class="entry-desc">
+				<?php if ( $done_at_burst ) : ?>
+					<span class="done-at-burst"><strong>NOTE:</strong> I did this work while working at <a href="http://burstmarketing.net">Burst Marketing</a></span>
+				<?php endif; ?>
+				<?php echo $proj_desc; ?>
+			</p>
 		</div>
 	</header><!-- .entry-header -->
 	

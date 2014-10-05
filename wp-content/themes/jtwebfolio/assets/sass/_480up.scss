@@ -243,6 +243,9 @@
 					.entry-title {}
 					.entry-desc {
 						font-size:18px;
+						.done-at-burst {
+							@include font(lighten($grn),10%,$font,14px);
+						}
 					}
 				}
 				//.entry-info

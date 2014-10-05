@@ -707,10 +707,15 @@ $head-marg:283px;
 						margin:0 auto;
 						padding:0 35px;
 						max-width:615px;
+						.done-at-burst {
+							@include font(lighten($grn),10%,$font,12px);
+							display:block;
+							padding-bottom:15px;
+						}
 						a {
-							color:lighten($grn,15%);
+							color:$drkgry;
 							&:hover {
-								color:lighten($grn,20%);
+								color:lighten($drkgry,20%);
 							}
 						}
 					}
