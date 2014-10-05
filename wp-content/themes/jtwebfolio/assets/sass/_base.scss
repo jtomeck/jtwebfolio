@@ -708,8 +708,9 @@ $head-marg:283px;
 						padding:0 35px;
 						max-width:615px;
 						.done-at-burst {
-							@include font(lighten($grn,10%),$font,12px);
+							@include font(lighten($grn,10%),$font,14px);
 							display:block;
+							line-height:1.5em;
 							padding-bottom:15px;
 							a {
 								color:lighten($grn,17%);

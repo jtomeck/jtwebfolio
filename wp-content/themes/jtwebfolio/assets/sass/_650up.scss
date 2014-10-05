@@ -22,9 +22,7 @@
 					}
 					.entry-desc {
 						font-size:22px;
-						.done-at-burst {
-							@include font(lighten($grn,10%),$font,16px);
-						}
+						.done-at-burst {}
 					}
 				}
 				//.entry-info

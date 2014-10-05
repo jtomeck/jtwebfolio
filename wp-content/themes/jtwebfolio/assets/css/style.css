@@ -1395,10 +1395,11 @@ a {
         .site-content .content-area .type-jtw_work .entry-header .entry-info .entry-desc .done-at-burst {
           color: #00c7c3;
           font-family: "panefresco_400wtregular", sans-serif;
-          font-size: 12px;
+          font-size: 14px;
           font-style: normal;
           font-weight: normal;
           display: block;
+          line-height: 1.5em;
           padding-bottom: 15px; }
           .site-content .content-area .type-jtw_work .entry-header .entry-info .entry-desc .done-at-burst a {
             color: #00ebe6; }
@@ -1754,7 +1755,7 @@ LARGER MOBILE DEVICES
       .site-content .content-area .type-jtw_work .entry-header .entry-info .entry-desc .done-at-burst {
         color: #00c7c3;
         font-family: "panefresco_400wtregular", sans-serif;
-        font-size: 14px;
+        font-size: 16px;
         font-style: normal;
         font-weight: normal; } }
 @media only screen and (min-width: 480px) and (min-width: 515px) {
@@ -1774,13 +1775,7 @@ LARGER MOBILE DEVICES
   .site-content .content-area .type-jtw_work .entry-header .entry-info .entry-title {
     font-size: 36px; }
   .site-content .content-area .type-jtw_work .entry-header .entry-info .entry-desc {
-    font-size: 22px; }
-    .site-content .content-area .type-jtw_work .entry-header .entry-info .entry-desc .done-at-burst {
-      color: #00c7c3;
-      font-family: "panefresco_400wtregular", sans-serif;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: normal; } }
+    font-size: 22px; } }
 /*
 TABLET & SMALLER LAPTOPS
 */
