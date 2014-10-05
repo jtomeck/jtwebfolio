@@ -326,12 +326,12 @@
 					overflow:hidden;
 					.project-image {
 						img {
-							@include transition(all .5s ease-in-out 0);
+							@include transition(all .5s ease-in-out);
 						}
 					}
 					//.project-image
 					.project-content {
-						@include transition(all .25s ease-in-out .25s);
+						@include transition(all .25s ease-in-out);
 						top:42%;
 						.project-title {
 							font-size:22px;
@@ -347,7 +347,7 @@
 					//.project-content
 					.hover {
 						$dim:76px;
-						@include transition(all .25s ease-in-out .25s);
+						@include transition(all .25s ease-in-out);
 						background:url(../img/proj_overlay.svg) no-repeat;
 						background-size:100%;
 						height:$dim;
@@ -362,19 +362,19 @@
 						.project-image {
 							img {
 								@include blur(0);
-								@include transition(all .5s ease-in-out .25s);
+								@include transition(all .5s ease-in-out);
 								@include transform(translate(-50%,-50%) rotate(0) scale(1.2));
 								@include opacity(100);
 							}
 						}
 						//:hover .project-image
 						.project-content {
-							@include transition(all .25s ease-in-out 0);
+							@include transition(all .25s ease-in-out);
 							top:-100%;
 						}
 						//:hover .project-content
 						.hover {
-							@include transition(all .25s ease-in-out 0);
+							@include transition(all .25s ease-in-out);
 							top:50%;
 						}
 					}

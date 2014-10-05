@@ -1858,11 +1858,11 @@ DESKTOP
     .site-content .content-area .work-archive .entry-content .project {
       overflow: hidden; }
       .site-content .content-area .work-archive .entry-content .project .project-image img {
-        -webkit-transition: all 0.5s ease-in-out 0;
-        -moz-transition: all 0.5s ease-in-out 0;
-        -ms-transition: all 0.5s ease-in-out 0;
-        -o-transition: all 0.5s ease-in-out 0;
-        transition: all 0.5s ease-in-out 0;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
         -webkit-transform: translateZ(0, 0, 0);
         -ms-transform: translateZ(0, 0, 0);
         -o-transform: translateZ(0, 0, 0);
@@ -1876,11 +1876,11 @@ DESKTOP
         -ms-backface-visibility: hidden;
         backface-visibility: hidden; }
       .site-content .content-area .work-archive .entry-content .project .project-content {
-        -webkit-transition: all 0.25s ease-in-out 0.25s;
-        -moz-transition: all 0.25s ease-in-out 0.25s;
-        -ms-transition: all 0.25s ease-in-out 0.25s;
-        -o-transition: all 0.25s ease-in-out 0.25s;
-        transition: all 0.25s ease-in-out 0.25s;
+        -webkit-transition: all 0.25s ease-in-out;
+        -moz-transition: all 0.25s ease-in-out;
+        -ms-transition: all 0.25s ease-in-out;
+        -o-transition: all 0.25s ease-in-out;
+        transition: all 0.25s ease-in-out;
         -webkit-transform: translateZ(0, 0, 0);
         -ms-transform: translateZ(0, 0, 0);
         -o-transform: translateZ(0, 0, 0);
@@ -1899,11 +1899,11 @@ DESKTOP
         .site-content .content-area .work-archive .entry-content .project .project-content .project-tags .tag {
           font-size: 12px; }
       .site-content .content-area .work-archive .entry-content .project .hover {
-        -webkit-transition: all 0.25s ease-in-out 0.25s;
-        -moz-transition: all 0.25s ease-in-out 0.25s;
-        -ms-transition: all 0.25s ease-in-out 0.25s;
-        -o-transition: all 0.25s ease-in-out 0.25s;
-        transition: all 0.25s ease-in-out 0.25s;
+        -webkit-transition: all 0.25s ease-in-out;
+        -moz-transition: all 0.25s ease-in-out;
+        -ms-transition: all 0.25s ease-in-out;
+        -o-transition: all 0.25s ease-in-out;
+        transition: all 0.25s ease-in-out;
         -webkit-transform: translateZ(0, 0, 0);
         -ms-transform: translateZ(0, 0, 0);
         -o-transform: translateZ(0, 0, 0);
@@ -1930,11 +1930,11 @@ DESKTOP
         -moz-filter: blur(0);
         -o-filter: blur(0);
         filter: blur(0);
-        -webkit-transition: all 0.5s ease-in-out 0.25s;
-        -moz-transition: all 0.5s ease-in-out 0.25s;
-        -ms-transition: all 0.5s ease-in-out 0.25s;
-        -o-transition: all 0.5s ease-in-out 0.25s;
-        transition: all 0.5s ease-in-out 0.25s;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
         -webkit-transform: translateZ(0, 0, 0);
         -ms-transform: translateZ(0, 0, 0);
         -o-transform: translateZ(0, 0, 0);
@@ -1956,11 +1956,11 @@ DESKTOP
         filter: alpha(opacity=100);
         opacity: 1; }
       .site-content .content-area .work-archive .entry-content .project:hover .project-content {
-        -webkit-transition: all 0.25s ease-in-out 0;
-        -moz-transition: all 0.25s ease-in-out 0;
-        -ms-transition: all 0.25s ease-in-out 0;
-        -o-transition: all 0.25s ease-in-out 0;
-        transition: all 0.25s ease-in-out 0;
+        -webkit-transition: all 0.25s ease-in-out;
+        -moz-transition: all 0.25s ease-in-out;
+        -ms-transition: all 0.25s ease-in-out;
+        -o-transition: all 0.25s ease-in-out;
+        transition: all 0.25s ease-in-out;
         -webkit-transform: translateZ(0, 0, 0);
         -ms-transform: translateZ(0, 0, 0);
         -o-transform: translateZ(0, 0, 0);
@@ -1975,11 +1975,11 @@ DESKTOP
         backface-visibility: hidden;
         top: -100%; }
       .site-content .content-area .work-archive .entry-content .project:hover .hover {
-        -webkit-transition: all 0.25s ease-in-out 0;
-        -moz-transition: all 0.25s ease-in-out 0;
-        -ms-transition: all 0.25s ease-in-out 0;
-        -o-transition: all 0.25s ease-in-out 0;
-        transition: all 0.25s ease-in-out 0;
+        -webkit-transition: all 0.25s ease-in-out;
+        -moz-transition: all 0.25s ease-in-out;
+        -ms-transition: all 0.25s ease-in-out;
+        -o-transition: all 0.25s ease-in-out;
+        transition: all 0.25s ease-in-out;
         -webkit-transform: translateZ(0, 0, 0);
         -ms-transform: translateZ(0, 0, 0);
         -o-transform: translateZ(0, 0, 0);
