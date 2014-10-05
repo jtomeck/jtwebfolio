@@ -3,8 +3,6 @@
  * @package jtwebfolio
  */
 
-$thumb_id = get_post_thumbnail_id( $post->ID );
-
 $client_logo = $cfs->get('jtw_client_logo');
 $proj_desc = $cfs->get('jtw_project_desc');
 $details = $cfs->get('jtw_details_section');
@@ -22,10 +20,6 @@ $cta_buttons = $cfs->get('jtw_project_cta_buttons');
 			</div>
 			<h1 class="entry-title"><?php the_title(); ?></h1>
 			<p class="entry-desc"><?php echo $proj_desc; ?></p>
-		</div>
-		<div class="entry-image">
-			<?php $thumb_url_array = wp_get_attachment_image_src($thumb_id, 'full', true); ?>
-			<img class="project-featured-image" src="<?php echo $thumb_url_array[0]; ?>" alt="Banner Text">
 		</div>
 	</header><!-- .entry-header -->
 	

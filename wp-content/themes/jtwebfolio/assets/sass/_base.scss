@@ -684,7 +684,10 @@ $head-marg:283px;
 		//.type-page
 		.type-jtw_work {
 			.entry-header {
+				background:$grn;
+				padding:134px 0 40px;
 				.entry-info {
+					position:relative;
 					.client-logo {
 						margin:0 auto 30px;
 						width:50%;
@@ -704,12 +707,19 @@ $head-marg:283px;
 						margin:0 auto;
 						padding:0 35px;
 						max-width:615px;
+						a {
+							color:lighten($grn,15%);
+							&:hover {
+								color:lighten($grn,20%);
+							}
+						}
 					}
 				}
 				//.entry-info
 				.entry-image {
+					display:none;
 					img {
-						@include opacity(10);
+						@include opacity(5);
 					}
 				}
 			}
