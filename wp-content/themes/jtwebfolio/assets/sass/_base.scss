@@ -711,11 +711,17 @@ $head-marg:283px;
 							@include font(lighten($grn,10%),$font,12px);
 							display:block;
 							padding-bottom:15px;
+							a {
+								color:lighten($grn,20%);
+								&:hover {
+									color:lighten($grn,25%);
+								}
+							}
 						}
 						a {
-							color:lighten($grn,20%);
+							color:lighten($grn,10%);
 							&:hover {
-								color:lighten($grn,25%);
+								color:lighten($grn,15%);
 							}
 						}
 					}

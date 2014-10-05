@@ -1400,10 +1400,14 @@ a {
           font-weight: normal;
           display: block;
           padding-bottom: 15px; }
+          .site-content .content-area .type-jtw_work .entry-header .entry-info .entry-desc .done-at-burst a {
+            color: #00faf5; }
+            .site-content .content-area .type-jtw_work .entry-header .entry-info .entry-desc .done-at-burst a:hover {
+              color: #15fffa; }
         .site-content .content-area .type-jtw_work .entry-header .entry-info .entry-desc a {
-          color: #00faf5; }
+          color: #00c7c3; }
           .site-content .content-area .type-jtw_work .entry-header .entry-info .entry-desc a:hover {
-            color: #15fffa; }
+            color: #00e1dc; }
     .site-content .content-area .type-jtw_work .entry-header .entry-image {
       display: none; }
       .site-content .content-area .type-jtw_work .entry-header .entry-image img {
