@@ -713,9 +713,9 @@ $head-marg:283px;
 							padding-bottom:15px;
 						}
 						a {
-							color:$drkgry;
+							color:lighten($grn,20%);
 							&:hover {
-								color:lighten($drkgry,20%);
+								color:lighten($grn,25%);
 							}
 						}
 					}
