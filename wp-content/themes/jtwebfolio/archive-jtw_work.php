@@ -11,10 +11,6 @@ $thumb_id = get_post_thumbnail_id( $post->ID );
 $page_icon = $cfs->get('jtw_page_icon');
 $page_tagline = $cfs->get('jtw_page_tagline');
 
-$add_skills_heading = $cfs->get('jtw_add_skills_heading');
-$add_skills_description = $cfs->get('jtw_add_skills_description');
-$add_skills = $cfs->get('jtw_add_skills');
-
 $work_args = array(
     'posts_per_page' => -1,
     'post_type' => 'jtw_work'

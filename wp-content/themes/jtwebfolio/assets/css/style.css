@@ -2026,8 +2026,10 @@ DESKTOP
       .site-content .content-area .entry-header .entry-info .entry-icon {
         margin-bottom: 25px;
         width: 140px; }
+      .site-content .content-area .entry-header .entry-info .entry-tagline .entry-title {
+        font-size: 32px; }
     .site-content .content-area .entry-header .entry-image {
-      padding-bottom: 48%; }
+      padding-bottom: 350px; }
     .site-content .content-area .type-page .entry-content {
       padding: 7% 10%; }
     .site-content .content-area .type-jtw_work .entry-header {
