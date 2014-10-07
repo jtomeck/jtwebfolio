@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Blog Archive
+ * Template for displaying categories
  *
  * @package jtwebfolio
  */
@@ -11,11 +11,7 @@ $thumb_id = get_post_thumbnail_id( 76 );
 $page_icon = $cfs->get('jtw_page_icon', 76);
 $page_tagline = $cfs->get('jtw_page_tagline', 76);
 
-/*$post_args = array(
-    'posts_per_page' => -1,
-    'post_type' => 'post'
-);
-$posts_query = new WP_Query( $post_args );*/
+$category = get_the_category($post->ID);
 
 get_header(); ?>
 
@@ -27,7 +23,7 @@ get_header(); ?>
 						<img src="<?php echo $page_icon; ?>" alt="">
 					</div>
 					<div class="entry-tagline">
-						<h2 class="entry-title"><?php echo $page_tagline; ?></h2>
+						<h2 class="entry-title"><?php echo $category[0]->cat_name; ?></h2>
 					</div>
 				</div><!-- .entry-info -->
 				<?php if ( $thumb_id ) : ?>

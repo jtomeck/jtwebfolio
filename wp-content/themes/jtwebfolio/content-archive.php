@@ -9,7 +9,7 @@ $terms = get_the_terms( get_the_ID() , 'category' );
 
 ?>
 
-<div class="post">
+<div class="post post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<a href="<?php the_permalink(); ?>" class="full"></a>
 	<div class="wrapper">
 		<div class="meta">

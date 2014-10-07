@@ -1618,7 +1618,8 @@ a {
         .site-content .content-area .blog-archive .entry-content .post .post-content .post-title {
           color: #ffc845;
           font-size: 18px;
-          margin-bottom: 8px; }
+          margin-bottom: 8px;
+          text-transform: none; }
         .site-content .content-area .blog-archive .entry-content .post .post-content .post-tags {
           margin: 0; }
           .site-content .content-area .blog-archive .entry-content .post .post-content .post-tags .tag {
