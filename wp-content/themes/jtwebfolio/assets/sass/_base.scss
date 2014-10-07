@@ -457,10 +457,11 @@ $head-marg:283px;
 	}
 	//.main-banner
 	.home-skills {
-		padding-top:40px;
+		padding-top:30px;
 		.skills-header {
 			.skills-title {
 				@include font($ltgry,$bld-font,112px);
+				margin:0;
 				text-align:center;
 				text-transform:lowercase;
 			}

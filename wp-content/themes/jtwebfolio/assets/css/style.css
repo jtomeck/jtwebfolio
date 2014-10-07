@@ -1135,13 +1135,14 @@ a {
         font-weight: normal;
         display: block; }
   .site-content .home-skills {
-    padding-top: 40px; }
+    padding-top: 30px; }
     .site-content .home-skills .skills-header .skills-title {
       color: #c7cdd3;
       font-family: "panefresco_999wtregular", sans-serif;
       font-size: 112px;
       font-style: normal;
       font-weight: normal;
+      margin: 0;
       text-align: center;
       text-transform: lowercase; }
     .site-content .home-skills .skills-list-wrap {
@@ -2372,7 +2373,7 @@ DESKTOP
   .home .site-content {
     padding-top: 100px; } }
 @media only screen and (min-width: 1030px) {
-  /* CTA SECTIONS
+  /* CTA SECTIONS 
   ********************************/
   .cta .wrapper {
     padding: 6% 8% 5% !important; }
@@ -2399,7 +2400,7 @@ DESKTOP
     /***********************************/
     /***********************************/ }
     .site-content .home-skills {
-      padding-top: 85px; }
+      padding-top: 0; }
       .site-content .home-skills .skills-header .skills-title {
         font-size: 300px; }
       .site-content .home-skills .skills-list-wrap {
