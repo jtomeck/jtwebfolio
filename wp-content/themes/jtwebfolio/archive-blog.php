@@ -1,7 +1,6 @@
 <?php
 /**
- * Template For displaying archives
- *
+ * Template Name: Blog Archive
  * @package jtwebfolio
  */
 
@@ -10,6 +9,12 @@ $thumb_id = get_post_thumbnail_id( 76 );
 
 $page_icon = $cfs->get('jtw_page_icon', 76);
 $page_tagline = $cfs->get('jtw_page_tagline', 76);
+
+$post_args = array(
+    'posts_per_page' => -1,
+    'post_type' => 'post'
+);
+$posts_query = new WP_Query( $post_args );
 
 get_header(); ?>
 
@@ -31,9 +36,9 @@ get_header(); ?>
 		            </div><!-- .entry-image -->
 		        <?php endif; ?>
 			</header><!-- .entry-header -->
-			<?php if ( have_posts() ) : ?>
+			<?php if ( $posts_query->have_posts() ) : ?>
         	<div class="entry-content">
-	            <?php while ( have_posts() ) : the_post(); ?>
+	            <?php while ( $posts_query->have_posts() ) : $posts_query->the_post(); ?>
 
 	                <?php get_template_part( 'content', 'archive' ); ?>
 
