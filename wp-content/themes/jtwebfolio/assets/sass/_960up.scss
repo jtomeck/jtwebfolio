@@ -38,6 +38,7 @@
 .wrapper {}
 
 .site-header {
+	@include box-shadow(0, 0, 50px, rgba(0,0,0,.45));
 	background:$drkgry;
 	bottom:0;
 	left:0;
@@ -183,7 +184,7 @@
 .site-content {
 	background:url(../img/bg_desktop.png) -200px top no-repeat;
 	float:right;
-	width:76%;
+	width:76.1%;
 	.wrapper {
 		padding:0 8%;
 	}
@@ -435,6 +436,57 @@
 			//.entry-content
 		}
 		//.work-archive
+		.blog-archive {
+			.entry-content {
+				padding:0;
+				.post {
+					.wrapper {}
+					.meta {
+						.posted-on {
+							span {
+								&.posted {}
+								&.month {}
+								&.day {}
+							}
+						}
+						//.posted-on
+					}
+					//.meta
+					.post-content {
+						.post-title {}
+						.post-tags {
+							.tag {}
+						}
+					}
+					//.post-content
+					&:nth-child(2n) {
+						.meta {}
+					}
+					&:hover {
+						.meta {}
+					}
+				}
+				//.post
+			}
+			//.entry-content
+			.sidebar {
+				.widget {
+					.widget-title {}
+					ul {
+						li {
+							a {}
+							&:nth-child(even) {}
+							&:hover {
+								a {}
+							}
+						}
+					}
+				}
+				//.widget
+			}
+			//.sidebar
+		}
+		//.blog-archive	
 	}
 	//.content-area
 

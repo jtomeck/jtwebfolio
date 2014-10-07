@@ -50,8 +50,9 @@ get_header(); ?>
 	        <?php else : ?>
 				<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 			<?php endif; ?>
+			<?php get_sidebar(); ?>
 	    </article>
-
+		
 	</section><!-- #primary -->
 
 <?php get_footer(); ?>

@@ -43,7 +43,7 @@ body {
 
 .site-content {
 	h1,h2,h3,h4,h5,h6 {
-		line-height:.75em;
+		line-height:1.25em;
 		margin:0 0 .25em;
 		text-transform:uppercase;
 	}
@@ -185,7 +185,7 @@ $btn-padding:13px 17px 11px;
 	}
 
 	// CONTACT PAGE CTA
-	.blog & {
+	.contact & {
 		.cta-title {
 			color:$blu;
 		}
@@ -807,7 +807,7 @@ $head-marg:283px;
 				background:$drkrgry;
 				padding:0 !important;
 				.project {
-					@include box-shadow(0, 0, 50px, rgba(0,0,0,.25), $inset:true);
+					@include box-shadow(0, 0, 50px, rgba(0,0,0,.45), $inset:true);
 					background:$ltrgry;
 					float:left;
 					position:relative;
@@ -863,6 +863,132 @@ $head-marg:283px;
 			//.entry-content
 		}
 		//.work-archive
+		.blog-archive {
+			.entry-content {
+				padding:0;
+				.post {
+					@include transition(background .25s ease-in-out);
+					background:$drkgry;
+					position:relative;
+					.wrapper {
+						@include clearfix;
+						padding:0;
+						position:relative;
+					}
+					.meta {
+						@include transition(background .25s ease-in-out);
+						background:$ylw;
+						bottom:0;
+						left:0;
+						padding-top:15px;
+						position:absolute;
+						right:80%;
+						text-align:center;
+						top:0;
+						.posted-on {
+							background-size:100%;
+							display:inline-block;
+							span {
+								color:$wht;
+								display:block;
+								text-transform:uppercase;
+								&.posted {
+									font-size:7.5px;
+								}
+								&.month {
+									font-size:16px;
+									padding-top:2px;
+								}
+								&.day {
+									color:$drkgry;
+									font-size:25px;
+								}
+							}
+						}
+						//.posted-on
+					}
+					//.meta
+					.post-content {
+						float:right;
+						min-height:80px;
+						padding:18px;
+						text-align:left;
+						width:80%;
+						.post-title {
+							color:$ylw;
+							font-size:18px;
+							margin-bottom:8px;
+						}
+						.post-tags {
+							margin:0;
+							.tag {
+								background:url(../img/tag.svg) 0 1px no-repeat;
+								background-size:10px;
+								color:$wht;
+								display:inline-block;
+								font-size:10px;
+								margin:0 5px 0 0;
+								padding-left:15px;
+							}
+						}
+					}
+					//.post-content
+					&:nth-child(2n) {
+						background:darken($drkgry,2%);
+						.meta {
+							background:darken(desaturate($ylw,15%),5%);
+						}
+					}
+					&:hover {
+						background:lighten($drkgry,2%);
+						.meta {
+							background:lighten(desaturate($ylw,5%),5%);
+						}
+					}
+				}
+				//.post
+			}
+			//.entry-content
+			.sidebar {
+				background:darken($ltgry,5%);
+				padding:20px;
+				.widget {
+					.widget-title {
+						background:$drkgry;
+						border-bottom:4px solid $ylw;
+						color:$wht;
+						font-size:16px;
+						margin:0;
+						padding:15px 20px;
+					}
+					ul {
+						border-bottom:8px solid $drkgry;
+						margin:0 0 30px;
+						padding:0;
+						li {
+							background:$ltrgry;
+							a {
+								@include transition(padding .25s ease-in-out);
+								color:$drkgry;
+								display:block;
+								padding:10px 20px;
+							}
+							&:nth-child(even) {
+								background:darken($ltrgry,4%);
+							}
+							&:hover {
+								a {
+									padding-left:25px;
+								}
+							}
+						}
+					}
+				}
+				//.widget
+			}
+			//.sidebar
+		}
+		//.blog-archive	
 	}
 	//.content-area
 

@@ -247,6 +247,71 @@
 			//.entry-content
 		}
 		//.work-archive
+		.blog-archive {
+			@include clearfix;
+			border-bottom:4px solid $ylw;
+			.entry-content {
+				padding:0;
+				float:left;
+				width:75%;
+				.post {
+					.wrapper {}
+					.meta {
+						right:88%;
+						.posted-on {
+							span {
+								&.posted {}
+								&.month {}
+								&.day {}
+							}
+						}
+						//.posted-on
+					}
+					//.meta
+					.post-content {
+						width:88%;
+						.post-title {}
+						.post-tags {
+							.tag {}
+						}
+					}
+					//.post-content
+					&:nth-child(2n) {
+						.meta {}
+					}
+					&:hover {
+						.meta {}
+					}
+				}
+				//.post
+			}
+			//.entry-content
+			.sidebar {
+				background:$drkrgry;
+				float:right;
+				padding:0;
+				width:25%;
+				.widget {
+					.widget-title {
+						background:none;
+					}
+					ul {
+						border-bottom:none;
+						margin:0;
+						li {
+							a {}
+							&:nth-child(even) {}
+							&:hover {
+								a {}
+							}
+						}
+					}
+				}
+				//.widget
+			}
+			//.sidebar
+		}
+		//.blog-archive	
 	}
 	//.content-area
 

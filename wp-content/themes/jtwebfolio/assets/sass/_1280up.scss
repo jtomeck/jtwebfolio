@@ -89,7 +89,7 @@
 }
 //.site-header
 .site-content {
-	width:83%;
+	width:83.1%;
 	.wrapper {}
 
 	// HOMEPAGE STYLES
@@ -227,6 +227,57 @@
 			//.entry-content
 		}
 		//.work-archive
+		.blog-archive {
+			.entry-content {
+				padding:0;
+				.post {
+					.wrapper {}
+					.meta {
+						.posted-on {
+							span {
+								&.posted {}
+								&.month {}
+								&.day {}
+							}
+						}
+						//.posted-on
+					}
+					//.meta
+					.post-content {
+						.post-title {}
+						.post-tags {
+							.tag {}
+						}
+					}
+					//.post-content
+					&:nth-child(2n) {
+						.meta {}
+					}
+					&:hover {
+						.meta {}
+					}
+				}
+				//.post
+			}
+			//.entry-content
+			.sidebar {
+				.widget {
+					.widget-title {}
+					ul {
+						li {
+							a {}
+							&:nth-child(even) {}
+							&:hover {
+								a {}
+							}
+						}
+					}
+				}
+				//.widget
+			}
+			//.sidebar
+		}
+		//.blog-archive	
 	}
 	//.content-area
 
