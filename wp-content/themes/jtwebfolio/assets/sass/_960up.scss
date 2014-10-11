@@ -28,6 +28,103 @@
 }
 //.cta
 
+/* BUTTONS & FORMS
+********************************/
+
+.gform_wrapper {
+	.gf_progressbar_wrapper {
+		.gf_progressbar_title {}
+		.gf_progressbar {
+			.gf_progressbar_percentage {
+				&.percentbar_0 {
+					span {}
+				}
+				&.percentbar_50 {}
+			}
+		}
+		//.gf_progressbar
+	}
+	//.gf_progressbar_wrapper
+	.gform_confirmation_wrapper {
+		background:url(../img/thumb.svg) top center no-repeat;
+		background-size:60%;
+		padding-bottom:60%;
+		margin-top:-50px;
+	}
+	.validation_error {}
+	//.validation_error
+	.gform_body {
+		input {}
+		.gform_page {
+			.gform_page_fields {
+				.gform_fields {
+					@include clearfix;
+					.gfield {
+						&.gsection {
+							.gsection_title {}
+						}
+						//.gsection
+						&.full {}
+						&.half {
+							float:left;
+							width:49%;
+							&.right {
+								float:right;
+							}
+						}
+						.gfield_label {
+							.gfield_required {}
+						}
+						.ginput_container {
+							& > input, textarea {
+								font-size:18px;
+								padding:15px 20px 18px;
+							}
+							textarea {}
+							.gfield_radio {
+								li {}
+								input {}
+								label {}
+								input:checked + label {}
+							}
+							//.gfield_radio
+							.ginput_counter {}
+						}
+						//.ginput_container
+						.gfield_description {
+							&.validation_message {}
+						}
+						&.gfield_error {
+							.ginput_container {
+								input[type=text],textarea {}
+							}
+						}
+						//.gfield_error
+					}
+					//.gfield
+					.gform_validation_container {}
+					//.gform_validation_container
+				}
+				//.gform_fields
+			}
+			//.gform_page_fields
+			.gform_page_footer {
+				input[type=button] {
+					&.gform_previous_button {}
+					&.gform_next_button {}
+				}
+				input[type=submit] {}
+			}
+			//.gform_page_footer
+		}
+		//.gform_page
+	}
+	//.gform_body
+}
+//.gform_wrapper
+
+
+
 /* MOBILE NAVIGATION
 ********************************/
 .mobile-navigation {
