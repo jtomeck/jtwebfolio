@@ -757,6 +757,9 @@ a {
     background: #009e9b;
     color: #fff; }
 
+.gform_wrapper .gform_body .gform_page .gform_page_fields .gform_fields .gform_validation_container {
+  display: none; }
+
 /* CTA SECTIONS
 ********************************/
 .cta {
@@ -1125,6 +1128,7 @@ a {
       font-style: normal;
       font-weight: normal;
       -webkit-transition-delay: .5s;
+      line-height: .75em;
       transition-delay: .5s;
       text-transform: uppercase; }
       .site-content .main-banner .main-title span {
@@ -1473,71 +1477,73 @@ a {
       padding-top: 9.5%; }
     .site-content .content-area .type-jtw_work .entry-content .detail:nth-of-type(2n) {
       background: #c7cdd3; }
-  .site-content .content-area .work-archive .entry-content {
-    zoom: 1;
-    background: #1f2022;
-    padding: 0 !important; }
-    .site-content .content-area .work-archive .entry-content:before, .site-content .content-area .work-archive .entry-content:after {
-      content: "";
-      display: table; }
-    .site-content .content-area .work-archive .entry-content:after {
-      clear: both; }
-    .site-content .content-area .work-archive .entry-content .project {
-      -webkit-box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.45);
-      -moz-box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.45);
-      box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.45);
-      background: #dae1e7;
-      float: left;
-      position: relative;
-      width: 50%; }
-      .site-content .content-area .work-archive .entry-content .project .project-image {
-        height: 0;
-        overflow: hidden;
-        padding-bottom: 100%;
-        position: relative; }
-        .site-content .content-area .work-archive .entry-content .project .project-image img {
-          -webkit-filter: blur(1px);
-          -moz-filter: blur(1px);
-          -o-filter: blur(1px);
-          filter: blur(1px);
-          -webkit-transform: translate(-50%, -50%) rotate(-10deg);
-          -moz-transform: translate(-50%, -50%) rotate(-10deg);
-          -ms-transform: translate(-50%, -50%) rotate(-10deg);
-          -o-transform: translate(-50%, -50%) rotate(-10deg);
-          transform: translate(-50%, -50%) rotate(-10deg);
-          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" 15 ")";
-          filter: alpha(opacity=15);
-          opacity: 0.15;
-          display: block;
-          height: 120%;
-          left: 50%;
+  .site-content .content-area .work-archive {
+    overflow: hidden; }
+    .site-content .content-area .work-archive .entry-content {
+      zoom: 1;
+      background: #1f2022;
+      padding: 0 !important; }
+      .site-content .content-area .work-archive .entry-content:before, .site-content .content-area .work-archive .entry-content:after {
+        content: "";
+        display: table; }
+      .site-content .content-area .work-archive .entry-content:after {
+        clear: both; }
+      .site-content .content-area .work-archive .entry-content .project {
+        -webkit-box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.45);
+        -moz-box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.45);
+        box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.45);
+        background: #dae1e7;
+        float: left;
+        position: relative;
+        width: 50%; }
+        .site-content .content-area .work-archive .entry-content .project .project-image {
+          height: 0;
+          overflow: hidden;
+          padding-bottom: 100%;
+          position: relative; }
+          .site-content .content-area .work-archive .entry-content .project .project-image img {
+            -webkit-filter: blur(1px);
+            -moz-filter: blur(1px);
+            -o-filter: blur(1px);
+            filter: blur(1px);
+            -webkit-transform: translate(-50%, -50%) rotate(-10deg);
+            -moz-transform: translate(-50%, -50%) rotate(-10deg);
+            -ms-transform: translate(-50%, -50%) rotate(-10deg);
+            -o-transform: translate(-50%, -50%) rotate(-10deg);
+            transform: translate(-50%, -50%) rotate(-10deg);
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" 15 ")";
+            filter: alpha(opacity=15);
+            opacity: 0.15;
+            display: block;
+            height: 120%;
+            left: 50%;
+            position: absolute;
+            top: 50%;
+            width: auto; }
+        .site-content .content-area .work-archive .entry-content .project .project-content {
           position: absolute;
-          top: 50%;
-          width: auto; }
-      .site-content .content-area .work-archive .entry-content .project .project-content {
-        position: absolute;
-        top: 40%;
-        width: 100%; }
-        .site-content .content-area .work-archive .entry-content .project .project-content .project-title {
-          font-family: "panefresco_750wtregular", sans-serif;
-          margin-bottom: 10px; }
-        .site-content .content-area .work-archive .entry-content .project .project-content .project-tags {
-          margin: 0;
-          padding: 0 20px;
-          text-align: center; }
-          .site-content .content-area .work-archive .entry-content .project .project-content .project-tags .tag {
-            color: #00615f;
-            font-family: "panefresco_400wtregular", sans-serif;
-            font-size: 11px;
-            font-style: normal;
-            font-weight: normal;
-            background: url(../img/tag.svg) 0 1px no-repeat;
-            background-size: 11px;
-            display: inline-block;
-            margin: 0 0 0 5px;
-            padding-left: 15px; }
-            .site-content .content-area .work-archive .entry-content .project .project-content .project-tags .tag:first-child {
-              margin: 0; }
+          top: 40%;
+          width: 100%; }
+          .site-content .content-area .work-archive .entry-content .project .project-content .project-title {
+            font-family: "panefresco_750wtregular", sans-serif;
+            margin-bottom: 10px; }
+          .site-content .content-area .work-archive .entry-content .project .project-content .project-tags {
+            margin: 0;
+            padding: 0 20px;
+            text-align: center; }
+            .site-content .content-area .work-archive .entry-content .project .project-content .project-tags .tag {
+              color: #00615f;
+              font-family: "panefresco_400wtregular", sans-serif;
+              font-size: 11px;
+              font-style: normal;
+              font-weight: normal;
+              background: url(../img/tag.svg) 0 1px no-repeat;
+              background-size: 11px;
+              display: inline-block;
+              margin: 0 0 0 5px;
+              padding-left: 15px; }
+              .site-content .content-area .work-archive .entry-content .project .project-content .project-tags .tag:first-child {
+                margin: 0; }
   .site-content .content-area .blog-archive .entry-content {
     padding: 0; }
     .site-content .content-area .blog-archive .entry-content .post {

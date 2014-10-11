@@ -134,6 +134,68 @@ $btn-padding:13px 17px 11px;
   @include button($grn,$btn-padding,20px);
 }
 
+.gform_wrapper {
+	.gf_progressbar_wrapper {
+		.gf_progressbar_title {}
+		.gf_progressbar {
+			.gf_progressbar_percentage {}
+		}
+		//.gf_progressbar
+	}
+	//.gf_progressbar_wrapper
+	.validation_error {}
+	//.validation_error
+	.gform_body {
+		.gform_page {
+			.gform_page_fields {
+				.gform_fields {
+					.gfield {
+						&.gsection {
+							.gsection_title {}
+						}
+						//.gsection
+						&.full {}
+						&.half {}
+						.gfield_label {}
+						.ginput_container {
+							& > input {}
+							textarea {}
+							.gfield_radio {
+								input {}
+								label {}
+							}
+							//.gfield_radio
+							.ginput_counter {}
+						}
+						//.ginput_container
+						.gfield_description {
+							&.validation_message {}
+						}
+					}
+					//.gfield
+					.gform_validation_container {
+						display:none;
+					}
+					//.gform_validation_container
+				}
+				//.gform_fields
+			}
+			//.gform_page_fields
+			.gform_page_footer {
+				input[type=button] {
+					&.gform_previous_button {}
+					&.gform_next_button {}
+				}
+				input[type=submit] {}
+			}
+			//.gform_page_footer
+		}
+		//.gform_page
+	}
+	//.gform_body
+}
+//.gform_wrapper
+
 /* CTA SECTIONS
 ********************************/
 
@@ -447,6 +509,7 @@ $head-marg:283px;
 		.main-title {
 			@include font($drkgry,$bld-font,42px);
 			-webkit-transition-delay: .5s;
+			line-height:.75em;
     		transition-delay: .5s;
 			text-transform:uppercase;
 			span {
@@ -803,6 +866,7 @@ $head-marg:283px;
 		}
 		//.type-jtw_work
 		.work-archive {
+			overflow:hidden;
 			.entry-content {
 				@include clearfix;
 				background:$drkrgry;
