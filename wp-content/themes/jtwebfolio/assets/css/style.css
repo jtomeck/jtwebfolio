@@ -2353,6 +2353,7 @@ TABLET & SMALLER LAPTOPS
       -moz-column-gap: 45px;
       -o-column-gap: 45px;
       column-gap: 45px;
+      padding: 40px 50px;
       text-align: left; } }
 /*
 DESKTOP
@@ -2744,6 +2745,8 @@ DESKTOP
         width: 140px; }
     .site-content .content-area.single-post .entry-header .entry-image {
       padding-bottom: 350px; }
+    .site-content .content-area.single-post .entry-content {
+      padding: 7% 10%; }
     .site-content .content-area .comments #respond form {
       zoom: 1; }
       .site-content .content-area .comments #respond form:before, .site-content .content-area .comments #respond form:after {
@@ -2874,6 +2877,10 @@ DESKTOP
       width: 80%; }
     .site-content .content-area .blog-archive .sidebar {
       width: 20%; }
+    .site-content .content-area.single-post .entry-content {
+      padding: 6% 8%; }
+      .site-content .content-area.single-post .entry-content p {
+        font-size: 18px; }
     .site-content .content-area .comments #respond form {
       zoom: 1; }
       .site-content .content-area .comments #respond form:before, .site-content .content-area .comments #respond form:after {

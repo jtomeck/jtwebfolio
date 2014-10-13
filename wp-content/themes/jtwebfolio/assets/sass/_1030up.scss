@@ -453,6 +453,15 @@
 			//.sidebar
 		}
 		//.blog-archive	
+		&.single-post {
+			.entry-content {
+				padding:6% 8%;
+				p {
+					font-size:18px;
+				}
+			}	
+		}
+		//.single-post
 		.comments {
 			h3 {
 				&#comments {}
