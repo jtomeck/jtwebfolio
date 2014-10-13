@@ -2,15 +2,29 @@
 /**
  * @package jtwebfolio
  */
+
+//Featured Image
+$thumb_id = get_post_thumbnail_id( 76 );
+
+$page_icon = $cfs->get('jtw_page_icon', 76);
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
-		<div class="entry-meta">
-			<?php jtwebfolio_posted_on(); ?>
-		</div><!-- .entry-meta -->
+		<div class="entry-info">
+			<div class="entry-icon">
+				<img src="<?php echo $page_icon; ?>" alt="">
+			</div>
+			<div class="entry-tagline">
+				<h2 class="entry-title"><?php the_title(); ?></h2>
+			</div>
+		</div><!-- .entry-info -->
+		<?php if ( $thumb_id ) : ?>
+            <div class="entry-image">
+                <?php $thumb_url_array = wp_get_attachment_image_src($thumb_id, 'full', true); ?>
+                <img class="entry-featured-image" src="<?php echo $thumb_url_array[0]; ?>" alt="Banner Text">
+            </div><!-- .entry-image -->
+        <?php endif; ?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
@@ -22,8 +36,4 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php jtwebfolio_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

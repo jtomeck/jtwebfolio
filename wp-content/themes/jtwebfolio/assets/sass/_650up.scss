@@ -54,6 +54,20 @@
 			//.entry-content
 		}
 		//.type-jtw_work
+		&.single-post {
+			.entry-header {
+				.entry-info {
+					.entry-icon {}
+				}
+				//.entry-info
+				.entry-image {
+					img {}
+				}
+				//.entry-image
+			}
+			//.entry-header
+		}
+		//.single-post
 	}
 	//.content-area
 }

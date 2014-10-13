@@ -350,7 +350,18 @@
 			}
 			//.sidebar
 		}
-		//.blog-archive	
+		//.blog-archive
+		&.single-post {
+			.entry-header {
+				.entry-info {
+					.entry-icon {}
+				}
+				//.entry-info
+				.entry-image {}
+			}
+			//.entry-header
+		}
+		//.single-post
 	}
 	//.content-area
 
