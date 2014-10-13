@@ -453,6 +453,67 @@
 			//.sidebar
 		}
 		//.blog-archive	
+		.comments {
+			h3 {
+				&#comments {}
+			}
+			.commentlist {
+				.comment {
+					a {}
+					.comment-body {
+						.comment-meta {
+							.comment-author {
+								img {}
+							}
+							//.comment-author
+							.comment-metadata {
+								a {}
+							}
+							//.comment-metadata
+							.comment-awaiting-moderation {}
+						}
+						//.comment-meta
+						.comment-content {
+							p {}
+						}
+						//.comment-content
+						.comment-reply-link {}
+					}
+					//.comment-body
+					#respond {
+						h3 {}
+					}
+					//#respond
+					.children {
+						.comment {}
+					}
+					//.children
+				}
+				//.comment
+			}
+			//.commentlist
+			#respond {
+				#cancel-comment-reply-link {}
+				p {}
+				form {
+					@include clearfix;
+					p {
+						&:first-of-type {
+							width:49%;
+						}
+						&:nth-child(2) {
+							width:49%;
+						}
+					}
+				}
+				label {}
+				input[type=text],textarea {}
+				textarea {}
+				input[type=submit] {}
+			}
+			//#respond
+		}
+		//.comments
 	}
 	//.content-area
 

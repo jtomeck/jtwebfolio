@@ -46,7 +46,7 @@
 	}
 	//.gf_progressbar_wrapper
 	.gform_confirmation_wrapper {
-		background:url(../img/thumb.svg) top center no-repeat;
+		background:url(../img/check.svg) top center no-repeat;
 		background-size:60%;
 		padding-bottom:60%;
 		margin-top:-50px;
@@ -584,6 +584,87 @@
 			//.sidebar
 		}
 		//.blog-archive	
+		&.single-post {
+			.entry-header {
+				.entry-info {
+					top:12%;
+					.entry-icon {
+						width:140px;
+					}
+				}
+				//.entry-info
+				.entry-image {
+					padding-bottom:350px;
+					img {}
+				}
+				//.entry-image
+			}
+			//.entry-header
+		}
+		//.single-post
+		.comments {
+			h3 {
+				&#comments {}
+			}
+			.commentlist {
+				.comment {
+					a {}
+					.comment-body {
+						.comment-meta {
+							.comment-author {
+								img {}
+							}
+							//.comment-author
+							.comment-metadata {
+								a {}
+							}
+							//.comment-metadata
+							.comment-awaiting-moderation {}
+						}
+						//.comment-meta
+						.comment-content {
+							p {}
+						}
+						//.comment-content
+						.comment-reply-link {}
+					}
+					//.comment-body
+					#respond {
+						h3 {}
+					}
+					//#respond
+					.children {
+						.comment {}
+					}
+					//.children
+				}
+				//.comment
+			}
+			//.commentlist
+			#respond {
+				#cancel-comment-reply-link {}
+				p {}
+				form {
+					@include clearfix;
+					p {
+						&:first-of-type {
+							float:left;
+							width:48%;
+						}
+						&:nth-child(2) {
+							float:right;
+							width:48%;
+						}
+					}
+				}
+				label {}
+				input[type=text],textarea {}
+				textarea {}
+				input[type=submit] {}
+			}
+			//#respond
+		}
+		//.comments
 	}
 	//.content-area
 

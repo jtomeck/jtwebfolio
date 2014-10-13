@@ -169,7 +169,7 @@ $btn-padding:13px 17px 11px;
 	//.gf_progressbar_wrapper
 	.gform_confirmation_wrapper {
 		@include hide-text;
-		background:url(../img/thumb.svg) center center no-repeat;
+		background:url(../img/check.svg) center center no-repeat;
 		background-size:100%;
 		height:0;
 		padding-bottom:100%;
@@ -179,6 +179,9 @@ $btn-padding:13px 17px 11px;
 	//.validation_error
 	.gform_body {
 		input,textarea {
+			-webkit-box-shadow: none;
+			-moz-box-shadow: none;
+			box-shadow: none;
 			outline:none !important;
 		}
 		.gform_page {
@@ -772,9 +775,15 @@ $head-marg:283px;
 	// INTERIOR STYLES
 	/***********************************/
 	
+	.single-post & {
+		.sidebar {
+			display:none;
+		}
+	}
+
 	.content-area {
 		.entry-header {
-			background:$drkgry;
+			background:lighten($drkgry,5%);
 			position:relative;
 			.entry-info {
 				bottom:0;
@@ -945,7 +954,7 @@ $head-marg:283px;
 				}
 			}
 			.entry-content {
-				padding:0 !Important;
+				padding:0 !important;
 				.detail {
 					.wrapper {
 						padding:40px 30px 50px;
@@ -1033,12 +1042,12 @@ $head-marg:283px;
 							padding:0 20px;
 							text-align:center;
 							.tag {
-								@include font(darken($grn,10%),$font,11px);
+								@include font(darken($grn,10%),$font,10px);
 								background:url(../img/tag.svg) 0 1px no-repeat;
-								background-size:11px;
+								background-size:10px;
 								display:inline-block;
 								margin:0 0 0 5px;
-								padding-left:15px;
+								padding-left:13px;
 								&:first-child {
 									margin:0;
 								}
@@ -1179,7 +1188,156 @@ $head-marg:283px;
 			}
 			//.sidebar
 		}
-		//.blog-archive	
+		//.blog-archive
+		&.single-post {
+			.entry-content {
+				padding:30px;
+			}
+			//.entry-content
+			.post-navigation {
+				@include clearfix;
+				background:$drkrgry;
+				a {
+					background:$ylw;
+					color:$wht;
+					display:block;
+					padding:10px 15px 8px;
+					text-transform:uppercase;
+					&:first-child {
+						float:left !important;
+					}
+					&:last-child {
+						float:right;
+					}
+				}
+			}
+		}
+		//.single-post
+		.comments {
+			background:$drkgry;
+			padding:30px;
+			text-align:center;
+			h3 {
+				color:$wht;
+				padding-bottom:20px;
+				&#comments {
+					font-size:18px;
+				}
+			}
+			.commentlist {
+				border-bottom:1px solid lighten($drkgry,5%);
+				margin:0 0 20px;
+				padding-bottom:20px;
+				.comment {
+					border-left:4px solid $ylw;
+					margin-bottom:25px;
+					text-align:left;
+					a {
+						color:$ylw;
+					}
+					.comment-body {
+						padding-left:15px;
+						.comment-meta {
+							padding:7px 0;
+							.comment-author {
+								color:$wht;
+								font-size:16px;
+								img {
+									display:none;
+								}
+							}
+							//.comment-author
+							.comment-metadata {
+								padding-top:5px;
+								a {
+									color:lighten($drkgry,20%);
+									font-size:10px;
+								}
+							}
+							//.comment-metadata
+							.comment-awaiting-moderation {
+								color:$wht;
+							}
+						}
+						//.comment-meta
+						.comment-content {
+							p {
+								color:$wht;
+								font-size:16px;
+							}
+						}
+						//.comment-content
+						.comment-reply-link {
+							@include button($ylw,8px 10px 5px,11px);
+							text-transform:uppercase;
+							text-shadow:0 1px 1px darken(desaturate($ylw,40%),20%);
+						}
+					}
+					//.comment-body
+					#respond {
+						border-left:4px solid darken(desaturate($ylw,40%),30%);
+						margin-left:-4px;
+						padding:15px 0 20px 15px;
+						width:100%;
+						h3 {
+							font-size:16px;
+							padding:0;
+						}
+					}
+					//#respond
+					.children {
+						.comment {
+							border:none;
+							border-bottom:1px solid lighten($drkgry,8%);
+							background:lighten($drkgry,3%);
+							margin-bottom:0;
+							padding:5px 0 20px;
+						}
+					}
+					//.children
+				}
+				//.comment
+			}
+			//.commentlist
+			#respond {
+				#cancel-comment-reply-link {
+					display:block;
+					padding-bottom:20px;
+				}
+				p {
+					color:$wht;
+					text-align:left;
+				}
+				form {
+					@include clearfix;
+				}
+				label {
+					color:lighten($drkgry,50%);
+				}
+				input[type=text],textarea {
+					@include border-radius(5px);
+					background:lighten($drkgry,5%);
+					border:none;
+					-webkit-box-shadow: none;
+					-moz-box-shadow: none;
+					box-shadow: none;
+					color:lighten($drkgry,35%);
+					outline:none;
+					padding:10px 15px;
+					width:100%;
+				}
+				textarea {
+					resize:none;
+				}
+				input[type=submit] {
+					@include button($ylw,12px 15px 9px,18px);
+					border:none;
+					width:100%;
+				}
+			}
+			//#respond
+		}
+		//.comments
 	}
 	//.content-area
 
