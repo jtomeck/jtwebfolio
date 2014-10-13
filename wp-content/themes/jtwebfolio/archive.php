@@ -21,7 +21,7 @@ get_header(); ?>
 						<img src="<?php echo $page_icon; ?>" alt="">
 					</div>
 					<div class="entry-tagline">
-						<h2 class="entry-title"><?php echo $page_tagline; ?></h2>
+						<h2 class="entry-title">Blog Archives</h2>
 					</div>
 				</div><!-- .entry-info -->
 				<?php if ( $thumb_id ) : ?>
