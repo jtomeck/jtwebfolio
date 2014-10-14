@@ -66,6 +66,23 @@
 				//.entry-image
 			}
 			//.entry-header
+			.entry-content {
+				img {
+					&.size-medium {
+						width:auto;
+					}
+					&.alignleft {
+						float:left;
+						margin-right:30px;
+						width:40%;
+					}
+					&.alignright {
+						float:right;
+						margin-left:30px;
+						width:40%;
+					}
+				}
+			}
 		}
 		//.single-post
 	}

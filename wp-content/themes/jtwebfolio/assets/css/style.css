@@ -1876,6 +1876,14 @@ a {
           padding-left: 25px; }
   .site-content .content-area.single-post .entry-content {
     padding: 30px; }
+    .site-content .content-area.single-post .entry-content img {
+      float: none;
+      height: auto;
+      width: 100%; }
+      .site-content .content-area.single-post .entry-content img.alignleft {
+        margin-right: 0; }
+      .site-content .content-area.single-post .entry-content img.alignright {
+        margin-left: 0; }
   .site-content .content-area.single-post .post-navigation {
     zoom: 1;
     background: #1f2022; }
@@ -2269,7 +2277,17 @@ LARGER MOBILE DEVICES
   .site-content .content-area .type-jtw_work .entry-header .entry-info .entry-title {
     font-size: 36px; }
   .site-content .content-area .type-jtw_work .entry-header .entry-info .entry-desc {
-    font-size: 22px; } }
+    font-size: 22px; }
+  .site-content .content-area.single-post .entry-content img.size-medium {
+    width: auto; }
+  .site-content .content-area.single-post .entry-content img.alignleft {
+    float: left;
+    margin-right: 30px;
+    width: 40%; }
+  .site-content .content-area.single-post .entry-content img.alignright {
+    float: right;
+    margin-left: 30px;
+    width: 40%; } }
 /*
 TABLET & SMALLER LAPTOPS
 */
@@ -2876,7 +2894,7 @@ DESKTOP
     .site-content .content-area.single-post .entry-content {
       padding: 6% 8%; }
       .site-content .content-area.single-post .entry-content p {
-        font-size: 18px; }
+        font-size: 16px; }
     .site-content .content-area .comments #respond form {
       zoom: 1; }
       .site-content .content-area .comments #respond form:before, .site-content .content-area .comments #respond form:after {

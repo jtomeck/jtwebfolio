@@ -1192,6 +1192,17 @@ $head-marg:283px;
 		&.single-post {
 			.entry-content {
 				padding:30px;
+				img {
+					float:none;
+					height:auto;
+					width:100%;
+					&.alignleft {
+						margin-right:0;
+					}
+					&.alignright {
+						margin-left:0;
+					}
+				}
 			}
 			//.entry-content
 			.post-navigation {
