@@ -2588,6 +2588,207 @@ DESKTOP
       .site-content .home-skills .skills-list-wrap .skills-text .skill-text {
         font-size: 24px;
         pointer-events: auto; }
+    .site-content .section-bottom {
+      zoom: 1; }
+      .site-content .section-bottom:before, .site-content .section-bottom:after {
+        content: "";
+        display: table; }
+      .site-content .section-bottom:after {
+        clear: both; }
+      .site-content .section-bottom .featured-work {
+        background: #1f2022;
+        float: left;
+        width: 50%; }
+        .site-content .section-bottom .featured-work .featured-work-header {
+          zoom: 1;
+          padding: 30px 50px; }
+          .site-content .section-bottom .featured-work .featured-work-header:before, .site-content .section-bottom .featured-work .featured-work-header:after {
+            content: "";
+            display: table; }
+          .site-content .section-bottom .featured-work .featured-work-header:after {
+            clear: both; }
+          .site-content .section-bottom .featured-work .featured-work-header .featured-work-title {
+            color: #fff;
+            font-family: "panefresco_750wtregular", sans-serif;
+            font-size: 26px;
+            font-style: normal;
+            font-weight: normal;
+            float: left;
+            margin: 0; }
+          .site-content .section-bottom .featured-work .featured-work-header .featured-work-link {
+            display: block;
+            float: right;
+            font-size: 17px;
+            margin-top: -2px;
+            padding: 8px 10px 4px; }
+        .site-content .section-bottom .featured-work .featured-work-projects {
+          position: relative; }
+          .site-content .section-bottom .featured-work .featured-work-projects .project {
+            position: relative;
+            width: 100%; }
+            .site-content .section-bottom .featured-work .featured-work-projects .project .project-info {
+              background: url(../img/gray_rpt.png) repeat;
+              padding: 25px 30px;
+              position: absolute;
+              top: 100px;
+              width: 100%;
+              z-index: 10; }
+              .site-content .section-bottom .featured-work .featured-work-projects .project .project-info .project-name {
+                color: #fff;
+                font-family: "panefresco_400wtregular", sans-serif;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: normal;
+                text-align: center; }
+              .site-content .section-bottom .featured-work .featured-work-projects .project .project-info .project-tags {
+                margin: 0;
+                padding: 0 20px;
+                text-align: center; }
+                .site-content .section-bottom .featured-work .featured-work-projects .project .project-info .project-tags .tag {
+                  color: #009491;
+                  font-family: "panefresco_400wtregular", sans-serif;
+                  font-size: 10px;
+                  font-style: normal;
+                  font-weight: normal;
+                  background: url(../img/tag.svg) 0 1px no-repeat;
+                  background-size: 10px;
+                  display: inline-block;
+                  margin: 0 0 0 5px;
+                  padding-left: 13px; }
+                  .site-content .section-bottom .featured-work .featured-work-projects .project .project-info .project-tags .tag:first-child {
+                    margin: 0; }
+            .site-content .section-bottom .featured-work .featured-work-projects .project .project-image {
+              height: 0;
+              overflow: hidden;
+              padding-bottom: 320px;
+              position: relative; }
+              .site-content .section-bottom .featured-work .featured-work-projects .project .project-image img {
+                -webkit-filter: blur(3px);
+                -moz-filter: blur(3px);
+                -o-filter: blur(3px);
+                filter: blur(3px);
+                -webkit-transform: translate(-50%, -50%) rotate(-10deg);
+                -moz-transform: translate(-50%, -50%) rotate(-10deg);
+                -ms-transform: translate(-50%, -50%) rotate(-10deg);
+                -o-transform: translate(-50%, -50%) rotate(-10deg);
+                transform: translate(-50%, -50%) rotate(-10deg);
+                height: auto;
+                left: 50%;
+                position: absolute;
+                top: 50%;
+                width: 120%; }
+          .site-content .section-bottom .featured-work .featured-work-projects #prev {
+            background: url(../img/pager_controls.png) top left no-repeat;
+            display: block;
+            height: 22px;
+            left: 20px;
+            position: absolute;
+            top: 133px;
+            width: 22px;
+            z-index: 102; }
+          .site-content .section-bottom .featured-work .featured-work-projects #next {
+            background: url(../img/pager_controls.png) top right no-repeat;
+            display: block;
+            height: 22px;
+            position: absolute;
+            right: 20px;
+            top: 133px;
+            width: 22px;
+            z-index: 102; }
+          .site-content .section-bottom .featured-work .featured-work-projects .pager {
+            background: url(../img/trans-ltgray.png) repeat;
+            bottom: 0;
+            padding: 7px;
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            z-index: 101; }
+            .site-content .section-bottom .featured-work .featured-work-projects .pager span {
+              text-indent: 300%;
+              white-space: nowrap;
+              overflow: hidden;
+              background: url(../img/pager_buttons.png) no-repeat;
+              background-position: top right;
+              cursor: pointer;
+              display: inline-block;
+              height: 14px;
+              margin: 0 2px;
+              width: 14px; }
+              .site-content .section-bottom .featured-work .featured-work-projects .pager span.cycle-pager-active {
+                background-position: top left; }
+      .site-content .section-bottom .featured-articles {
+        background: #2c2f31;
+        float: right;
+        width: 50%; }
+        .site-content .section-bottom .featured-articles .featured-articles-header {
+          zoom: 1;
+          padding: 30px 50px; }
+          .site-content .section-bottom .featured-articles .featured-articles-header:before, .site-content .section-bottom .featured-articles .featured-articles-header:after {
+            content: "";
+            display: table; }
+          .site-content .section-bottom .featured-articles .featured-articles-header:after {
+            clear: both; }
+          .site-content .section-bottom .featured-articles .featured-articles-header .featured-articles-title {
+            color: #fff;
+            font-family: "panefresco_750wtregular", sans-serif;
+            font-size: 26px;
+            font-style: normal;
+            font-weight: normal;
+            float: left;
+            margin: 0; }
+          .site-content .section-bottom .featured-articles .featured-articles-header .featured-articles-link {
+            display: block;
+            float: right;
+            font-size: 17px;
+            margin-top: -2px;
+            padding: 8px 10px 4px; }
+        .site-content .section-bottom .featured-articles .featured-article-list .article {
+          zoom: 1;
+          -webkit-transition: background 0.25s ease-in-out;
+          -moz-transition: background 0.25s ease-in-out;
+          -ms-transition: background 0.25s ease-in-out;
+          -o-transition: background 0.25s ease-in-out;
+          transition: background 0.25s ease-in-out;
+          -webkit-transform: translateZ(0, 0, 0);
+          -ms-transform: translateZ(0, 0, 0);
+          -o-transform: translateZ(0, 0, 0);
+          transform: translateZ(0, 0, 0);
+          -webkit-transform-style: preserve-3d;
+          -moz-transform-style: preserve-3d;
+          -ms-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+          -webkit-backface-visibility: hidden;
+          -moz-backface-visibility: hidden;
+          -ms-backface-visibility: hidden;
+          backface-visibility: hidden;
+          background: #2c2f31;
+          padding: 20px 30px 20px 50px;
+          position: relative; }
+          .site-content .section-bottom .featured-articles .featured-article-list .article:before, .site-content .section-bottom .featured-articles .featured-article-list .article:after {
+            content: "";
+            display: table; }
+          .site-content .section-bottom .featured-articles .featured-article-list .article:after {
+            clear: both; }
+          .site-content .section-bottom .featured-articles .featured-article-list .article .article-date {
+            color: #747c82;
+            float: left;
+            font-size: 12px;
+            padding-right: 30px;
+            padding-top: 5px;
+            vertical-align: middle; }
+          .site-content .section-bottom .featured-articles .featured-article-list .article .article-title {
+            color: #d2d5d7;
+            float: left;
+            font-size: 16px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-transform: none;
+            white-space: nowrap;
+            width: 78%; }
+          .site-content .section-bottom .featured-articles .featured-article-list .article:nth-of-type(odd) {
+            background: #333739; }
+          .site-content .section-bottom .featured-articles .featured-article-list .article:hover {
+            background: #383c3e; }
     .site-content .content-area .entry-header .entry-info {
       top: 12%; }
       .site-content .content-area .entry-header .entry-info .entry-icon {

@@ -70,7 +70,7 @@ $cta_buttons = $cfs->get('jtw_project_cta_buttons');
             </div>
             <div class="cta-buttons">
             	<?php foreach ($cta_buttons as $cta_button ) : ?>
-                	<a href="<?php bloginfo('url'); ?><?php echo $cta_button['jtw_project_cta_button_url']; ?>" class="btn"><?php echo $cta_button['jtw_project_cta_button_label']; ?></a>
+                	<a href="<?php echo $cta_button['jtw_project_cta_button_url']; ?>" class="btn"><?php echo $cta_button['jtw_project_cta_button_label']; ?></a>
             	<?php endforeach; ?>
             </div>
         </div>

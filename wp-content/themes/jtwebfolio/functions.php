@@ -94,6 +94,7 @@ add_action( 'widgets_init', 'jtwebfolio_widgets_init' );
 function jtwebfolio_scripts() {
 	wp_enqueue_style( 'jtwebfolio-style', get_stylesheet_directory_uri() . '/assets/css/style.css', array(), '20140719', all );
 	wp_enqueue_script( 'jtwebfolio-mainjs', get_template_directory_uri() . '/assets/js/main.js', array(), '20130115', true );
+	wp_enqueue_script( 'jtwebfolio-cycle2', get_template_directory_uri() . '/assets/js/jquery.cycle2.min.js', array(), '20130115', true );
 	wp_enqueue_script( 'jtwebfolio-select', get_template_directory_uri() . '/assets/js/jquery.lister.js', array(), '20130115', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

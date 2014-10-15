@@ -361,6 +361,190 @@
 	}
 	//.home-skills
 
+	.section-bottom {
+		@include clearfix;
+		.featured-work {
+			background:$drkrgry;
+			float: left;
+			width:50%;
+			.featured-work-header {
+				@include clearfix;
+				padding:30px 50px;
+				.featured-work-title {
+					@include font($wht,$md-font,26px);
+					float:left;
+					margin:0;
+				}
+				.featured-work-link {
+					display:block;
+					float:right;
+					font-size:17px;
+					margin-top:-2px;
+					padding:8px 10px 4px;
+				}
+			}
+			//.featured-work-header
+			.featured-work-projects {
+				position:relative;
+				.project {
+					position:relative;
+					width:100%;
+					.project-info {
+						background:url(../img/gray_rpt.png) repeat;
+						padding:25px 30px;
+						position:absolute;
+						top:100px;
+						width:100%;
+						z-index:10;
+						.project-name {
+							@include font($wht,$font,18px);
+							text-align:center;
+						}
+						.project-tags {
+							margin:0;
+							padding:0 20px;
+							text-align:center;
+							.tag {
+								@include font($grn,$font,10px);
+								background:url(../img/tag.svg) 0 1px no-repeat;
+								background-size:10px;
+								display:inline-block;
+								margin:0 0 0 5px;
+								padding-left:13px;
+								&:first-child {
+									margin:0;
+								}
+							}
+						}
+						//.project-tags
+					}
+					//.project-info
+					.project-image {
+						height:0;
+						overflow:hidden;
+						padding-bottom:320px;
+						position:relative;
+						img {
+							@include blur(3px);
+							@include transform(translate(-50%,-50%) rotate(-10deg));
+							height:auto;
+							left:50%;
+							position:absolute;
+							top:50%;
+							width:120%;
+						}
+					}
+					//.project-image
+				}
+				//.project
+				#prev {
+					background:url(../img/pager_controls.png) top left no-repeat;
+					display:block;
+					height:22px;
+					left:20px;
+					position:absolute;
+					top:133px;
+					width:22px;
+					z-index:102;
+				}
+				#next {
+					background:url(../img/pager_controls.png) top right no-repeat;
+					display:block;
+					height:22px;
+					position:absolute;
+					right:20px;
+					top:133px;
+					width:22px;
+					z-index:102;
+				}
+				.pager {
+					background:url(../img/trans-ltgray.png) repeat;
+					bottom:0;
+					padding:7px;
+					position:absolute;
+					text-align:center;
+					width:100%;
+					z-index:101;
+					span {
+						@include hide-text;
+						background:url(../img/pager_buttons.png) no-repeat;
+						background-position:top right;
+						cursor:pointer;
+						display:inline-block;
+						height:14px;
+						margin:0 2px;
+						width:14px;
+						&.cycle-pager-active {
+							background-position:top left;
+						}
+					}
+				}
+				//.pager
+			}
+			//.featured-work-projects
+		}
+		//.featured-work
+		.featured-articles {
+			background:$drkgry;
+			float:right;
+			width:50%;
+			.featured-articles-header {
+				@include clearfix;
+				padding:30px 50px;
+				.featured-articles-title {
+					@include font($wht,$md-font,26px);
+					float:left;
+					margin:0;
+				}
+				.featured-articles-link {
+					display:block;
+					float:right;
+					font-size:17px;
+					margin-top:-2px;
+					padding:8px 10px 4px;
+				}
+			}
+			//.featured-articles-header
+			.featured-article-list {
+				.article {
+					@include clearfix;
+					@include transition(background .25s ease-in-out);
+					background:$drkgry;
+					padding:20px 30px 20px 50px;
+					position:relative;
+					.article-date {
+						color:lighten($drkgry,30%);
+						float:left;
+						font-size:12px;
+						padding-right:30px;
+						padding-top:5px;
+						vertical-align:middle;
+					}
+					.article-title {
+						color:lighten($drkgry,65%);
+						float:left;
+						font-size:16px;
+						overflow:hidden;
+						text-overflow:ellipsis;
+						text-transform:none;
+						white-space:nowrap;
+						width:78%;
+					}
+					&:nth-of-type(odd) {
+						background:lighten($drkgry,3%);
+					}
+					&:hover {
+						background:lighten($drkgry,5%);
+					}
+				}
+				//.article
+			}
+			//.featured-article-list
+		}
+		//.featured-articles
+	}
+	//.section-bottom
+
 
 	/***********************************/
 	// END OF HOMEPAGE STYLES
