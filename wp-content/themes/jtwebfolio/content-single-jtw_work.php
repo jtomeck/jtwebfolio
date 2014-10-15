@@ -10,6 +10,7 @@ $details = $cfs->get('jtw_details_section');
 $cta_heading = $cfs->get('jtw_project_cta_heading');
 $cta_text = $cfs->get('jtw_project_cta_text');
 $cta_buttons = $cfs->get('jtw_project_cta_buttons');
+$new_window = $cfs->get('jtw_new_window');
 
 ?>
 
@@ -65,12 +66,12 @@ $cta_buttons = $cfs->get('jtw_project_cta_buttons');
         <div class="wrapper">
         	<div class="cta-content">
                 <h3 class="cta-title">What did you think?</h3>
-                <p class="cta-text">If this piqued your interest, there's more where this came from.</p>
-                <h6 class="cta-whats-next">So, what's next?</h6>
+                <p class="cta-text">If this piqued your interest, there's plenty more where this came from. All you have to do is make you're choice.</p>
+                <h6 class="cta-whats-next">So, what'll it be?</h6>
             </div>
             <div class="cta-buttons">
             	<?php foreach ($cta_buttons as $cta_button ) : ?>
-                	<a href="<?php echo $cta_button['jtw_project_cta_button_url']; ?>" class="btn"><?php echo $cta_button['jtw_project_cta_button_label']; ?></a>
+                	<a href="<?php echo $cta_button['jtw_project_cta_button_url']; ?>" class="btn" <?php if ( $new_window ) { echo 'target="_blank"' } ?>><?php echo $cta_button['jtw_project_cta_button_label']; ?></a>
             	<?php endforeach; ?>
             </div>
         </div>
