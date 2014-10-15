@@ -2623,6 +2623,7 @@ DESKTOP
         .site-content .section-bottom .featured-work .featured-work-projects {
           position: relative; }
           .site-content .section-bottom .featured-work .featured-work-projects .project {
+            overflow: hidden;
             position: relative;
             width: 100%; }
             .site-content .section-bottom .featured-work .featured-work-projects .project .project-info {
