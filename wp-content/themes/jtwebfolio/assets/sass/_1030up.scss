@@ -269,6 +269,77 @@
 	}
 	//.home-skills
 
+	.section-bottom {
+		.featured-work {
+			.featured-work-header {
+				padding:30px 50px;
+				.featured-work-title {
+					@include font($wht,$md-font,26px);
+				}
+				.featured-work-link {}
+			}
+			//.featured-work-header
+			.featured-work-projects {
+				.project {
+					.project-info {
+						.project-name {}
+						.project-tags {
+							.tag {
+								&:first-child {}
+							}
+						}
+						//.project-tags
+					}
+					//.project-info
+					.project-image {
+						img {}
+					}
+					//.project-image
+				}
+				//.project
+				#prev {}
+				#next {}
+				.pager {
+					span {
+						&.cycle-pager-active {}
+					}
+				}
+				//.pager
+			}
+			//.featured-work-projects
+		}
+		//.featured-work
+		.featured-articles {
+			background:$drkgry;
+			float:right;
+			width:50%;
+			.featured-articles-header {
+				@include clearfix;
+				padding:30px 50px;
+				.featured-articles-title {
+					@include font($wht,$md-font,26px);
+				}
+				.featured-articles-link {}
+			}
+			//.featured-articles-header
+			.featured-article-list {
+				.article {
+					padding:20px 30px 20px 50px;
+					.article-date {}
+					.article-title {
+						width:78%;
+					}
+					&:nth-of-type(odd) {}
+					&:hover {}
+				}
+				//.article
+			}
+			//.featured-article-list
+		}
+		//.featured-articles
+	}
+	//.section-bottom
+
 
 	/***********************************/
 	// END OF HOMEPAGE STYLES

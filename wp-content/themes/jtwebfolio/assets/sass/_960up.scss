@@ -363,15 +363,16 @@
 
 	.section-bottom {
 		@include clearfix;
+		display:block;
 		.featured-work {
 			background:$drkrgry;
 			float: left;
 			width:50%;
 			.featured-work-header {
 				@include clearfix;
-				padding:30px 50px;
+				padding:30px 35px;
 				.featured-work-title {
-					@include font($wht,$md-font,26px);
+					@include font($wht,$md-font,22px);
 					float:left;
 					margin:0;
 				}
@@ -490,9 +491,9 @@
 			width:50%;
 			.featured-articles-header {
 				@include clearfix;
-				padding:30px 50px;
+				padding:30px 35px;
 				.featured-articles-title {
-					@include font($wht,$md-font,26px);
+					@include font($wht,$md-font,22px);
 					float:left;
 					margin:0;
 				}
@@ -510,13 +511,13 @@
 					@include clearfix;
 					@include transition(background .25s ease-in-out);
 					background:$drkgry;
-					padding:20px 30px 20px 50px;
+					padding:20px 30px 20px 35px;
 					position:relative;
 					.article-date {
 						color:lighten($drkgry,30%);
 						float:left;
 						font-size:12px;
-						padding-right:30px;
+						padding-right:20px;
 						padding-top:5px;
 						vertical-align:middle;
 					}
@@ -528,7 +529,7 @@
 						text-overflow:ellipsis;
 						text-transform:none;
 						white-space:nowrap;
-						width:78%;
+						width:75%;
 					}
 					&:nth-of-type(odd) {
 						background:lighten($drkgry,3%);
