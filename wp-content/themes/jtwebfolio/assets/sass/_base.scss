@@ -1006,7 +1006,7 @@ $head-marg:283px;
 				background:$drkrgry;
 				padding:0 !important;
 				.project {
-					@include box-shadow(0, 0, 50px, rgba(0,0,0,.45), $inset:true);
+					@include box-shadow(0, 0, 50px, rgba(0,0,0,.3), $inset:true);
 					background:$ltrgry;
 					float:left;
 					position:relative;
@@ -1019,7 +1019,7 @@ $head-marg:283px;
 						img {
 							@include blur(1px);
 							@include transform(translate(-50%,-50%) rotate(-10deg));
-							@include opacity(15);
+							@include opacity(10);
 							display:block;
 							height:120%;
 							left:50%;
