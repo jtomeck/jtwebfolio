@@ -1712,7 +1712,8 @@ a {
           width: 100%; }
           .site-content .content-area .work-archive .entry-content .project .project-content .project-title {
             font-family: "panefresco_750wtregular", sans-serif;
-            margin-bottom: 10px; }
+            margin-bottom: 10px;
+            padding: 0 15px; }
           .site-content .content-area .work-archive .entry-content .project .project-content .project-tags {
             margin: 0;
             padding: 0 20px;
