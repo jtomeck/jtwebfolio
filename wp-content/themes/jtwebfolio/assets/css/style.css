@@ -2721,7 +2721,7 @@ DESKTOP
                 background-position: top left; }
       .site-content .section-bottom .featured-articles {
         background: #2c2f31;
-        float: right;
+        float: left;
         width: 50%; }
         .site-content .section-bottom .featured-articles .featured-articles-header {
           zoom: 1;
@@ -3077,28 +3077,24 @@ DESKTOP
         font-size: 26px;
         font-style: normal;
         font-weight: normal; }
-    .site-content .section-bottom .featured-articles {
-      background: #2c2f31;
-      float: right;
-      width: 50%; }
-      .site-content .section-bottom .featured-articles .featured-articles-header {
-        zoom: 1;
-        padding: 30px 50px; }
-        .site-content .section-bottom .featured-articles .featured-articles-header:before, .site-content .section-bottom .featured-articles .featured-articles-header:after {
-          content: "";
-          display: table; }
-        .site-content .section-bottom .featured-articles .featured-articles-header:after {
-          clear: both; }
-        .site-content .section-bottom .featured-articles .featured-articles-header .featured-articles-title {
-          color: #fff;
-          font-family: "panefresco_750wtregular", sans-serif;
-          font-size: 26px;
-          font-style: normal;
-          font-weight: normal; }
-      .site-content .section-bottom .featured-articles .featured-article-list .article {
-        padding: 20px 30px 20px 50px; }
-        .site-content .section-bottom .featured-articles .featured-article-list .article .article-title {
-          width: 78%; }
+    .site-content .section-bottom .featured-articles .featured-articles-header {
+      zoom: 1;
+      padding: 30px 50px; }
+      .site-content .section-bottom .featured-articles .featured-articles-header:before, .site-content .section-bottom .featured-articles .featured-articles-header:after {
+        content: "";
+        display: table; }
+      .site-content .section-bottom .featured-articles .featured-articles-header:after {
+        clear: both; }
+      .site-content .section-bottom .featured-articles .featured-articles-header .featured-articles-title {
+        color: #fff;
+        font-family: "panefresco_750wtregular", sans-serif;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: normal; }
+    .site-content .section-bottom .featured-articles .featured-article-list .article {
+      padding: 20px 30px 20px 50px; }
+      .site-content .section-bottom .featured-articles .featured-article-list .article .article-title {
+        width: 78%; }
     .site-content .content-area .entry-header .entry-info .entry-tagline {
       width: 590px; }
     .site-content .content-area .type-page .entry-content {
