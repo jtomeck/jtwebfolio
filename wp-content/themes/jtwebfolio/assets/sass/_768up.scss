@@ -323,12 +323,58 @@
 			//.entry-header
 			.entry-content {
 				padding:40px 50px;
+				float:left;
 				text-align:left;
+				width:75%;
 				img {}
 			}
 			//.entry-content
+			.sidebar {
+				background:$drkrgry;
+				display:block;
+				float:right;
+				padding:0;
+				width:25%;
+				.widget {
+					.widget-title {
+						background:$drkgry;
+						border-bottom:4px solid $ylw;
+						color:$wht;
+						font-size:16px;
+						margin:0;
+						padding:15px 20px;
+					}
+					ul {
+						border-bottom:none;
+						margin:0;
+						li {
+							background:$ltrgry;
+							border-left:2px solid darken($ltrgry,4%);
+							a {
+								@include transition(padding .25s ease-in-out);
+								color:$drkgry;
+								display:block;
+								padding:10px 20px;
+							}
+							&:nth-child(even) {
+								background:darken($ltrgry,4%);
+							}
+							&:hover {
+								a {
+									padding-left:25px;
+								}
+							}
+						}
+					}
+				}
+				//.widget
+			}
+			//.sidebar
 		}
 		//.single-post
+		.type-post {
+			@include clearfix;
+		}
 	}
 	//.content-area
 

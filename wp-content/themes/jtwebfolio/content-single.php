@@ -36,4 +36,5 @@ $page_icon = $cfs->get('jtw_page_icon', 76);
 			) );
 		?>
 	</div><!-- .entry-content -->
+	<?php get_sidebar(); ?>
 </article><!-- #post-## -->

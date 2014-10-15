@@ -66,7 +66,8 @@ $new_window = $cfs->get('jtw_new_window');
         <div class="wrapper">
         	<div class="cta-content">
                 <h3 class="cta-title">What did you think?</h3>
-                <p class="cta-text">If this piqued your interest, there's plenty more where this came from. All you have to do is make you're choice.</p>
+                <p class="cta-text">If this piqued your interest, there's plenty more where this came from.<br>
+                	All you have to do is make your choice.</p>
                 <h6 class="cta-whats-next">So, what'll it be?</h6>
             </div>
             <div class="cta-buttons">

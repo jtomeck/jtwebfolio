@@ -523,11 +523,15 @@
 		//.blog-archive	
 		&.single-post {
 			.entry-content {
-				padding:6% 8%;
+				padding:4% 6%;
+				width:80%;
 				p {
 					font-size:16px;
 				}
-			}	
+			}
+			.sidebar {
+				width:20%;
+			}
 		}
 		//.single-post
 		.comments {
