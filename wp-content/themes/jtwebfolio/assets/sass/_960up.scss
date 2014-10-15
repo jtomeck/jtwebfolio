@@ -421,13 +421,15 @@
 					}
 					//.project-info
 					.project-image {
+						background:$ltgry;
 						height:0;
 						overflow:hidden;
 						padding-bottom:320px;
 						position:relative;
 						img {
-							@include blur(3px);
+							@include transition(all .5s ease-in-out);
 							@include transform(translate(-50%,-50%) rotate(-10deg));
+							@include opacity(60);
 							height:auto;
 							left:50%;
 							position:absolute;
@@ -438,25 +440,22 @@
 					//.project-image
 				}
 				//.project
-				#prev {
-					background:url(../img/pager_controls.png) top left no-repeat;
+				#prev,#next {
 					display:block;
 					height:22px;
-					left:20px;
+					outline:none;
 					position:absolute;
 					top:133px;
 					width:22px;
 					z-index:102;
 				}
+				#prev {
+					background:url(../img/pager_controls.png) top left no-repeat;
+					left:20px;
+				}
 				#next {
 					background:url(../img/pager_controls.png) top right no-repeat;
-					display:block;
-					height:22px;
-					position:absolute;
 					right:20px;
-					top:133px;
-					width:22px;
-					z-index:102;
 				}
 				.pager {
 					background:url(../img/trans-ltgray.png) repeat;
@@ -481,6 +480,17 @@
 					}
 				}
 				//.pager
+				&:hover {
+					.project {
+						.project-image {
+							img {
+								@include blur(0);
+								@include transform(translate(-50%,-50%) rotate(0) scale(1.2));
+								@include opacity(100);
+							}
+						}
+					}
+				}
 			}
 			//.featured-work-projects
 		}
@@ -694,7 +704,6 @@
 					&:hover {
 						.project-image {
 							img {
-								@include blur(0);
 								@include transition(all .5s ease-in-out);
 								@include transform(translate(-50%,-50%) rotate(0) scale(1.2));
 								@include opacity(100);

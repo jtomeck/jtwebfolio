@@ -1020,7 +1020,6 @@ $head-marg:283px;
 						padding-bottom:100%;
 						position:relative;
 						img {
-							@include blur(1px);
 							@include transform(translate(-50%,-50%) rotate(-10deg));
 							@include opacity(10);
 							display:block;
