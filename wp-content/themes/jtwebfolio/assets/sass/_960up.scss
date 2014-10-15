@@ -430,7 +430,6 @@
 						img {
 							@include transition(all .5s ease-in-out);
 							@include transform(translate(-50%,-50%) rotate(-10deg));
-							@include opacity(60);
 							height:auto;
 							left:50%;
 							position:absolute;
@@ -487,7 +486,6 @@
 							img {
 								@include blur(0);
 								@include transform(translate(-50%,-50%) rotate(0) scale(1.2));
-								@include opacity(100);
 							}
 						}
 					}

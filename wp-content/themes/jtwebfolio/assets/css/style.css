@@ -2687,9 +2687,6 @@ DESKTOP
                 -ms-transform: translate(-50%, -50%) rotate(-10deg);
                 -o-transform: translate(-50%, -50%) rotate(-10deg);
                 transform: translate(-50%, -50%) rotate(-10deg);
-                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" 60 ")";
-                filter: alpha(opacity=60);
-                opacity: 0.6;
                 height: auto;
                 left: 50%;
                 position: absolute;
@@ -2739,10 +2736,7 @@ DESKTOP
             -moz-transform: translate(-50%, -50%) rotate(0) scale(1.2);
             -ms-transform: translate(-50%, -50%) rotate(0) scale(1.2);
             -o-transform: translate(-50%, -50%) rotate(0) scale(1.2);
-            transform: translate(-50%, -50%) rotate(0) scale(1.2);
-            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" 100 ")";
-            filter: alpha(opacity=100);
-            opacity: 1; }
+            transform: translate(-50%, -50%) rotate(0) scale(1.2); }
       .site-content .section-bottom .featured-articles {
         background: #2c2f31;
         float: left;
