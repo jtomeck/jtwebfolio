@@ -71,7 +71,7 @@ $new_window = $cfs->get('jtw_new_window');
             </div>
             <div class="cta-buttons">
             	<?php foreach ($cta_buttons as $cta_button ) : ?>
-                	<a href="<?php echo $cta_button['jtw_project_cta_button_url']; ?>" class="btn" <?php if ( $new_window ) { echo 'target="_blank"' } ?>><?php echo $cta_button['jtw_project_cta_button_label']; ?></a>
+                	<a href="<?php echo $cta_button['jtw_project_cta_button_url']; ?>" class="btn" <?php if ( $cta_button['jtw_new_window'] ) { echo 'target="_blank"' } ?>><?php echo $cta_button['jtw_project_cta_button_label']; ?></a>
             	<?php endforeach; ?>
             </div>
         </div>
