@@ -2,7 +2,7 @@
 	background:#2c2f31;
 	bottom:0;
 	left:0;
-	padding:80px 20%;
+	padding:60px 25%;
 	position:fixed;
 	right:0;
 	text-align:center;
@@ -12,7 +12,7 @@
 		.wrapper {
 			.alert-header {
 				.alert-logo {
-					margin:0 auto 40px;
+					margin:0 auto 30px;
 					width:139px;
 					img {
 						height:auto;
@@ -22,21 +22,44 @@
 				//.alert-logo
 				.alert-heading {
 					color:#ffc845;
-					margin-bottom:20px;
+					margin-bottom:10px;
 				}
 			}
 			//.alert-header
 			.alert-content {
-				padding-bottom:20px;
+				padding-bottom:15px;
 				p {
 					color:white;
-					font-size:18px;
+					font-size:16px;
 				}
 			}
 			//.alert-content
 			.alert-footer {
 				.alert-footer-heading {
 					color:#ff8772;
+				}
+				p {
+					color:white;
+					font-size:16px;
+				}
+				.browsers {
+					.browser {
+						float:left;
+						width:25%;
+						a {
+							display:block;
+							padding:15px;
+							p {
+								font-size:18px;
+								text-align:center;
+								color:#888888;
+							}
+						}
+						img {
+							height:auto;
+							width:100%;
+						}
+					}
 				}
 			}
 			//.alert-footer

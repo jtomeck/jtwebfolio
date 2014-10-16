@@ -23,7 +23,7 @@ $options = get_option('theme_options');
 <?php wp_enqueue_script( 'jquery' ); ?> 
 <?php wp_head(); ?>
 
-
+<!--[if lte IE 9]>
 <div class="alert alert-warning">
   <div class="wrapper">
     <div class="alert-header">
@@ -31,7 +31,7 @@ $options = get_option('theme_options');
       <h2 class="alert-heading">I can't even believe it...</h2>
     </div>
     <div class="alert-content">
-      <p>How are you still using such an antiquated web browser!? I don't mean to insult you, but the internet has come a long way over the years and your browser hasn't kept up...</p>
+      <p>I've detected you're using Internet Explorer 9 or older... I don't mean to insult you, but the internet has come a long way over the years and your browser hasn't kept up...</p>
     </div>
     <div class="alert-footer">
       <h4 class="alert-footer-heading">Please upgrade, for everyone's sake...</h4>
@@ -66,7 +66,7 @@ $options = get_option('theme_options');
   </div>
 </div>
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/ie.css" />
-
+<![endif]-->
 
 </head>
 
