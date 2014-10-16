@@ -21,6 +21,8 @@ $new_window = $cfs->get('jtw_new_window');
 			<div class="client-logo">
 				<img src="<?php echo $client_logo; ?>" alt="">
 			</div>
+			<?php else : ?>
+				<h1 class="client-name"><?php the_title(); ?></h1>
 			<?php endif; ?>
 			<?php if ( $proj_desc ) : ?>
 			<p class="entry-desc">

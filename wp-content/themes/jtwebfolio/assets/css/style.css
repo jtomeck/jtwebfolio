@@ -1729,7 +1729,8 @@ a {
               background-size: 10px;
               display: inline-block;
               margin: 0 0 0 5px;
-              padding-left: 13px; }
+              padding-left: 13px;
+              padding-bottom: 4px; }
               .site-content .content-area .work-archive .entry-content .project .project-content .project-tags .tag:first-child {
                 margin: 0; }
   .site-content .content-area .blog-archive .entry-content {
