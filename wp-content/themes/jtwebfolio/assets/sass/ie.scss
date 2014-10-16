@@ -1,0 +1,48 @@
+.alert {
+	background:#2c2f31;
+	bottom:0;
+	left:0;
+	padding:80px 20%;
+	position:fixed;
+	right:0;
+	text-align:center;
+	top:0;
+	z-index:1001;
+	&.alert-warning {
+		.wrapper {
+			.alert-header {
+				.alert-logo {
+					margin:0 auto 40px;
+					width:139px;
+					img {
+						height:auto;
+						width:100%;
+					}
+				}
+				//.alert-logo
+				.alert-heading {
+					color:#ffc845;
+					margin-bottom:20px;
+				}
+			}
+			//.alert-header
+			.alert-content {
+				padding-bottom:20px;
+				p {
+					color:white;
+					font-size:18px;
+				}
+			}
+			//.alert-content
+			.alert-footer {
+				.alert-footer-heading {
+					color:#ff8772;
+				}
+			}
+			//.alert-footer
+		}
+		//.wrapper
+	}
+	//.alert-warning
+}
+//.alert

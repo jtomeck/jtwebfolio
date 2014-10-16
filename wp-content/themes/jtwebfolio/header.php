@@ -22,6 +22,52 @@ $options = get_option('theme_options');
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <?php wp_enqueue_script( 'jquery' ); ?> 
 <?php wp_head(); ?>
+
+
+<div class="alert alert-warning">
+  <div class="wrapper">
+    <div class="alert-header">
+      <h1 class="alert-logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/jt_logo.png" alt="jtwebfolio"></h1>
+      <h2 class="alert-heading">I can't even believe it...</h2>
+    </div>
+    <div class="alert-content">
+      <p>How are you still using such an antiquated web browser!? I don't mean to insult you, but the internet has come a long way over the years and your browser hasn't kept up...</p>
+    </div>
+    <div class="alert-footer">
+      <h4 class="alert-footer-heading">Please upgrade, for everyone's sake...</h4>
+      <p>Here are the links to the most modern browsers. Pick any one of them!</p>
+      <ul class="browsers">
+        <li class="browser">
+          <a href="https://www.google.com/intl/en/chrome/browser/" target="_blank">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/browser-google_chrome.png" alt="Chrome Browser">
+            <p>Google Chrome</p>
+          </a>
+        </li>
+        <li class="browser">
+          <a href="http://www.mozilla.org/en-US/firefox/new/" target="_blank">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/browser-firefox.png" alt="Mozilla Firefox Browser">
+            <p>Mozilla Firefox</p>
+          </a>
+        </li>
+        <li class="browser">
+          <a href="http://www.opera.com/" target="_blank">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/browser-opera.png" alt="Opera Browser">
+            <p>Opera</p>
+          </a>
+        </li>
+        <li class="browser">
+          <a href="http://support.apple.com/downloads/#safari" target="_blank">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/browser-apple_safari.png" alt="Safari Browser">
+            <p>Apple Safari</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/ie.css" />
+
+
 </head>
 
 <body <?php body_class($post->post_name); ?>>
