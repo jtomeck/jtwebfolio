@@ -58,7 +58,7 @@ get_header(); ?>
     <section class="section-bottom desktop">
         <div class="featured-work">
             <div class="featured-work-header">
-                <h1 class="featured-work-title">Featured Work</h1>
+                <h1 class="featured-work-title">Recent Work</h1>
                 <a href="<?php bloginfo( 'url' ); ?>/work" class="featured-work-link btn">All Work</a>
             </div>
             <?php if ( $work_query->have_posts() ) : ?>
@@ -102,7 +102,7 @@ get_header(); ?>
         </div><!-- .featured-work -->
         <div class="featured-articles">
             <div class="featured-articles-header">
-                <h1 class="featured-articles-title">Featured Posts</h1>
+                <h1 class="featured-articles-title">Recent Posts</h1>
                 <a href="<?php bloginfo( 'url' ); ?>/work" class="featured-articles-link btn">All Posts</a>
             </div>
             <?php if ( $posts_query->have_posts() ) : ?>
